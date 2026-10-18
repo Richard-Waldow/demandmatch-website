@@ -88,7 +88,8 @@
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const fine = matchMedia('(pointer: fine)').matches;
   const store = { get: k => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) { /* private mode */ } } };
-  let lang = store.get('dm-lang') || (navigator.language || 'de').slice(0, 2);
+  // each language has its own address (/ German, /en/ English); the page says which one it is
+  let lang = window.PAGE_LANG || store.get('dm-lang') || 'de';
   if (!T[lang]) lang = 'de';
   if (!reduced) root.classList.add('motion');
   if (!reduced && CSS.supports?.('animation-timeline: view()')) root.classList.add('sda'); // scroll-driven animations for the problem section
@@ -154,7 +155,11 @@
     if (mq) { const set = ['f1', 'f2', 'f3', 'f4'].map((k, i) => `<span class="mq-i"><i class="ph-light ph-${['flask', 'lightning', 'gear-six', 'cpu'][i]}"></i>${t[k]}</span>`).join(''); mq.innerHTML = set + set; }
     story.fill(t);
   }
-  document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', () => { lang = b.dataset.lang; store.set('dm-lang', lang); apply(); }));
+  document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', () => {
+    const to = b.dataset.lang, url = window.LANG_URLS?.[to];
+    if (url && to !== lang) { location.href = url + location.hash; return; }
+    lang = to; store.set('dm-lang', lang); apply();
+  }));
   document.querySelectorAll('[data-year]').forEach(el => { el.textContent = new Date().getFullYear(); });
 
   // ------------------------------------------------------------------ 2. the hero field

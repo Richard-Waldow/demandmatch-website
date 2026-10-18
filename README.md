@@ -19,6 +19,8 @@ Run it locally: `python3 -m http.server 8005` in this folder, then open http://l
 
 Published with GitHub Pages from the public repo `Richard-Waldow/demandmatch-website` on **https://waldowautomation.com** (DNS already points to GitHub). Every push to `main` updates the live site within a minute or two.
 
+- **Two addresses:** German at https://waldowautomation.com/ (the homepage), English at https://waldowautomation.com/en/. The English page is generated: after any change to `index.html`, run `python3 build-en.py` before pushing.
+
 - **Contact address:** the `EMAIL` constant at the top of `site.js` (currently `hello@waldowautomation.com`).
 - **Legal pages:** update them once DemandMatch is registered (company name, register, VAT ID, Bing as co-representative if applicable).
 
