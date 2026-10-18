@@ -1,9 +1,9 @@
 /* DemandMatch company site.
    1. Text in German and English (T), the contact address, the language switch.
-   2. The hero field: demand particles drift in from the left, stock from the right; where they meet they pair up.
-   3. The headline reveals word by word; sections fade in as they arrive (IntersectionObserver, no scroll listeners).
-   4. The approach story: the panel follows the step being read (understand, match, act).
-   5. Small pointer effects: spotlight on tiles, magnetic primary buttons.
+   2. The hero: an ASCII stream behind (demand › streams right, stock ‹ streams left, pairs light up as ◆), and a terminal that runs the product as a command.
+   3. Headings decode from random characters as they arrive; sections fade in (IntersectionObserver, no scroll listeners).
+   4. The approach story: the pane follows the step being read (understand, match, act).
+   5. Small pointer effects: spotlight on the file windows, a magnetic contact button.
    Everything runs without third-party code and stays still for visitors who prefer reduced motion. */
 (() => {
   // the contact address: change it here once the domain and mailbox exist
@@ -21,6 +21,10 @@
       md: [['envelope-simple', 'E-Mail', 'Anfrage über 20 t', '20 t · KW 46'], ['phone', 'Anruf', '3 Preisstaffeln', '1, 3, 5 t'], ['database', 'CRM', 'Rahmenabruf', '8 Paletten'], ['whatsapp-logo', 'WhatsApp', '„Wie immer“', '12 t wie zuletzt']],
       ms: [['warehouse', 'Lager', 'sofort verfügbar'], ['boat', 'Zulauf', 'in 2 Wochen'], ['factory', 'Kontingent', 'beim Hersteller'], ['buildings', 'Lager', 'zweiter Standort']],
       draft_t: 'Angebot vorbereitet', draft_s: 'Wartet auf Ihre Freigabe', approve: 'Freigeben',
+      cmd: 'demandmatch run --inbox --crm --stock',
+      log: [['info', '29 Anfragen gelesen: E-Mail, Telefon, CRM, WhatsApp'], ['info', 'Bedarf erkannt: Produkt, Menge, Termin'], ['info', 'abgeglichen mit Lager, Zulauf und Kontingent'], ['ok', '4 Angebote vorbereitet, Marge geprüft'], ['wait', 'warten auf Ihre Freigabe']],
+      log_done: '0 Nachrichten ohne Freigabe versendet',
+      tray_ok: '10 Quellen, eine Bedarfsliste',
       p_h: 'Im Großhandel wird mit verstreuten Informationen verkauft.',
       p_lead: 'Anfragen gehen per E-Mail, Telefon und CRM ein. Der Bestand ändert sich täglich. DemandMatch führt beides zusammen, damit Ihr Vertrieb seine Zeit mit Verkaufen verbringt.',
       p1_t: 'Der Bedarf kommt von überall', p1_d: 'Anfragen, Abrufe und Preisfragen gehen per E-Mail, Telefon, Messenger und CRM ein, in jedem Format.',
@@ -57,6 +61,10 @@
       md: [['envelope-simple', 'Email', 'Request for 20 t', '20 t · week 46'], ['phone', 'Call', '3 price tiers', '1, 3, 5 t'], ['database', 'CRM', 'Call-off', '8 pallets'], ['whatsapp-logo', 'WhatsApp', '"The usual"', '12 t as last time']],
       ms: [['warehouse', 'Warehouse', 'Available now'], ['boat', 'Inbound', 'In 2 weeks'], ['factory', 'Allocation', 'At the producer'], ['buildings', 'Warehouse', 'Second site']],
       draft_t: 'Offer drafted', draft_s: 'Waiting for your approval', approve: 'Approve',
+      cmd: 'demandmatch run --inbox --crm --stock',
+      log: [['info', '29 requests read: email, phone, CRM, WhatsApp'], ['info', 'demand extracted: product, quantity, date'], ['info', 'matched against warehouse, inbound and allocation'], ['ok', '4 offers drafted, margin checked'], ['wait', 'waiting for your approval']],
+      log_done: '0 messages sent without approval',
+      tray_ok: '10 sources, one demand list',
       p_h: 'Distributors sell from scattered information.',
       p_lead: 'Requests arrive by email, phone and CRM. Stock changes every day. DemandMatch brings both together, so your account managers spend their time selling.',
       p1_t: 'Demand is everywhere', p1_d: 'Requests, call-offs and price questions arrive by email, phone, messenger and CRM, in every format.',
@@ -98,7 +106,7 @@
   const story = (() => {
     const panel = document.querySelector('.panel'); if (!panel) return { fill() {}, set() {} };
     const body = panel.querySelector('.panel-body'), svg = panel.querySelector('.pl-links');
-    const dl = panel.querySelector('.pl-d'), sl = panel.querySelector('.pl-s');
+    const dl = panel.querySelector('.pl-d'), sl = panel.querySelector('.pl-s'), title = panel.querySelector('[data-panel-title]');
     const PAIRS = [[0, 1], [1, 0], [2, 2], [3, 3]]; // which stock item answers which request
     function draw() {
       const r0 = body.getBoundingClientRect(); if (!r0.width) return;
@@ -113,12 +121,13 @@
     addEventListener('resize', () => requestAnimationFrame(draw));
     return {
       fill(t) {
-        dl.innerHTML = t.md.map(([icon, title, meta, tag], i) => `<li style="--i:${i}"><span class="mi"><i class="ph-light ph-${icon}"></i></span><span class="mt"><b>${title}</b><small>${meta}</small></span><em class="tag">${tag}</em></li>`).join('');
-        sl.innerHTML = t.ms.map(([icon, title, meta], i) => `<li style="--i:${i}"><span class="mi"><i class="ph-light ph-${icon}"></i></span><span class="mt"><b>${title}</b><small>${meta}</small></span></li>`).join('');
+        dl.innerHTML = t.md.map(([, title, meta, tag], i) => `<li style="--i:${i}"><span class="mi">›</span><span class="mt"><b>${title}</b><small>${meta}</small></span><em class="tag">${tag}</em></li>`).join('');
+        sl.innerHTML = t.ms.map(([, title, meta], i) => `<li style="--i:${i}"><span class="mi">‹</span><span class="mt"><b>${title}</b><small>${meta}</small></span></li>`).join('');
         requestAnimationFrame(draw);
       },
       set(s) {
         panel.dataset.step = s;
+        if (title) title.textContent = `demandmatch ${['understand', 'match', 'act'][s]}`;
         document.querySelectorAll('.step').forEach(el => el.classList.toggle('on', +el.dataset.s === s));
         requestAnimationFrame(draw);
       },
@@ -147,12 +156,12 @@
     document.querySelectorAll('[data-mail]').forEach(a => { a.href = `mailto:${EMAIL}?subject=${encodeURIComponent(t.mail_subject)}`; });
     document.querySelectorAll('[data-email]').forEach(el => { el.textContent = EMAIL; });
     document.querySelectorAll('.lang button').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang));
-    // the headline, word by word
+    // the headline: the last two words in the accent colour
     const h1 = document.querySelector('.kin');
-    if (h1) { h1.setAttribute('aria-label', t.h1); h1.innerHTML = t.h1.split(' ').map((w, i) => `<span class="w" aria-hidden="true" style="--d:${i + 1}"><span>${w}</span></span>`).join(' '); }
+    if (h1) { h1.setAttribute('aria-label', t.h1); const w = t.h1.split(' '); h1.innerHTML = `${w.slice(0, -2).join(' ')} <span class="acc">${w.slice(-2).join(' ')}</span>`; }
     // the sectors band: the four sectors, repeated so the loop is seamless
     const mq = document.querySelector('.mq-track');
-    if (mq) { const set = ['f1', 'f2', 'f3', 'f4'].map((k, i) => `<span class="mq-i"><i class="ph-light ph-${['flask', 'lightning', 'gear-six', 'cpu'][i]}"></i>${t[k]}</span>`).join(''); mq.innerHTML = set + set; }
+    if (mq) { const set = ['f1', 'f2', 'f3', 'f4'].map(k => `<span class="mq-i">${t[k]}</span>`).join(''); mq.innerHTML = set + set; }
     story.fill(t);
   }
   document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', () => {
@@ -162,55 +171,58 @@
   }));
   document.querySelectorAll('[data-year]').forEach(el => { el.textContent = new Date().getFullYear(); });
 
-  // ------------------------------------------------------------------ 2. the hero field
+  // ------------------------------------------------------------------ 2. the hero: the ASCII stream
   (() => {
     const cv = document.querySelector('.field'); if (!cv) return;
     const ctx = cv.getContext('2d');
-    const DEM = '232,236,255', STK = '99,128,255';
+    const DEM = '214,228,218', STK = '75,224,138';
     let W = 0, H = 0, P = [], flashes = [], running = false, mouse = { x: -999, y: -999 };
     const rnd = (a, b) => a + Math.random() * (b - a);
     function spawn(p, side, anywhere) {
       p.side = side;
-      p.x = anywhere ? (side < 0 ? rnd(0, W * .7) : rnd(W * .55, W)) : (side < 0 ? rnd(-20, W * .02) : rnd(W * .98, W + 20));
-      p.y = rnd(H * .06, H * .94);
-      p.v = rnd(.25, .7); p.r = rnd(.9, 2.3); p.ph = rnd(0, Math.PI * 2); p.a = rnd(.3, .85);
+      p.x = anywhere ? (side < 0 ? rnd(0, W * .7) : rnd(W * .45, W)) : (side < 0 ? rnd(-20, W * .02) : rnd(W * .98, W + 20));
+      p.y = Math.round(rnd(H * .06, H * .94) / 24) * 24; // glyphs travel on text rows
+      p.v = rnd(.3, .8); p.s = Math.round(rnd(11, 16)); p.ph = rnd(0, Math.PI * 2); p.a = rnd(.18, .55);
       return p;
     }
     function size() {
       const r = cv.getBoundingClientRect(), dpr = Math.min(devicePixelRatio || 1, 2);
       W = r.width; H = r.height; cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      const n = Math.round(Math.min(100, Math.max(34, W / 14)));
+      const n = Math.round(Math.min(80, Math.max(26, W / 18)));
       P = Array.from({ length: n * 2 }, (_, i) => spawn({}, i % 2 ? 1 : -1, true));
     }
     function frame(t) {
       ctx.clearRect(0, 0, W, H);
-      const mid = W * .64; // they meet right of centre, away from the headline
-      ctx.lineWidth = 1;
-      // faint threads from each demand particle to its nearest stock particle; very close pairs near the meeting line match
+      const mid = W * .52; // demand and stock meet in the middle
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      // a demand glyph that meets a stock glyph on the same row near the middle becomes a match
       for (let i = 0; i < P.length; i += 2) {
-        const a = P[i]; let best = null, bd = 120 * 120;
-        for (let j = 1; j < P.length; j += 2) { const b = P[j]; const dx = a.x - b.x, dy = a.y - b.y, d = dx * dx + dy * dy; if (d < bd) { bd = d; best = b; } }
-        if (!best) continue;
-        ctx.strokeStyle = `rgba(${STK},${(1 - Math.sqrt(bd) / 120) * .25})`; ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(best.x, best.y); ctx.stroke();
-        if (bd < 16 * 16 && Math.abs(a.x - mid) < W * .22) { flashes.push({ x: (a.x + best.x) / 2, y: (a.y + best.y) / 2, t: 0 }); spawn(a, -1); spawn(best, 1); }
+        const a = P[i];
+        for (let j = 1; j < P.length; j += 2) {
+          const b = P[j];
+          if (Math.abs(a.y - b.y) < 3 && Math.abs(a.x - b.x) < 9 && Math.abs(a.x - mid) < W * (W < 1000 ? .5 : .1)) { flashes.push({ x: (a.x + b.x) / 2, y: a.y, t: 0 }); spawn(a, -1); spawn(b, 1); break; }
+        }
       }
       for (const p of P) {
-        // demand streams right, stock streams left; they cross around the meeting line, unmatched ones fade out beyond it
-        p.x += -p.side * p.v + Math.sin(t / 900 + p.ph) * .12;
-        p.y += Math.sin(t / 1300 + p.ph * 2) * .25;
-        const past = (p.x - mid) * -p.side; // how far it has travelled beyond the meeting line
-        const fade = past > 0 ? Math.max(0, 1 - past / (W * .18)) : 1;
+        p.x += -p.side * p.v;
+        const past = (p.x - mid) * -p.side; // how far it has travelled beyond the middle
+        const fade = past > 0 ? Math.max(0, 1 - past / (W * .3)) : 1;
         if (fade <= 0) { spawn(p, p.side); continue; }
+        let y = p.y;
         const mx = p.x - mouse.x, my = p.y - mouse.y, md = Math.sqrt(mx * mx + my * my);
-        if (md < 120) { const f = (1 - md / 120) * 2.2; p.x += mx / (md || 1) * f; p.y += my / (md || 1) * f; } // the pointer pushes particles aside
-        if (p.x < -40 || p.x > W + 40 || p.y < -40 || p.y > H + 40) spawn(p, p.side);
-        ctx.fillStyle = `rgba(${p.side < 0 ? DEM : STK},${p.a * fade})`; ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fill();
+        if (md < 110) y += (my >= 0 ? 1 : -1) * (1 - md / 110) * 26; // the pointer parts the stream
+        if (p.x < -40 || p.x > W + 40) { spawn(p, p.side); continue; }
+        ctx.font = `600 ${p.s}px "Geist Mono", monospace`;
+        const calm = W < 1000 ? .55 : p.x < W * .42 ? .45 : 1; // quieter behind the headline
+        ctx.fillStyle = `rgba(${p.side < 0 ? DEM : STK},${p.a * fade * calm})`;
+        ctx.fillText(p.side < 0 ? '›' : '‹', p.x, y);
       }
       flashes = flashes.filter(f => f.t < 1);
       for (const f of flashes) {
-        f.t += .02;
-        ctx.strokeStyle = `rgba(255,255,255,${(1 - f.t) * .75})`; ctx.lineWidth = 1.4; ctx.beginPath(); ctx.arc(f.x, f.y, 4 + f.t * 28, 0, Math.PI * 2); ctx.stroke();
-        ctx.fillStyle = `rgba(${STK},${(1 - f.t) * .95})`; ctx.beginPath(); ctx.arc(f.x, f.y, 3.2, 0, Math.PI * 2); ctx.fill();
+        f.t += .018;
+        const r = 5 + f.t * 22;
+        ctx.strokeStyle = `rgba(${STK},${(1 - f.t) * .6})`; ctx.lineWidth = 1; ctx.strokeRect(f.x - r, f.y - r, r * 2, r * 2);
+        ctx.font = '700 15px "Geist Mono", monospace'; ctx.fillStyle = `rgba(255,255,255,${(1 - f.t) * .95})`; ctx.fillText('◆', f.x, f.y);
       }
       if (running) requestAnimationFrame(frame);
     }
@@ -225,17 +237,57 @@
     document.addEventListener('visibilitychange', () => { if (document.hidden) running = false; else if (visible) start(); });
   })();
 
+  // ------------------------------------------------------------------ 2. the hero: the command runs, prints its log, waits, and runs again
+  (() => {
+    const typed = document.querySelector('[data-typed]'), log = document.querySelector('.term-hero .log'); if (!typed || !log) return;
+    const t = T[lang], rows = [...t.log.map(([lv, text]) => [lv, text]), ['done', t.log_done]];
+    const row = ([lv, text], ms) => `<li class="${lv === 'done' ? 'done' : ''}"><span class="ts">${(ms / 1000).toFixed(2)}s</span><span class="lvl ${lv === 'done' ? 'ok' : lv}">[${lv}]</span><span>${text}</span></li>`;
+    if (reduced) { typed.textContent = t.cmd; log.innerHTML = rows.map((r, i) => row(r, 120 + i * 340)).join(''); return; }
+    const sleep = ms => new Promise(r => setTimeout(r, ms));
+    (async function run() {
+      for (;;) {
+        typed.textContent = ''; log.innerHTML = '';
+        await sleep(900);
+        for (const ch of t.cmd) { typed.textContent += ch; await sleep(ch === ' ' ? 70 : 28 + Math.random() * 45); }
+        await sleep(450);
+        let ms = 0;
+        for (const r of rows) { const d = 260 + Math.random() * 520; ms += d; await sleep(d); log.insertAdjacentHTML('beforeend', row(r, ms)); }
+        await sleep(7000);
+        while (document.hidden) await sleep(1000);
+      }
+    })();
+  })();
+
+  // ------------------------------------------------------------------ 3. headings decode from random characters the first time they appear
+  const GLYPHS = 'abcdefghijklmnopqrstuvwxyz0123456789#$%&*+<>/=';
+  function decode(el) {
+    const nodes = []; const walk = n => n.childNodes.forEach(c => c.nodeType === 3 ? nodes.push([c, c.textContent]) : walk(c)); walk(el);
+    const total = nodes.reduce((n, [, s]) => n + s.length, 0), dur = Math.min(1100, 300 + total * 18), t0 = performance.now();
+    (function tick(now) {
+      const k = Math.min(1, (now - t0) / dur);
+      let seen = 0;
+      for (const [node, s] of nodes) {
+        node.textContent = [...s].map((ch, i) => (ch === ' ' || (seen + i) / total < k) ? ch : GLYPHS[(Math.random() * GLYPHS.length) | 0]).join('');
+        seen += s.length;
+      }
+      if (k < 1) requestAnimationFrame(tick);
+    })(t0);
+  }
+
   // ------------------------------------------------------------------ 3. header and fade-ins
   const top = document.querySelector('.top'), sentinel = document.getElementById('top-sentinel');
   if (top && sentinel) new IntersectionObserver(([e]) => top.classList.toggle('scrolled', !e.isIntersecting)).observe(sentinel);
   if (!reduced) {
     const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .18, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.rv, .scatter').forEach(el => io.observe(el));
+    const dio = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { decode(e.target); dio.unobserve(e.target); } }), { threshold: .6 });
+    document.querySelectorAll('.h2 [data-i], .step h3, .b-key h3').forEach(el => dio.observe(el));
+    const h1 = document.querySelector('.kin'); if (h1) setTimeout(() => decode(h1), 250);
   } else document.querySelectorAll('.rv, .scatter').forEach(el => el.classList.add('in'));
 
   // ------------------------------------------------------------------ 5. pointer effects (mouse and trackpad only)
   if (fine && !reduced) {
-    document.querySelectorAll('.b, .person').forEach(el => el.addEventListener('pointermove', e => { const r = el.getBoundingClientRect(); el.style.setProperty('--mx', `${e.clientX - r.left}px`); el.style.setProperty('--my', `${e.clientY - r.top}px`); }));
+    document.querySelectorAll('.b').forEach(el => el.addEventListener('pointermove', e => { const r = el.getBoundingClientRect(); el.style.setProperty('--mx', `${e.clientX - r.left}px`); el.style.setProperty('--my', `${e.clientY - r.top}px`); }));
     document.querySelectorAll('.magnetic').forEach(el => {
       el.addEventListener('pointermove', e => { const r = el.getBoundingClientRect(); el.style.transform = `translate(${(e.clientX - r.left - r.width / 2) * .18}px, ${(e.clientY - r.top - r.height / 2) * .3}px)`; });
       el.addEventListener('pointerleave', () => { el.style.transform = ''; });
