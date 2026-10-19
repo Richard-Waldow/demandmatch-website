@@ -198,6 +198,9 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .who { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1rem; padding: .15rem 0; }
 .who b { font-weight: 600; color: var(--acc-hi); }
 .who span { color: var(--ink-2); }
+.who a { color: inherit; text-decoration: none; text-underline-offset: .2em; }
+.who a span { color: inherit; opacity: .7; }
+.who a:hover, .who a:focus-visible { text-decoration: underline; }
 .whoami .cmd + .who { margin-top: .4rem; } .whoami .who + .cmd { margin-top: .6rem; }
 
 /* ---------------------------------------------------------------- contact: the brightest moment on the page */
