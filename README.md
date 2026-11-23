@@ -8,7 +8,7 @@ The company website for DemandMatch (Richard von Waldow and Bing Cai). A static 
 | `site.js` | All visible text in German and English, the contact email address, the particle field and scroll story |
 | `style.css` | Design: dark and cinematic, one cobalt accent, animations that respect "reduced motion" |
 | `impressum.html`, `datenschutz.html` | Legal notice and privacy policy, with Richard von Waldow (Waldow Automation Partners, Berlin) as the site operator until DemandMatch is a registered company |
-| `CNAME` | The custom domain for GitHub Pages: `waldowautomation.com` |
+| `CNAME` | The custom domain for GitHub Pages: `demandmatch.io` |
 | `assets/` | Logo, Geist fonts, Phosphor icons |
 
 Run it locally: `python3 -m http.server 8005` in this folder, then open http://localhost:8005.
@@ -17,9 +17,9 @@ Run it locally: `python3 -m http.server 8005` in this folder, then open http://l
 
 ## Live site
 
-Published with GitHub Pages from the public repo `Richard-Waldow/demandmatch-website` on **https://waldowautomation.com** (DNS already points to GitHub). Every push to `main` updates the live site within a minute or two.
+Published with GitHub Pages from the public repo `Richard-Waldow/demandmatch-website` on **https://demandmatch.io** (DNS at Namecheap points to GitHub; until 23 Nov 2026 the site ran on waldowautomation.com). Every push to `main` updates the live site within a minute or two.
 
-- **Two addresses:** German at https://waldowautomation.com/ (the homepage), English at https://waldowautomation.com/en/. The English page is generated: after any change to `index.html`, run `python3 build-en.py` before pushing.
+- **Two addresses:** German at https://demandmatch.io/ (the homepage), English at https://demandmatch.io/en/. The English page is generated: after any change to `index.html`, run `python3 build-en.py` before pushing.
 
 - **Contact address:** the `EMAIL` constant at the top of `site.js` (currently `hello@waldowautomation.com`).
 - **Legal pages:** update them once DemandMatch is registered (company name, register, VAT ID, Bing as co-representative if applicable).
