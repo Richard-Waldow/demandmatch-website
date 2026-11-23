@@ -3,184 +3,318 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DemandMatch · Vertriebsautomatisierung für den B2B-Handel</title>
-<meta name="description" content="DemandMatch gleicht Kundenbedarf mit Ihrem Bestand ab, damit der Vertrieb im Großhandel weiß, wem er was anbieten soll.">
-<meta name="theme-color" content="#090c0a">
-<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
-<link rel="preload" href="assets/fonts/GeistMono-var.woff2" as="font" type="font/woff2" crossorigin>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#ffffff">
+<title>DemandMatch · Autopilot für den Vertrieb</title>
+<meta name="description" content="DemandMatch gleicht jede Kundenanfrage mit Ihrem Bestand ab und bereitet das Angebot vor. Ihr Vertrieb gibt frei.">
+<link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap">
+<link rel="preload" href="assets/fonts/Geist-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/art/unloading.jpg" as="image">
+<link rel="stylesheet" href="assets/css/film.css">
+<link rel="stylesheet" href="assets/css/systems.css">
+<link rel="stylesheet" href="assets/css/custom.css">
 <link rel="stylesheet" href="assets/icons/style.css">
-<link rel="stylesheet" href="style.css">
-<link rel="alternate" hreflang="de" href="https://demandmatch.io/">
-<link rel="alternate" hreflang="en" href="https://demandmatch.io/en/">
+<link rel="stylesheet" href="assets/app/app.css">
+<link rel="stylesheet" href="assets/app/ae.css">
+<link rel="stylesheet" href="assets/app/gantt.css">
+<link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-<span id="top-sentinel" aria-hidden="true"></span>
-<!-- status bar -->
-<header class="top">
-  <div class="wrap top-in">
-    <a class="brand" href="#top" aria-label="DemandMatch"><img src="assets/logo.svg" alt="" width="22" height="22"><span>demandmatch</span><em class="host">@hq:~</em></a>
-    <nav class="nav" aria-label="Sections">
-      <a href="#problem" data-i="nav_problem"></a><a href="#approach" data-i="nav_approach"></a><a href="#principles" data-i="nav_principles"></a><a href="#team" data-i="nav_team"></a>
+<a class="skip" href="#main" data-t="skip"></a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="brand" href="#main" aria-label="DemandMatch">
+      <span class="brand-mark" data-logo="mark" aria-hidden="true"></span>
+      <span class="brand-word">DemandMatch</span>
+    </a>
+    <nav class="nav" aria-label="Seiten">
+      <a href="#value" data-t="nav_value"></a>
+      <a href="#product" data-t="nav_product"></a>
+      <a href="#systems" data-t="nav_how"></a>
+      <a href="#pilot" data-t="nav_pilot"></a>
     </nav>
     <div class="top-r">
-      <div class="lang" role="group" aria-label="Language"><button data-lang="de">de</button><button data-lang="en">en</button></div>
-      <a class="btn btn-sm btn-primary" data-mail><span data-i="cta"></span></a>
+      <div class="lang" role="group" aria-label="Sprache / Language"><button type="button" data-lang="de">DE</button><button type="button" data-lang="en">EN</button></div>
+      <a class="btn btn-ink btn-sm" data-mail><span data-t="cta"></span></a>
     </div>
   </div>
 </header>
 
-<main id="top">
-  <!-- hero: the promise on the left, the product running in a terminal on the right, an ASCII stream of demand and stock behind -->
-  <section class="hero">
-    <canvas class="field" aria-hidden="true"></canvas>
-    <div class="wrap hero-in">
-      <div class="hero-copy">
-        <p class="eyebrow rise" style="--d:0"><span class="c">//</span> <span data-i="eyebrow"></span></p>
-        <h1 class="kin" data-i="h1"></h1>
-        <p class="lead rise" style="--d:6" data-i="lead"></p>
-        <div class="cta-row rise" style="--d:7">
-          <a class="btn btn-primary btn-lg" data-mail><span class="prompt">$</span><span data-i="cta"></span><i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
-          <a class="btn btn-ghost btn-lg" href="#approach"><span class="prompt">./</span><span data-i="cta2"></span></a>
-        </div>
-      </div>
-      <div class="term term-hero rise" style="--d:3" aria-hidden="true">
-        <div class="term-bar"><span class="dots"><i></i><i></i><i></i></span><span class="term-title">demandmatch: zsh</span><span class="term-size">120x32</span></div>
-        <div class="term-body">
-          <p class="cmd"><span class="ps1">demandmatch@hq:~$</span> <span data-typed></span><span class="cur"></span></p>
-          <ol class="log"></ol>
-        </div>
-      </div>
-    </div>
-    <div class="legend rise" style="--d:8" aria-hidden="true"><span><b class="gd">›</b><span data-i="m_demand"></span></span><span><b class="gs">‹</b><span data-i="m_stock"></span></span><span><b class="gm">◆</b><span data-i="m_match"></span></span></div>
-  </section>
+<main id="main">
 
-  <!-- problem: scattered sources sort themselves while the three problems print -->
-  <section class="scatter" id="problem">
-    <div class="stage">
-      <div class="wrap stage-in">
-        <div class="stage-copy">
-          <h2 class="h2"><span class="hash">#</span> <span data-i="p_h"></span></h2>
-          <p class="sub" data-i="p_lead"></p>
-          <ol class="probs">
-            <li class="pb pb1"><span class="lvl warn">[warn]</span><span><b data-i="p1_t"></b><small data-i="p1_d"></small></span></li>
-            <li class="pb pb2"><span class="lvl warn">[warn]</span><span><b data-i="p2_t"></b><small data-i="p2_d"></small></span></li>
-            <li class="pb pb3"><span class="lvl warn">[warn]</span><span><b data-i="p3_t"></b><small data-i="p3_d"></small></span></li>
-          </ol>
-        </div>
-        <div class="tray term" aria-hidden="true">
-          <div class="term-bar"><span class="dots"><i></i><i></i><i></i></span><span class="term-title">sources | sort | demandmatch</span></div>
-          <ul class="chips">
-            <li style="--sx:-210px;--sy:-160px;--r:-14deg"><span data-i="c1"></span></li>
-            <li style="--sx:140px;--sy:-210px;--r:11deg"><span data-i="c2"></span></li>
-            <li style="--sx:-260px;--sy:40px;--r:8deg"><span>whatsapp</span></li>
-            <li style="--sx:190px;--sy:-40px;--r:-9deg"><span>crm</span></li>
-            <li style="--sx:-150px;--sy:190px;--r:-6deg"><span>excel</span></li>
-            <li style="--sx:230px;--sy:150px;--r:13deg"><span>pdf</span></li>
-            <li style="--sx:-60px;--sy:-250px;--r:5deg"><span data-i="c7"></span></li>
-            <li style="--sx:60px;--sy:240px;--r:-12deg"><span data-i="c8"></span></li>
-            <li style="--sx:-280px;--sy:-60px;--r:16deg"><span data-i="c9"></span></li>
-            <li style="--sx:270px;--sy:60px;--r:-15deg"><span>teams</span></li>
-          </ul>
-          <p class="tray-ok"><span class="lvl ok">[ok]</span> <span data-i="tray_ok"></span></p>
+  <!-- HERO: the value in one line, who it is for, and the matching itself as the picture: one lot of stock finding its customers (surplus.js) -->
+  <section class="hero wrap">
+    <h1 class="h1" data-split="h1"></h1>
+    <p class="lead in-hero" style="--d:5" data-t="lead"></p>
+    <p class="for in-hero" style="--d:6" data-t="for"></p>
+    <div class="cta-row in-hero" style="--d:7">
+      <a class="btn btn-ink" data-mail><span data-t="cta"></span></a>
+      <a class="btn btn-soft" href="#match"><span data-t="cta_see"></span><span class="btn-ic" aria-hidden="true"><i class="ph-light ph-arrow-down"></i></span></a>
+    </div>
+  </section>
+  <section class="match-sec" id="match" aria-label="Matching">
+    <div class="sp-stage-sec">
+      <div class="sp-stage hero-stage">
+        <div class="sp-art" aria-hidden="true"><img src="assets/art/unloading.jpg" alt="" decoding="async" fetchpriority="high"></div>
+        <div class="sp-board" id="sp-board">
+          <div class="sp-lot glass">
+            <p class="sp-k" data-t="sp_lot_k"></p>
+            <h2 data-t="sp_lot_h"></h2>
+            <p class="sp-grade">HMA 016 · Marlex 9006</p>
+            <p class="sp-t"><b>40</b><span>t</span></p>
+            <ul class="sp-meta">
+              <li data-t="sp_lot_1"></li>
+              <li data-t="sp_lot_2"></li>
+              <li data-t="sp_lot_3"></li>
+            </ul>
+          </div>
+          <svg class="sp-flow" aria-hidden="true"></svg>
+          <ol class="sp-list glass" data-ta="sp_list_label"></ol>
+          <div class="sp-foot glass">
+            <p><b data-t="sp_sum_a"></b> <span data-t="sp_sum_b"></span></p>
+            <a class="btn btn-soft btn-sm" href="#product" data-open-push><span data-t="sp_open"></span><span class="btn-ic" aria-hidden="true"><i class="ph-light ph-arrow-up-right"></i></span></a>
+          </div>
         </div>
       </div>
+      <p class="film-cap in-hero" style="--d:12" data-t="match_cap"></p>
     </div>
   </section>
 
-  <!-- approach: the pane on the left follows the step being read -->
-  <section class="sec story" id="approach">
-    <div class="wrap">
-      <div class="story-h rv"><h2 class="h2"><span class="hash">#</span> <span data-i="a_h"></span></h2><p class="sub" data-i="a_lead"></p></div>
-      <div class="story-grid">
-        <div class="story-stick">
-          <div class="term panel" data-step="0" aria-hidden="true">
-            <div class="term-bar"><span class="dots"><i></i><i></i><i></i></span><span class="term-title" data-panel-title>demandmatch run</span></div>
-            <div class="panel-in">
-              <div class="panel-head"><span data-i="m_demand"></span><span data-i="m_stock"></span></div>
-              <div class="panel-body">
-                <ul class="pl pl-d"></ul>
-                <svg class="pl-links"></svg>
-                <ul class="pl pl-s"></ul>
-              </div>
-              <div class="panel-foot"><span class="lvl ok">[draft]</span><span class="pf-t"><b data-i="draft_t"></b><small data-i="draft_s"></small></span><span class="approve"><span data-i="approve"></span></span></div>
+  <!-- WHY: what unmatched stock and unanswered demand cost, read line by line as you scroll -->
+  <section class="why wrap" id="why">
+    <p class="eyebrow rv" data-t="why_eyebrow"></p>
+    <h2 class="say">
+      <span class="ln" data-t="why1"></span>
+      <span class="ln" data-t="why2"></span>
+      <span class="ln" data-t="why3"></span>
+      <span class="ln ln-end" data-t="why4"></span>
+    </h2>
+  </section>
+
+  <!-- BOTH WAYS: demand finds stock, stock finds demand. Two painted cards with one small piece of the product each -->
+  <section class="both wrap" id="both">
+    <div class="sec-h">
+      <p class="eyebrow rv" data-t="both_eyebrow"></p>
+      <h2 class="h2 rv" data-th="both_h"></h2>
+    </div>
+    <div class="bento">
+      <article class="card card-c card-half rv" data-play>
+        <div class="card-core">
+          <header class="card-h"><small class="card-k" data-t="b1_k"></small><h3 data-t="b1_h"></h3><p data-t="b1_p"></p></header>
+          <div class="card-art"><img src="assets/art/cargo-sea.jpg" alt="" loading="lazy" decoding="async">
+            <div class="ui ui-match" aria-hidden="true">
+              <div class="ui-match-h"><span>PP 7032E3</span><em data-t="c3_need"></em></div>
+              <div class="mrow"><div><b data-t="c3_w1"></b><small data-t="c3_w1s"></small></div><span class="bar"><i style="--w:1"></i></span><em class="ok" data-t="c3_fit"></em></div>
+              <div class="mrow"><div><b data-t="c3_w2"></b><small data-t="c3_w2s"></small></div><span class="bar"><i style="--w:.55"></i></span><em data-t="c3_alt"></em></div>
+              <div class="ui-match-f"><span data-t="c3_margin"></span><b>11,4 %</b></div>
             </div>
           </div>
         </div>
-        <ol class="steps">
-          <li class="step" data-s="0"><span class="step-cmd">$ demandmatch understand</span><h3 data-i="a1_t"></h3><p data-i="a1_d"></p></li>
-          <li class="step" data-s="1"><span class="step-cmd">$ demandmatch match</span><h3 data-i="a2_t"></h3><p data-i="a2_d"></p></li>
-          <li class="step" data-s="2"><span class="step-cmd">$ demandmatch act --wait-for-approval</span><h3 data-i="a3_t"></h3><p data-i="a3_d"></p></li>
-        </ol>
+      </article>
+      <article class="card card-half card-w rv" style="--d:1" data-play>
+        <div class="card-core">
+          <header class="card-h"><small class="card-k" data-t="b2_k"></small><h3 data-t="b2_h"></h3><p data-t="b2_p"></p></header>
+          <div class="card-art"><img src="assets/art/warehouse.jpg" alt="" loading="lazy" decoding="async">
+            <div class="ui ui-match" aria-hidden="true">
+              <div class="ui-match-h"><span data-t="b2_lot"></span><em data-t="b2_free"></em></div>
+              <div class="mrow"><div><b>Hanse Closures</b><small data-t="b2_r1"></small></div><span class="bar"><i style="--w:1"></i></span><em class="ok">24 t</em></div>
+              <div class="mrow"><div><b>Weser Getränketechnik</b><small data-t="b2_r2"></small></div><span class="bar"><i style="--w:.6"></i></span><em class="ok">12 t</em></div>
+              <div class="ui-match-f"><span data-t="b2_foot"></span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- VALUE: what it does for the business. Three outcomes, each on a painting with one small piece of the product -->
+  <section class="value wrap" id="value">
+    <div class="sec-h">
+      <p class="eyebrow rv" data-t="v_eyebrow"></p>
+      <h2 class="h2 rv" data-th="v_h"></h2>
+    </div>
+    <div class="bento bento-3">
+      <article class="card card-d rv" data-play>
+        <div class="card-core">
+          <header class="card-h"><h3 data-t="o1_h"></h3><p data-t="o1_p"></p></header>
+          <div class="card-art"><img src="assets/art/river-dusk.jpg" alt="" loading="lazy" decoding="async">
+            <div class="ui ui-asks">
+              <div class="ask" style="--i:0">
+                <div class="ask-h"><i></i><span data-t="c4_t1"></span><em data-t="c4_now"></em></div>
+                <p data-t="c4_m1"></p>
+                <div class="ask-b"><button type="button" class="b-ink" data-approve><span data-t="c4_ok"></span></button><button type="button" class="b-soft" data-open-offer data-t="c4_view"></button></div>
+              </div>
+              <div class="ask" style="--i:1">
+                <div class="ask-h"><i class="blue"></i><span data-t="c4_t2"></span><em>09:02</em></div>
+                <p data-t="c4_m2"></p>
+                <div class="ask-b"><button type="button" class="b-ink" data-approve><span data-t="c4_ok2"></span></button><button type="button" class="b-soft" data-open-offer data-t="c4_view"></button></div>
+              </div>
+              <div class="ask" style="--i:2">
+                <div class="ask-h"><i class="sand"></i><span data-t="c4_t3"></span><em>08:47</em></div>
+                <p data-t="c4_m3"></p>
+                <div class="ask-b"><button type="button" class="b-ink" data-approve><span data-t="c4_ok3"></span></button><button type="button" class="b-soft" data-open-offer data-t="c4_view"></button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="card card-b rv" style="--d:1" data-play>
+        <div class="card-core">
+          <header class="card-h"><h3 data-t="o2_h"></h3><p data-t="o2_p"></p></header>
+          <div class="card-art"><img src="assets/art/granulate.jpg" alt="" loading="lazy" decoding="async">
+            <div class="ui ui-src ui-plain" aria-hidden="true">
+              <div class="ui-src-h"><span data-t="o2_ui"></span><em>PP 7032E3</em></div>
+              <ul>
+                <li style="--i:0"><b data-t="o2_r1"></b><span data-t="o2_v1"></span><i></i></li>
+                <li style="--i:1"><b data-t="o2_r2"></b><span data-t="o2_v2"></span><i></i></li>
+                <li style="--i:2"><b data-t="o2_r3"></b><span data-t="o2_v3"></span><i></i></li>
+                <li style="--i:3"><b data-t="o2_r4"></b><span data-t="o2_v4"></span><i></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="card card-a rv" style="--d:2" data-play>
+        <div class="card-core">
+          <header class="card-h"><h3 data-t="o3_h"></h3><p data-t="o3_p"></p></header>
+          <div class="card-art"><img src="assets/art/chem-store.jpg" alt="" loading="lazy" decoding="async">
+            <div class="ui ui-src" aria-hidden="true">
+              <div class="ui-src-h"><span data-t="c1_ui"></span><em>07:00</em></div>
+              <ul>
+                <li style="--i:0"><img src="assets/logos/sap.svg" alt=""><b>SAP S/4</b><span data-t="c1_r1"></span><i></i></li>
+                <li style="--i:1"><img src="assets/logos/hubspot.svg" alt=""><b>HubSpot</b><span data-t="c1_r2"></span><i></i></li>
+                <li style="--i:2"><img src="assets/logos/gmail.svg" alt=""><b data-t="c1_mail"></b><span data-t="c1_r3"></span><i></i></li>
+                <li style="--i:3"><img src="assets/logos/whatsapp.svg" alt=""><b>WhatsApp</b><span data-t="c1_r4"></span><i></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <p class="rule rv"><span class="eyebrow" data-t="rule_eyebrow"></span><span class="rule-t" data-t="rule"></span></p>
+  </section>
+
+  <!-- FILM: matching today by hand, and with DemandMatch (film.js, drawn frame by frame on a painted stage) -->
+  <section class="film-sec" id="film-sec" aria-label="Film">
+    <div class="sec-h film-h">
+      <p class="eyebrow rv" data-t="film_eyebrow"></p>
+      <h2 class="h2 rv" data-th="film_h"></h2>
+    </div>
+    <div class="film" id="film"></div>
+    <p class="film-cap" data-t="film_cap"></p>
+  </section>
+
+  <!-- PRODUCT: try it. The real app as a glass window on an oil painting; tabs below jump to its screens. Plays in when it comes into view -->
+  <section class="stage-sec" id="product" aria-label="Produkt">
+    <div class="stage-h">
+      <p class="eyebrow rv" data-t="try_eyebrow"></p>
+      <h2 class="h2 rv" data-th="try_h"></h2>
+    </div>
+    <div class="stage">
+      <div class="stage-art" aria-hidden="true"><img src="assets/art/hero-harbour.jpg" alt="" decoding="async" loading="lazy"></div>
+      <div class="stage-in">
+        <div class="win" id="win">
+          <div class="win-app"></div>
+          <button class="win-try" type="button"><span><i class="ph-light ph-cursor-click" aria-hidden="true"></i><b data-t="try"></b></span></button>
+          <button class="win-full" type="button" data-ta="full"><i class="ph-light ph-corners-out" aria-hidden="true"></i></button>
+        </div>
+        <div class="dock" id="dock">
+          <div class="dock-tabs" role="tablist" data-ta="tabs_label">
+            <span class="dock-ind" aria-hidden="true"></span>
+          </div>
+          <p class="dock-line" aria-live="polite"></p>
+        </div>
       </div>
-      <ul class="outcomes">
-        <li class="rv"><span class="plus">+</span><span data-i="o1"></span></li>
-        <li class="rv"><span class="plus">+</span><span data-i="o2"></span></li>
-        <li class="rv"><span class="plus">+</span><span data-i="o3"></span></li>
-        <li class="rv"><span class="plus">+</span><span data-i="o4"></span></li>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS, for IT and operations: the systems graphic (systems.js), then the principles and the systems it reads from -->
+  <section class="sec-systems" id="systems"></section>
+  <section class="trust wrap" aria-label="Principles">
+    <ul class="trust-l rv">
+      <li><i class="ph-light ph-eye" aria-hidden="true"></i><b data-t="t1_h"></b><span data-t="t1_p"></span></li>
+      <li><i class="ph-light ph-hand-pointing" aria-hidden="true"></i><b data-t="t2_h"></b><span data-t="t2_p"></span></li>
+      <li><i class="ph-light ph-lock-simple" aria-hidden="true"></i><b data-t="t3_h"></b><span data-t="t3_p"></span></li>
+      <li><i class="ph-light ph-handshake" aria-hidden="true"></i><b data-t="t4_h"></b><span data-t="t4_p"></span></li>
+    </ul>
+    <div class="works rv">
+      <p class="works-h" data-t="works"></p>
+      <ul class="works-l">
+        <li><img src="assets/logos/sap.svg" alt="" width="18" height="18"><span>SAP</span></li>
+        <li><img src="assets/logos/oracle.svg" alt="" width="18" height="18"><span>Oracle</span></li>
+        <li><img src="assets/logos/odoo.svg" alt="" width="18" height="18"><span>Odoo</span></li>
+        <li><img src="assets/logos/datev.svg" alt="" width="18" height="18"><span>DATEV</span></li>
+        <li><img src="assets/logos/hubspot.svg" alt="" width="18" height="18"><span>HubSpot</span></li>
+        <li><img src="assets/logos/gmail.svg" alt="" width="18" height="18"><span>Gmail</span></li>
+        <li><img src="assets/logos/whatsapp.svg" alt="" width="18" height="18"><span>WhatsApp</span></li>
+        <li><img src="assets/logos/slack.svg" alt="" width="18" height="18"><span>Slack</span></li>
       </ul>
     </div>
   </section>
 
-  <!-- principles: five files; the trust message is the one that is open -->
-  <section class="sec" id="principles">
-    <div class="wrap">
-      <h2 class="h2 rv"><span class="hash">#</span> <span data-i="w_h"></span></h2>
-      <div class="bento">
-        <article class="b b-key term rv"><div class="term-bar"><span class="dots"><i></i><i></i><i></i></span><span class="term-title">cat people-decide.md</span></div><div class="b-in"><span class="big-rule">human_in_the_loop: true</span><h3 data-i="w3_t"></h3><p data-i="w3_d"></p></div></article>
-        <article class="b term rv"><div class="term-bar"><span class="term-title">cat built-for-you.md</span></div><div class="b-in"><h3 data-i="w1_t"></h3><p data-i="w1_d"></p></div></article>
-        <article class="b term rv"><div class="term-bar"><span class="term-title">cat on-your-systems.md</span></div><div class="b-in"><h3 data-i="w2_t"></h3><p data-i="w2_d"></p></div></article>
-        <article class="b term rv"><div class="term-bar"><span class="term-title">cat your-data.md</span></div><div class="b-in"><h3 data-i="w4_t"></h3><p data-i="w4_d"></p></div></article>
-        <article class="b term rv"><div class="term-bar"><span class="term-title">cat start-small.md</span></div><div class="b-in"><h3 data-i="w5_t"></h3><p data-i="w5_d"></p></div></article>
-      </div>
+  <!-- CUSTOM: what you tried is the base product; base product + customisation = your solution, an app that assembles (custom.js) -->
+  <section class="sec-custom" id="custom"></section>
+
+  <!-- PILOT: thirty days, three steps on one ruled line -->
+  <section class="pilot wrap" id="pilot">
+    <div class="pilot-h">
+      <p class="eyebrow rv" data-t="p_eyebrow"></p>
+      <h2 class="h2 rv" data-th="p_h"></h2>
+      <p class="sub rv" data-t="p_sub"></p>
+    </div>
+    <ol class="steps rv" data-play>
+      <li style="--i:0"><span class="n">01</span><small data-t="p1_w"></small><h3 data-t="p1_h"></h3><p data-t="p1_p"></p></li>
+      <li style="--i:1"><span class="n">02</span><small data-t="p2_w"></small><h3 data-t="p2_h"></h3><p data-t="p2_p"></p></li>
+      <li style="--i:2"><span class="n">03</span><small data-t="p3_w"></small><h3 data-t="p3_h"></h3><p data-t="p3_p"></p></li>
+    </ol>
+    <div class="team rv">
+      <p data-t="team"></p>
+      <a href="https://www.linkedin.com/in/richard-von-waldow/" target="_blank" rel="noopener"><span class="av">RW</span><span><b>Richard von Waldow</b><small data-t="role_r"></small></span></a>
+      <a href="https://www.linkedin.com/in/bingcai/" target="_blank" rel="noopener"><span class="av">BC</span><span><b>Bing Cai</b><small data-t="role_b"></small></span></a>
     </div>
   </section>
 
-  <!-- who it is for: one slow line of sectors -->
-  <section class="sectors">
-    <div class="wrap rv"><h2 class="h2"><span class="hash">#</span> <span data-i="f_h"></span></h2><p class="sub" data-i="f_d"></p></div>
-    <div class="marquee" aria-hidden="true"><div class="mq-track"></div></div>
-    <ul class="sr-only"><li data-i="f1"></li><li data-i="f2"></li><li data-i="f3"></li><li data-i="f4"></li></ul>
-  </section>
-
-  <!-- who we are -->
-  <section class="sec" id="team">
-    <div class="wrap team">
-      <div class="rv"><h2 class="h2"><span class="hash">#</span> <span data-i="t_h"></span></h2><p class="sub" data-i="t_d"></p></div>
-      <div class="term whoami rv">
-        <div class="term-bar"><span class="dots"><i></i><i></i><i></i></span><span class="term-title">zsh</span></div>
-        <div class="term-body">
-          <p class="cmd"><span class="ps1">$</span> whoami --team</p>
-          <p class="who"><b><a href="https://www.linkedin.com/in/richard-von-waldow/" target="_blank" rel="noopener" aria-label="Richard von Waldow · LinkedIn">richard_von_waldow <span aria-hidden="true">↗</span></a></b><span data-i="t_role"></span></p>
-          <p class="who"><b><a href="https://www.linkedin.com/in/bingcai/" target="_blank" rel="noopener" aria-label="Bing Cai · LinkedIn">bing_cai <span aria-hidden="true">↗</span></a></b><span data-i="t_role"></span></p>
-          <p class="cmd"><span class="ps1">$</span> <span class="cur"></span></p>
-        </div>
+  <!-- CLOSE: one sentence, one button, the last painting -->
+  <section class="close" id="contact">
+    <div class="wrap close-in">
+      <h2 class="h2 rv" data-th="end_h"></h2>
+      <div class="cta-row rv" style="--d:1">
+        <a class="btn btn-ink" data-mail><span data-t="cta"></span></a>
+        <a class="btn btn-soft" href="#product"><span data-t="end_try"></span><span class="btn-ic" aria-hidden="true"><i class="ph-light ph-arrow-up"></i></span></a>
       </div>
     </div>
-  </section>
-
-  <!-- contact -->
-  <section class="contact" id="contact">
-    <div class="wrap contact-in">
-      <p class="contact-cmd rv"><span class="ps1">demandmatch@hq:~$</span> ./contact</p>
-      <h2 class="h2 huge rv" data-i="c_h"></h2>
-      <p class="sub rv" data-i="c_d"></p>
-      <div class="contact-act rv">
-        <a class="btn btn-primary btn-xl magnetic" data-mail><span class="prompt">$</span><span data-i="cta"></span><i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
-        <a class="mail-line" data-mail><span class="c">mailto:</span><span data-email></span></a>
-      </div>
-    </div>
+    <div class="close-art" aria-hidden="true"><img src="assets/art/quay-evening.jpg" alt="" loading="lazy" decoding="async" data-close-art></div>
   </section>
 </main>
 
 <footer class="foot">
   <div class="wrap foot-in">
-    <span class="brand brand-sm"><img src="assets/logo.svg" alt="" width="18" height="18"><span>demandmatch</span></span>
-    <span class="foot-c">© <span data-year></span> DemandMatch</span>
-    <nav><a href="impressum.html" data-i="imprint"></a><a href="datenschutz.html" data-i="privacy"></a></nav>
+    <div class="foot-b">
+      <a class="brand" href="#main" aria-label="DemandMatch"><span class="brand-mark" data-logo="mark" aria-hidden="true"></span><span class="brand-word">DemandMatch</span></a>
+      <p data-t="foot_tag"></p>
+      <a class="btn btn-ink btn-sm" data-mail><span data-t="cta"></span></a>
+    </div>
+    <div class="foot-c"><h3 data-t="f_product"></h3><a href="#value" data-t="nav_value"></a><a href="#product" data-t="nav_product"></a><a href="#systems" data-t="nav_how"></a><a href="#pilot" data-t="nav_pilot"></a></div>
+    <div class="foot-c"><h3 data-t="f_company"></h3><a href="https://www.linkedin.com/in/richard-von-waldow/" target="_blank" rel="noopener">Richard von Waldow</a><a href="https://www.linkedin.com/in/bingcai/" target="_blank" rel="noopener">Bing Cai</a><a data-mail data-email></a></div>
   </div>
+  <div class="wrap foot-base"><span>© 2026 DemandMatch</span><span data-t="foot_note"></span><div class="lang" role="group" aria-label="Sprache / Language"><button type="button" data-lang="de">DE</button><button type="button" data-lang="en">EN</button></div></div>
 </footer>
 
-<script>window.PAGE_LANG = 'de'; window.LANG_URLS = { de: './', en: 'en/' };</script>
-<script src="site.js"></script>
+<script>window.SHARED_BASE = 'assets/';</script>
+<script src="assets/js/site.js"></script>
+<script src="assets/app/engine.js"></script>
+<script src="assets/app/sample.js"></script>
+<script src="assets/app/gantt.js"></script>
+<script src="assets/app/ae.js"></script>
+<script src="assets/app/app.js"></script>
+<script src="assets/js/film.js"></script>
+<script src="assets/js/systems.js"></script>
+<script src="assets/js/stage.js"></script>
+<script src="assets/js/surplus.js"></script>
+<script src="assets/js/custom.js"></script>
 </body>
 </html>
