@@ -9,7 +9,7 @@
   const T = {
     de: {
       title: 'DemandMatch · Ihr Bestand findet seine Kunden',
-      skip: 'Zum Inhalt', nav_value: 'Nutzen', nav_product: 'Produkt', nav_why: 'Warum', nav_how: 'So funktioniert es', nav_pilot: 'Pilot',
+      skip: 'Zum Inhalt', nav_value: 'Nutzen', nav_faq: 'Fragen', nav_product: 'Produkt', nav_why: 'Warum', nav_how: 'So funktioniert es', nav_pilot: 'Pilot',
       cta: 'Demo anfragen', cta_try: 'Produkt ausprobieren', mail_subject: 'DemandMatch: Demo',
       h1: 'Jede Tonne Bestand findet ihren Kunden.',
       lead: 'DemandMatch gleicht Ihren Bestand automatisch mit dem Bedarf Ihrer Kunden ab. Ihr Vertrieb verkauft mehr, mit besserer Marge, und gibt nur noch frei.',
@@ -81,6 +81,18 @@
       p1_w: 'Woche 1', p1_h: 'Verbinden', p1_p: 'Lesender Zugriff auf ERP, CRM und Postfach. Ihre Daten bleiben, wo sie sind.',
       p2_w: 'Woche 2', p2_h: 'Abgleichen', p2_p: 'Ihre echten Anfragen gegen Ihren echten Bestand, mit Ihren Regeln zu Marge und Kunden.',
       p3_w: 'Woche 3 und 4', p3_h: 'Arbeiten', p3_p: 'Ihr Team arbeitet damit und gibt frei. Wir messen gemeinsam, was es bringt.',
+      faq_eyebrow: 'Fragen und Antworten', faq_h: 'Was Sie über DemandMatch<br><span class="mute">wissen sollten.</span>',
+      faq: [
+        ['Was ist DemandMatch?', 'DemandMatch ist Software für den B2B-Handel. Sie gleicht Ihren Bestand automatisch mit dem Bedarf Ihrer Kunden ab: Zu jeder Anfrage aus E-Mail, Telefon oder CRM findet sie das passende Material, das Lager und die Marge und bereitet das Angebot vor. Umgekehrt findet sie für Überbestand und Ware im Zulauf die Kunden, die genau das kaufen. Ihr Vertrieb prüft und gibt frei.'],
+        ['Für wen ist DemandMatch gemacht?', 'Für Distributoren und Großhändler von Chemie, Kunststoffen und Industriebedarf, vor allem für Vertriebsleitung, Außendienst und Innendienst, die viele Anfragen und viel Bestand zusammenbringen müssen.'],
+        ['Was bringt DemandMatch dem Vertrieb?', 'Mehr Umsatz, weil keine Anfrage liegen bleibt und kein Kunde vergessen wird. Bessere Marge, weil jedes Angebot mit Fracht, Lager und Ihren Preisregeln rechnet und liegende Ware verkauft statt abgeschrieben wird. Und weniger Handarbeit: Lesen, Abgleichen und Angebot schreiben laufen automatisch.'],
+        ['Mit welchen Systemen arbeitet DemandMatch?', 'DemandMatch liest aus den Systemen, die Sie schon nutzen: ERP wie SAP, Oracle, Odoo oder DATEV, CRM wie HubSpot, das Postfach (Outlook, Gmail) und Messenger wie WhatsApp oder Slack. Nichts wird ersetzt, es gibt keinen Systemwechsel.'],
+        ['Schickt DemandMatch selbst Angebote an Kunden?', 'Nein. DemandMatch bereitet vor, ein Mensch entscheidet. Kein Angebot und keine E-Mail geht raus, bevor Ihr Vertrieb es gesehen und freigegeben hat.'],
+        ['Was passiert mit unseren Daten?', 'DemandMatch greift nur lesend auf ERP, CRM und Postfach zu und ändert dort nichts. Ihre Daten bleiben, wo sie sind. Anbindung und Zugriffsrechte legen wir gemeinsam mit Ihrer IT fest.'],
+        ['Wie fängt man an?', 'Mit einem Pilot von 30 Tagen auf Ihren echten Daten. Woche 1: lesend verbinden. Woche 2: Ihre echten Anfragen gegen Ihren echten Bestand abgleichen, mit Ihren Regeln zu Marge und Kunden. Woche 3 und 4: Ihr Team arbeitet damit, und wir messen gemeinsam, was es bringt.'],
+        ['Wer steht hinter DemandMatch?', 'DemandMatch wurde in Berlin von Richard von Waldow (Vertrieb und Produkt) und Bing Cai (Technik und Daten) gegründet. Kontakt: hello@waldowautomation.com.']
+      ],
+      meta_desc: 'DemandMatch gleicht Ihren Bestand automatisch mit dem Bedarf Ihrer Kunden ab. Software für Distributoren von Chemie, Kunststoffen und Industriebedarf: mehr Umsatz, bessere Marge, Ihr Vertrieb gibt nur noch frei.',
       team: 'Gegründet in Berlin von', role_r: 'Vertrieb und Produkt', role_b: 'Technik und Daten',
       end_h: 'Der nächste Auftrag<br><span class="mute">liegt schon in Ihrem Postfach.</span>', end_try: 'Zurück zum Produkt',
       foot_tag: 'Bestand und Bedarf, automatisch abgeglichen. Für den B2B-Handel.', f_product: 'Produkt', f_company: 'Unternehmen', f_legal: 'Rechtliches',
@@ -88,7 +100,7 @@
     },
     en: {
       title: 'DemandMatch · Your stock finds its customers',
-      skip: 'Skip to content', nav_value: 'Value', nav_product: 'Product', nav_why: 'Why', nav_how: 'How it works', nav_pilot: 'Pilot',
+      skip: 'Skip to content', nav_value: 'Value', nav_faq: 'FAQ', nav_product: 'Product', nav_why: 'Why', nav_how: 'How it works', nav_pilot: 'Pilot',
       cta: 'Book a demo', cta_try: 'Try the product', mail_subject: 'DemandMatch: demo',
       h1: 'Every tonne of stock finds its customer.',
       lead: 'DemandMatch matches your inventory with your customers\' demand, automatically. Your sales team sells more, at better margin, and only approves.',
@@ -160,6 +172,18 @@
       p1_w: 'Week 1', p1_h: 'Connect', p1_p: 'Read-only access to ERP, CRM and inbox. Your data stays where it is.',
       p2_w: 'Week 2', p2_h: 'Match', p2_p: 'Your real requests against your real stock, with your rules on margin and customers.',
       p3_w: 'Weeks 3 and 4', p3_h: 'Work', p3_p: 'Your team works with it and approves. Together we measure what it brings.',
+      faq_eyebrow: 'Questions and answers', faq_h: 'What you should know<br><span class="mute">about DemandMatch.</span>',
+      faq: [
+        ['What is DemandMatch?', 'DemandMatch is software for B2B distribution. It matches your inventory with your customers\' demand automatically: for every request from email, phone or CRM it finds the right material, warehouse and margin and prepares the offer. The other way round, it finds the customers who buy exactly what sits in overstock or arrives inbound. Your sales team reviews and approves.'],
+        ['Who is DemandMatch for?', 'For distributors and wholesalers of chemicals, plastics and industrial goods, above all for heads of sales, field sales and inside sales teams who have to bring many requests and a lot of stock together.'],
+        ['What does DemandMatch bring to a sales team?', 'More sales, because no request is left waiting and no customer is forgotten. Better margin, because every offer accounts for freight, storage and your pricing rules, and stock that sits gets sold instead of written off. And less manual work: reading, matching and writing the offer run automatically.'],
+        ['Which systems does DemandMatch work with?', 'DemandMatch reads from the systems you already run: ERP such as SAP, Oracle, Odoo or DATEV, CRM such as HubSpot, the inbox (Outlook, Gmail) and messengers such as WhatsApp or Slack. Nothing is replaced and there is no system change.'],
+        ['Does DemandMatch send offers to customers by itself?', 'No. DemandMatch prepares, a person decides. No offer and no email goes out before your sales team has seen and approved it.'],
+        ['What happens to our data?', 'DemandMatch has read-only access to ERP, CRM and inbox and changes nothing there. Your data stays where it is. We set up the connection and access rights together with your IT.'],
+        ['How do we get started?', 'With a 30-day pilot on your real data. Week 1: connect read-only. Week 2: match your real requests against your real stock, with your rules on margin and customers. Weeks 3 and 4: your team works with it, and together we measure what it brings.'],
+        ['Who is behind DemandMatch?', 'DemandMatch was founded in Berlin by Richard von Waldow (sales and product) and Bing Cai (engineering and data). Contact: hello@waldowautomation.com.']
+      ],
+      meta_desc: 'DemandMatch matches your inventory with your customers\' demand, automatically. Software for distributors of chemicals, plastics and industrial goods: more sales, better margin, and your sales team only approves.',
       team: 'Founded in Berlin by', role_r: 'Sales and product', role_b: 'Engineering and data',
       end_h: 'Your next order<br><span class="mute">is already in your inbox.</span>', end_try: 'Back to the product',
       foot_tag: 'Stock and demand, matched automatically. For B2B distribution.', f_product: 'Product', f_company: 'Company', f_legal: 'Legal',
@@ -168,9 +192,11 @@
   };
 
   // ---------------------------------------------------------------- language (+ the shim the app reads)
-  let lang = new URLSearchParams(location.search).get('lang');
-  if (!T[lang]) { try { lang = localStorage.getItem('dm-lang'); } catch (e) {} }
-  if (!T[lang]) lang = 'de';
+  // each language is its own written-out page (/ and /en/, built by tools/build.mjs), so crawlers and agents
+  // read the text without running scripts. The page's lang decides; old ?lang= links go to the right page.
+  let lang = T[root.lang] ? root.lang : 'de';
+  const asked = new URLSearchParams(location.search).get('lang');
+  if (T[asked] && asked !== lang && root.dataset[asked]) { location.replace(root.dataset[asked] + location.hash); }
   const listeners = [];
   window.UI = { get lang() { return lang; }, onLang(fn) { listeners.push(fn); }, t: k => T[lang][k] };
 
@@ -192,8 +218,9 @@
   apply();
   qa('.lang button').forEach(b => b.addEventListener('click', () => {
     if (b.dataset.lang === lang) return;
-    lang = b.dataset.lang; try { localStorage.setItem('dm-lang', lang); } catch (e) {}
-    apply(); listeners.forEach(fn => fn(lang));
+    const to = root.dataset[b.dataset.lang];
+    if (to) { location.href = to + location.hash; return; }
+    lang = b.dataset.lang; apply(); listeners.forEach(fn => fn(lang));
   }));
 
   // ---------------------------------------------------------------- the logo (assets/logo/mark.svg, by Codex): two arcs, demand above and

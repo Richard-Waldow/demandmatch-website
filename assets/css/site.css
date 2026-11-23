@@ -472,6 +472,21 @@ button { font: inherit; color: inherit; }
 @media (max-width: 560px) { .trust-l { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { .hero-stage, .film { clip-path: none; transition: none; } }
 
+/* ------------------------------------------------------------------ faq: native details, one hairline per question, a plus that turns into a minus */
+.faq { padding-top: clamp(60px, 8vw, 110px); padding-bottom: clamp(80px, 10vw, 140px); }
+.faq-l { margin-top: clamp(40px, 5vw, 64px); border-top: 1px solid var(--line); }
+.faq-i { border-bottom: 1px solid var(--line); }
+.faq-i summary { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 24px 0; list-style: none; cursor: pointer; }
+.faq-i summary::-webkit-details-marker { display: none; }
+.faq-i summary:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; border-radius: 4px; }
+.faq-i h3 { margin: 0; font: 400 clamp(20px, 1.9vw, 26px)/1.2 var(--serif); letter-spacing: -.025em; color: var(--ink); transition: color 200ms ease; }
+.faq-i summary > i { position: relative; flex: none; width: 14px; height: 14px; }
+.faq-i summary > i::before, .faq-i summary > i::after { content: ""; position: absolute; left: 0; top: 6.5px; width: 14px; height: 1px; background: var(--ink-2); transition: transform 200ms var(--ease-out); }
+.faq-i summary > i::after { transform: rotate(90deg); }
+.faq-i[open] summary > i::after { transform: rotate(0deg); }
+.faq-i p { margin: 0; padding: 0 0 28px; max-width: 68ch; font-size: 15.5px; line-height: 1.6; color: var(--ink-2); }
+@media (hover: hover) and (pointer: fine) { .faq-i summary:hover h3 { color: var(--ink-2); } }
+
 /* ------------------------------------------------------------------ reveals */
 .rv { opacity: 0; transform: translateY(28px); filter: blur(6px); transition: opacity 1000ms var(--ease-out), transform 1100ms var(--ease-out), filter 900ms var(--ease-out); transition-delay: calc(var(--d, 0) * 90ms); }
 .rv.in { opacity: 1; transform: none; filter: blur(0); }
