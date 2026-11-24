@@ -1,4 +1,4 @@
-/* Ported from 09_DemandMatch_io for the atelier site: the heading uses the page's eyebrow / serif h2 (text in
+/* Ported from 09_DemandMatch_io for the atelier site: the heading uses the page's serif h2 (text in
    site.js, cu_*), the three steps are left out (the pilot below has them), and it reveals with the page's .rv.
    Version 5: #custom, right after the product demo. What you just tried is the base product; every solution is
    customised. Drawn as a kit that builds itself: base product + customisation = your solution, where "your solution"
@@ -59,8 +59,7 @@
 
   function render() {
     host.innerHTML = `<div class="wrap">
-      <div class="cu-head"><p class="eyebrow rv">${window.UI.t('cu_eyebrow')}</p>
-      <h2 class="h2 cu-h rv">${window.UI.t('cu_h')}</h2></div>
+      <div class="cu-head"><h2 class="h2 cu-h rv">${window.UI.t('cu_h')}</h2></div>
 
       <div class="cu-sum">
         <div class="cu-base"><small>${L('Base product', 'Basisprodukt')}</small><b>${L('Ready from day one', 'Ab dem ersten Tag bereit')}</b>

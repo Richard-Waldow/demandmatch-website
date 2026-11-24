@@ -8,7 +8,21 @@ It reads the systems a distributor already runs (ERP such as SAP, Oracle, Odoo o
 - Demand finds stock: for every request from email, phone or CRM it finds the right material, warehouse and margin and prepares the offer.
 - Stock finds demand: for overstock and inbound goods it finds the customers who buy exactly that and prepares a personal message for each.
 
-A person in sales approves everything before it goes out. Companies start with a 30-day pilot on their real data. Contact: hello@waldowautomation.com.
+A person in sales approves everything before it goes out. Companies start with a free fit check, then a value assessment and a 30-day pilot on their real data. Contact: hello@waldowautomation.com.
+
+## Pricing
+
+All prices net (excl. VAT in Europe, excl. sales tax in the US). Every paid step is credited in full to the next one.
+
+- Fit check (30 minutes): Free
+- Value assessment (3 weeks): €20,000 / $22,000
+- Pilot (30 days): €60,000 / $66,000
+- License Division (To start with one division): €180,000 / $198,000 per year, plus implementation from €60,000 / $66,000 one-time. One business unit or one country; revenue in scope up to €400m; sales users up to 60.
+- License Group (Typical at about €1bn revenue): €450,000 / $495,000 per year, plus implementation from €150,000 / $165,000 one-time. All divisions and countries; revenue in scope up to €2bn; sales users up to 500.
+- License Global (For groups with several companies): from €600,000 / $660,000 per year, plus implementation from €150,000 / $165,000 one-time. Several ERP systems, single sign-on, a dedicated contact; revenue in scope above €2bn; sales users by agreement.
+- Every license includes: matching both ways, offers with margin, freight and your pricing rules, read-only connection to ERP, CRM and inbox, and nothing goes out without your team's approval.
+- Paid annually in advance, 12-month minimum term. The value assessment and the pilot are credited in full.
+- Business case calculator: https://demandmatch.io/en/#roi
 
 ## Pages
 

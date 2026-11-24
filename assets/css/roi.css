@@ -1,0 +1,155 @@
+/* #roi: the business case (roi.js), in the language of the pricing section. The inputs sit on a flat tile; the result is a
+   short memo for a CFO, lying on an oil painting (roi-silos) that stays in view while the inputs scroll. The memo opens with
+   one sentence, the verdict, and only then the detail: value per year, license in proportion, where the value comes from,
+   freed capacity, the three years, the cost line. Sentence-case labels throughout, no section numbers, no metric tiles.
+   The serif is kept for the verdict and the larger figures; inputs read in the text face with tabular figures. */
+.roi { padding-top: clamp(100px, 12vw, 170px); padding-bottom: clamp(40px, 6vw, 80px); }
+.roi .sec-h .sub { max-width: 60ch; }
+.roi-static { margin: clamp(40px, 5vw, 64px) 0 0; max-width: 80ch; color: var(--ink-2); }
+
+.roi-sheet { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 2px; margin-top: clamp(40px, 5vw, 64px); }
+.roi-in { padding: clamp(24px, 3vw, 44px); border-radius: 10px; background: var(--paper-2); }
+.roi-side { min-width: 0; }
+
+/* the painted frame and the memo on it */
+.roi-out { position: sticky; top: var(--roi-top, 76px); display: block; padding: clamp(64px, 6vw, 96px) clamp(12px, 1.4vw, 20px) clamp(12px, 1.4vw, 20px);
+  border-radius: 10px; overflow: hidden; isolation: isolate; background: #e9e2d3; }
+.roi-art { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 8% 30%;
+  transform: scale(1.05); transition: transform 1800ms var(--ease-out); }
+.roi-sheet.in .roi-art { transform: none; }
+.roi-memo { padding: clamp(20px, 2vw, 28px) clamp(20px, 2.2vw, 30px); border-radius: 8px; background: rgb(255 255 255 / .95);
+  box-shadow: 0 0 0 1px rgb(20 20 20 / .05), 0 40px 80px -40px rgb(25 35 45 / .55); }
+.roi-memo-h { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; margin: 0; font-size: 13px; color: var(--ink-2); }
+.roi-memo-c { color: var(--ink-3); }
+.roi-verdict { margin: 12px 0 0; font: 400 clamp(21px, 1.8vw, 26px)/1.28 var(--serif); letter-spacing: -.02em; color: var(--ink-3); text-wrap: pretty; }
+.roi-verdict b { font-weight: 400; color: var(--ink); white-space: nowrap; }
+
+.roi-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; margin: 18px 0 0; }
+.roi-f { padding: 12px 0 14px; border-top: 1px solid var(--line); }
+.roi-f dt { font-size: 13px; color: var(--ink-3); }
+.roi-f dd { margin: 6px 0 0; }
+.roi-f b { display: block; font: 400 clamp(24px, 2vw, 30px)/1.05 var(--serif); letter-spacing: -.03em; color: var(--ink); white-space: nowrap; }
+.roi-f small { display: block; margin-top: 6px; font-size: 12.5px; line-height: 1.4; color: var(--ink-3); }
+
+.roi-blk { padding: 14px 0; border-top: 1px solid var(--line); }
+.roi-h { margin: 0 0 12px; font-size: 13.5px; font-weight: 500; color: var(--ink); }
+.roi-bar { display: flex; gap: 2px; height: 4px; border-radius: 4px; overflow: hidden; background: var(--paper-3); }
+.roi-bar i { transition: width 300ms var(--ease-out); }
+.roi-bar i:nth-child(1), .roi-leg .c0 { background: var(--ink); }
+.roi-bar i:nth-child(2), .roi-leg .c1 { background: var(--blue); }
+.roi-bar i:nth-child(3), .roi-leg .c2 { background: var(--sand); }
+.roi-leg { display: grid; gap: 6px; margin: 10px 0 0; padding: 0; list-style: none; }
+.roi-leg li { display: grid; grid-template-columns: 7px 1fr auto; align-items: center; gap: 10px; font-size: 13.5px; color: var(--ink-2); }
+.roi-leg i { width: 7px; height: 7px; border-radius: 50%; }
+.roi-leg b { font-weight: 500; color: var(--ink); }
+
+.roi-capb { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.roi-capb .roi-h { margin-bottom: 4px; }
+.roi-cap-s { margin: 0; font-size: 13.5px; color: var(--ink-3); transition: color 200ms ease; }
+.roi-capb.on .roi-cap-s { color: var(--ink-2); }
+.roi-sw { position: relative; display: inline-flex; flex: none; align-items: center; gap: 10px; font-size: 12.5px; color: var(--ink-2); cursor: pointer; }
+.roi-sw input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.roi-sw span { position: relative; width: 30px; height: 18px; border-radius: 99px; background: var(--ink-4); transition: background-color 200ms ease; }
+.roi-sw span::after { content: ""; position: absolute; top: 2px; left: 2px; width: 14px; height: 14px; border-radius: 50%; background: #fff; box-shadow: 0 1px 2px rgb(20 20 20 / .25); transition: transform 200ms var(--ease-out); }
+.roi-sw input:checked + span { background: var(--ink); }
+.roi-sw input:checked + span::after { transform: translateX(12px); }
+.roi-sw input:focus-visible + span { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+.roi-yrs { width: 100%; margin-top: 4px; border-collapse: collapse; font-size: 13px; font-variant-numeric: lining-nums tabular-nums; }
+.roi-yrs th, .roi-yrs td { padding: 6px 0 6px 12px; text-align: right; border-top: 1px solid var(--line); white-space: nowrap; }
+.roi-yrs thead th { border-top: 0; padding-top: 12px; font-size: 12.5px; font-weight: 400; color: var(--ink-3); }
+.roi-yrs tbody th { padding-left: 0; text-align: left; font-weight: 400; color: var(--ink-3); }
+.roi-yrs td { color: var(--ink-2); }
+.roi-yrs .roi-cum td { font-weight: 500; color: var(--ink); }
+.roi-yrs td.neg { color: #8a5a3c; }
+.roi-costl { margin: 10px 0 0; font-size: 12.5px; line-height: 1.5; color: var(--ink-3); }
+
+/* actions: two quiet text buttons with a drawn icon, not two more pills */
+.roi-act { display: flex; flex-wrap: wrap; gap: 6px 22px; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); }
+.roi-act button { display: inline-flex; align-items: center; gap: 7px; padding: 4px 0; border: 0; background: none; font: 500 13px/1.2 var(--font); color: var(--ink-2); cursor: pointer;
+  transition: color 160ms ease, transform 140ms var(--ease-out); }
+.roi-act i { font-size: 15px; }
+.roi-act button:active { transform: scale(.97); }
+.roi-act button:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 4px; }
+@media (hover: hover) and (pointer: fine) { .roi-act button:hover { color: var(--ink); } }
+.roi-note { margin: 18px 0 0; max-width: 80ch; font-size: 13.5px; line-height: 1.5; color: var(--ink-3); }
+
+/* segmented switches: presets, license, currency */
+.roi-seg { display: inline-flex; flex-wrap: wrap; gap: 2px; padding: 3px; border-radius: 999px; background: var(--paper-3); }
+.roi-seg button { padding: 8px 16px; border: 0; border-radius: 999px; background: none; color: var(--ink-3); font: 500 13.5px/1 var(--font); cursor: pointer;
+  transition: background-color 200ms ease, color 200ms ease, box-shadow 200ms ease, transform 140ms var(--ease-out); }
+.roi-seg button[aria-checked="true"] { background: #fff; color: var(--ink); box-shadow: 0 1px 2px rgb(20 20 20 / .08), 0 0 0 1px rgb(20 20 20 / .04); }
+.roi-seg button:active { transform: scale(.97); }
+.roi-seg button:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
+@media (hover: hover) and (pointer: fine) { .roi-seg button:hover { color: var(--ink); } }
+.roi-seg-s button { padding: 6px 12px; font-size: 12.5px; }
+.roi-in .roi-seg { background: #e9e7e1; }
+
+/* inputs: plain group titles, label and value on one line, a quiet slider under them */
+.roi-g { margin: 40px 0 0; padding: 0; border: 0; min-width: 0; }
+.roi-g legend { margin: 0 0 8px; padding: 0; font: 500 15px/1.3 var(--font); color: var(--ink); }
+.roi-r { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: 2px 16px; padding: 14px 0 12px; border-top: 1px solid rgb(20 20 20 / .07); }
+.roi-r label, .roi-lbl { font-size: 14px; line-height: 1.35; color: var(--ink-2); }
+.roi-r output { font: 500 14.5px/1 var(--font); color: var(--ink); white-space: nowrap; font-variant-numeric: lining-nums tabular-nums; }
+.roi-r input, .roi-r .roi-seg { grid-column: 1 / -1; }
+.roi-r .roi-seg { justify-self: start; margin-top: 8px; }
+.roi-r small { grid-column: 1 / -1; font-size: 12.5px; color: var(--ink-3); }
+
+/* the slider: a hairline track, ink up to the value, a small solid ink thumb */
+.roi-r input[type="range"] { -webkit-appearance: none; appearance: none; width: 100%; height: 22px; margin: 2px 0 0; background: none; cursor: pointer; --p: 50%; }
+.roi-r input[type="range"]::-webkit-slider-runnable-track { height: 2px; border-radius: 2px; background: linear-gradient(to right, var(--ink) var(--p), rgb(20 20 20 / .14) var(--p)); }
+.roi-r input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 13px; height: 13px; margin-top: -5.5px; border-radius: 50%; background: var(--ink);
+  box-shadow: 0 0 0 3px var(--paper-2); transition: transform 140ms var(--ease-out); }
+.roi-r input[type="range"]::-moz-range-track { height: 2px; border-radius: 2px; background: rgb(20 20 20 / .14); }
+.roi-r input[type="range"]::-moz-range-progress { height: 2px; border-radius: 2px; background: var(--ink); }
+.roi-r input[type="range"]::-moz-range-thumb { width: 13px; height: 13px; border: 0; border-radius: 50%; background: var(--ink); box-shadow: 0 0 0 3px var(--paper-2); }
+.roi-r input[type="range"]:active::-webkit-slider-thumb { transform: scale(1.25); }
+.roi-r input[type="range"]:focus-visible { outline: none; }
+.roi-r input[type="range"]:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 3px var(--paper-2), 0 0 0 6px rgb(20 20 20 / .18); }
+.roi-r input[type="range"]:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 3px var(--paper-2), 0 0 0 6px rgb(20 20 20 / .18); }
+
+/* how we calculate */
+.roi-how { margin-top: 22px; }
+.roi-how summary { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: var(--ink-2); cursor: pointer; list-style: none; }
+.roi-how summary::-webkit-details-marker { display: none; }
+.roi-how summary::after { content: "+"; font-size: 16px; line-height: 1; color: var(--ink-3); }
+.roi-how[open] summary::after { content: "−"; }
+.roi-how summary:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 4px; }
+.roi-how ol { margin: 16px 0 0; padding-left: 20px; max-width: 86ch; font-size: 14px; line-height: 1.6; color: var(--ink-2); }
+.roi-how li + li { margin-top: 6px; }
+
+/* phones and tablets: one column; a small bar with payback and ROI stays in view while the sliders scroll */
+.roi-mini { display: none; }
+@media (max-width: 1000px) {
+  .roi-sheet { grid-template-columns: minmax(0, 1fr); }
+  .roi-out { position: static; padding-top: 180px; }
+  .roi-art { object-position: 10% 45%; }
+  .roi-mini { position: sticky; top: 64px; z-index: 2; display: flex; justify-content: space-between; gap: 12px; margin: 16px 0 0; padding: 10px 14px;
+    border-radius: 10px; background: rgb(255 255 255 / .95); box-shadow: 0 0 0 1px var(--line), 0 10px 24px -14px rgb(20 35 50 / .35); font-size: 13px; color: var(--ink);
+    font-variant-numeric: lining-nums tabular-nums; }
+}
+@media (max-width: 520px) {
+  .roi-out { padding: 140px 8px 8px; }
+  .roi-facts { grid-template-columns: minmax(0, 1fr); }
+  .roi-capb { flex-direction: column; }
+  .roi-yrs th, .roi-yrs td { padding-left: 8px; font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) { .roi-art { transform: none !important; transition: none !important; } }
+
+/* print: only the business case, both columns, all values, no painting */
+@media print {
+  .top, .skip, footer, main > *:not(#roi) { display: none !important; }
+  .rv { opacity: 1 !important; transform: none !important; filter: none !important; }
+  .roi { padding: 0; }
+  .roi-sheet { grid-template-columns: 1fr 1fr; }
+  .roi-out { position: static; padding: 0; background: none; }
+  .roi-art { display: none; }
+  .roi-memo { box-shadow: 0 0 0 1px var(--line); }
+  .roi-presets, .roi-mini, .roi-act, .roi-r input { display: none !important; }
+  .roi-how ol { display: block; }
+  .roi-how summary::after { content: none; }
+}
+
+/* lining figures in the serif (the font shorthands above reset font-variant): proportional in the sentence, tabular in the figures */
+#roi .roi-verdict { font-variant-numeric: lining-nums proportional-nums; }
+#roi .roi-f b { font-variant-numeric: lining-nums tabular-nums; }

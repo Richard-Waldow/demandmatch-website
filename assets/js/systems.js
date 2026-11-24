@@ -1,4 +1,4 @@
-/* Ported from 09_DemandMatch_io for the atelier site: the heading uses the page's eyebrow / serif h2 / sub and its text
+/* Ported from 09_DemandMatch_io for the atelier site: the heading uses the page's serif h2 / sub and its text
    lives in site.js (sy_*); the stage is an oil painting that clears up when the autopilot goes on (systems.css).
    Version 7: #systems, after the hero film. It replaces the separate layer section: the heading says what the
    autopilot does (aggregate scattered information), and under the stage the processes it runs, inbound and outbound.
@@ -133,7 +133,6 @@
   function render() {
     host.innerHTML = `<div class="wrap">
       <div class="sy-head">
-        <p class="eyebrow rv">${window.UI.t('sy_eyebrow')}</p>
         <h2 class="h2 rv">${window.UI.t('sy_h')}</h2>
         <p class="sub rv">${window.UI.t('sy_lead')}</p>
         <button class="sy-switch rv" type="button" role="switch" aria-checked="false"><span class="sy-spark">${sparkle()}</span><span class="sy-sw-t">Autopilot</span><i class="sy-tg big"><i></i></i></button>

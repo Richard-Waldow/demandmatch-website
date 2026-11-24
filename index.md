@@ -79,6 +79,44 @@ Liest aus Ihren bestehenden Systemen: SAP, Oracle, Odoo, DATEV, HubSpot, Gmail, 
 
 Was Sie gerade ausprobiert haben, ist das Basisprodukt. Ihre Lösung bauen wir auf Ihr Haus zu.
 
+## Business Case: Rechnen Sie selbst. Mit Ihren Zahlen, nicht mit unseren.
+
+Jede Annahme ist sichtbar und verstellbar. In den ROI geht nur Geld ein, das wirklich ankommt. Frei werdende Zeit zeigen wir daneben, gerechnet wird sie nur, wenn Sie es wollen.
+
+Beispiel für einen Distributor mit 1,2 Mrd. € Umsatz, 12 % Bruttomarge, 12 % Lagerbestand und 400 Personen im Vertrieb. Erwartet: 1 % mehr Umsatz aus verlorenen Anfragen (1,4 Mio. €), 0,3 Prozentpunkte Margenplus (3,6 Mio. €) und 15 Mio. € Bestand (10,5 %) früher verkauft bei 9 % Lagerhaltungskosten (1,4 Mio. €), zusammen 6,4 Mio. € pro Jahr. Kosten im ersten Jahr: Gruppenlizenz 450.000 €, Einführung 150.000 €, Eigenaufwand 32.000 €. Amortisation nach etwa 2,4 Monaten, ROI über 3 Jahre etwa 950 %. Vorsichtig (0,5 % Umsatz, 0,1 Prozentpunkte, 3,5 % des Bestands): 2,4 Mio. € pro Jahr, Amortisation nach etwa 6 Monaten, ROI über 3 Jahre etwa 290 %. Dazu frei werdende Zeit von 10 bis 20 %, das sind 40 bis 80 Vollzeitstellen, nicht eingerechnet.
+
+### So rechnen wir
+
+- Rohertrag = Umsatz × Bruttomarge.
+- Gewonnene Anfragen = Umsatz × zusätzlicher Umsatz in % × Bruttomarge.
+- Margenplus = Umsatz × Prozentpunkte Margenplus.
+- Bestand = Umsatz × Lagerbestand in % × früher verkaufter Anteil × Lagerhaltungskosten. Vermiedene Abschreibungen rechnen wir nicht mit.
+- Wert pro Jahr = (Gewonnene Anfragen + Margenplus + Bestand) × Anteil des Geschäfts mit DemandMatch.
+- Frei werdende Kapazität = Mitarbeitende × frei werdende Zeit × Kosten pro Person. Sie zählt nur mit, wenn Sie sie einrechnen.
+- Jahr 1 bringt 50 % des Werts (Anlauf), Jahr 2 und 3 je 100 %.
+- Kosten Jahr 1 = Lizenz + Einführung + Eigenaufwand (Personentage × 800 €). Jahr 2 und 3 = Lizenz. Der Pilot wird auf Jahr 1 angerechnet.
+- Lizenz: Bereich 180.000 € pro Jahr (bis 400 Mio. € Umsatz im Umfang, Einführung 60.000 €), Gruppe 450.000 € (bis 2 Mrd. €, Einführung 150.000 €), Global ab 600.000 € (Einführung ab 150.000 €).
+- ROI über 3 Jahre = (Wert über 3 Jahre − Kosten über 3 Jahre) ÷ Kosten über 3 Jahre. Amortisation = der Monat, in dem der kumulierte Wert die kumulierten Kosten übersteigt.
+
+## Preise: Klare Preise. Erst messen, dann entscheiden.
+
+Jeder Schritt hat einen festen Preis, und jeder bezahlte Schritt wird auf den nächsten angerechnet. Sie zahlen nie doppelt.
+
+Alle Preise netto, zzgl. MwSt. Preise in US-Dollar für Kunden in den USA, zzgl. Sales Tax.
+
+- **Fit-Check** (30 Minuten): Kostenlos. Ein Gespräch, nachdem Sie uns ein paar Eckdaten geschickt haben: Branche, Umsatz, ERP und Größe des Vertriebs. So sprechen wir nur mit Unternehmen, für die es passt.
+- **Potenzialanalyse** (3 Wochen): 20.000 € / 22.000 $. Auf den Daten eines Bereichs: wie viel Umsatz heute verloren geht, wie viel Bestand liegt und wie viel Marge offen bleibt, in Euro. Wird voll auf den Pilot angerechnet.
+- **Pilot** (30 Tage): 60.000 € / 66.000 $. Eine Produktfamilie, ein Team, Erfolgskriterien vorher schriftlich. Wird zu 100 % auf das erste Jahr angerechnet, wenn Sie innerhalb von 30 Tagen nach der Auswertung unterschreiben.
+- **Lizenz** (Ab Jahr 1): ab 180.000 € / 198.000 $ pro Jahr. Jährlich, je nach Umfang: ein Bereich, die ganze Gruppe oder global.
+
+- **Bereich** (Für den Einstieg mit einem Bereich): 180.000 € / 198.000 $ pro Jahr. Umfang: Ein Geschäftsbereich oder ein Land; Umsatz im Umfang: bis 400 Mio. €; Nutzer im Vertrieb: bis 60; Einführung, einmalig: ab 60.000 € / 66.000 $.
+- **Gruppe** (Typisch bei rund 1 Mrd. € Umsatz): 450.000 € / 495.000 $ pro Jahr. Umfang: Alle Bereiche und Länder; Umsatz im Umfang: bis 2 Mrd. €; Nutzer im Vertrieb: bis 500; Einführung, einmalig: ab 150.000 € / 165.000 $.
+- **Global** (Für Konzerne mit mehreren Gesellschaften): ab 600.000 € / 660.000 $ pro Jahr. Umfang: Mehrere ERP-Systeme, Single Sign-on, fester Ansprechpartner; Umsatz im Umfang: über 2 Mrd. €; Nutzer im Vertrieb: nach Vereinbarung; Einführung, einmalig: ab 150.000 € / 165.000 $.
+
+In jeder Lizenz: Abgleich in beide Richtungen, Angebote mit Marge, Fracht und Ihren Preisregeln, lesende Anbindung an ERP, CRM und Postfach, und nichts geht raus ohne Freigabe Ihres Teams.
+
+Jährliche Zahlung im Voraus, Mindestlaufzeit 12 Monate. Potenzialanalyse und Pilot werden voll angerechnet.
+
 ## In 30 Tagen im Einsatz. Mit Ihren echten Daten.
 
 Kein Systemwechsel, kein Großprojekt. Wir verbinden uns lesend und arbeiten mit Ihrem Team.
@@ -101,6 +139,14 @@ Für Distributoren und Großhändler von Chemie, Kunststoffen und Industriebedar
 
 Mehr Umsatz, weil keine Anfrage liegen bleibt und kein Kunde vergessen wird. Bessere Marge, weil jedes Angebot mit Fracht, Lager und Ihren Preisregeln rechnet und liegende Ware verkauft statt abgeschrieben wird. Und weniger Handarbeit: Lesen, Abgleichen und Angebot schreiben laufen automatisch.
 
+### Welchen ROI kann ein Distributor mit 1 Mrd. € Umsatz erwarten?
+
+Bei 1,2 Mrd. € Umsatz und 12 % Bruttomarge rechnen wir mit 2,4 Mio. € (vorsichtig) bis 6,4 Mio. € (erwartet) pro Jahr aus mehr Umsatz, besserer Marge und früher verkauftem Bestand. Gegen Gruppenlizenz, Einführung und Eigenaufwand von zusammen rund 630.000 € im ersten Jahr amortisiert sich das nach etwa 2 bis 6 Monaten. Frei werdende Vertriebszeit kommt dazu. Mit dem Rechner auf dieser Seite lassen sich alle Annahmen anpassen.
+
+### Was kostet DemandMatch?
+
+Der Fit-Check ist kostenlos. Die Potenzialanalyse kostet 20.000 €, der Pilot über 30 Tage 60.000 €; beide werden voll angerechnet. Die Lizenz kostet pro Jahr 180.000 € für einen Bereich (bis 400 Mio. € Umsatz), 450.000 € für die ganze Gruppe (bis 2 Mrd. € Umsatz) und ab 600.000 € global, dazu einmalig ab 60.000 € (Bereich) bzw. ab 150.000 € (Gruppe, Global) für Einführung und Anpassung. Alle Preise netto zzgl. MwSt. In den USA: 22.000 $, 66.000 $, 198.000 $, 495.000 $ und ab 660.000 $, dazu ab 66.000 $ bzw. ab 165.000 $ für die Einführung, zzgl. Sales Tax.
+
 ### Mit welchen Systemen arbeitet DemandMatch?
 
 DemandMatch liest aus den Systemen, die Sie schon nutzen: ERP wie SAP, Oracle, Odoo oder DATEV, CRM wie HubSpot, das Postfach (Outlook, Gmail) und Messenger wie WhatsApp oder Slack. Nichts wird ersetzt, es gibt keinen Systemwechsel.
@@ -115,7 +161,7 @@ DemandMatch greift nur lesend auf ERP, CRM und Postfach zu und ändert dort nich
 
 ### Wie fängt man an?
 
-Mit einem Pilot von 30 Tagen auf Ihren echten Daten. Woche 1: lesend verbinden. Woche 2: Ihre echten Anfragen gegen Ihren echten Bestand abgleichen, mit Ihren Regeln zu Marge und Kunden. Woche 3 und 4: Ihr Team arbeitet damit, und wir messen gemeinsam, was es bringt.
+Mit einem kostenlosen Fit-Check, dann einer Potenzialanalyse auf den Daten eines Bereichs und einem Pilot von 30 Tagen auf Ihren echten Daten. Woche 1: lesend verbinden. Woche 2: Ihre echten Anfragen gegen Ihren echten Bestand abgleichen, mit Ihren Regeln zu Marge und Kunden. Woche 3 und 4: Ihr Team arbeitet damit, und wir messen gemeinsam, was es bringt.
 
 ### Wer steht hinter DemandMatch?
 

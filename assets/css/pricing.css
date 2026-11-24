@@ -1,0 +1,96 @@
+/* #pricing (pricing.js), in the quiet language of the rest of the page: the path to a decision is a small offer document
+   sitting on an oil painting, the way the product sits on the harbour; the licenses are three flat tiles with hairline
+   gutters and the same spec rows, so they compare line by line. No rings, no drop shadows on the tiles, no tick lists.
+   Prices in the serif with lining, tabular figures. */
+.pricing { padding-top: clamp(90px, 11vw, 160px); padding-bottom: clamp(20px, 3vw, 40px); }
+.pricing .sec-h .sub { max-width: 58ch; }
+.pr-cur[hidden] { display: none; }
+
+/* the painting and the offer document on it */
+.pr-stage { position: relative; display: flex; align-items: center; justify-content: flex-end; min-height: clamp(560px, 48vw, 680px);
+  margin-top: clamp(40px, 5vw, 64px); padding: clamp(24px, 4vw, 64px); border-radius: 10px; overflow: hidden; isolation: isolate; background: #e7e3da; }
+.pr-art { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 0% 70%;
+  transform: scale(1.05); transition: transform 1800ms var(--ease-out); }
+.pr-stage.in .pr-art { transform: none; }
+.pr-doc { width: min(440px, 100%); padding: 22px 26px 20px; border-radius: 10px; background: rgb(255 255 255 / .93);
+  box-shadow: 0 0 0 1px rgb(20 20 20 / .05), 0 40px 80px -40px rgb(25 35 45 / .55);
+  opacity: 0; transform: translateY(16px); transition: opacity 900ms var(--ease-out), transform 1100ms var(--ease-out); transition-delay: 250ms; }
+.pr-stage.in .pr-doc { opacity: 1; transform: none; }
+.pr-doc-h { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-bottom: 14px; font-size: 13px; color: var(--ink-2); }
+.pr-doc-h .roi-seg button { padding: 5px 11px; }
+.pr-doc-l { margin: 0; padding: 0; list-style: none; }
+.pr-doc-l li { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: 2px 16px; padding: 14px 0; border-top: 1px solid var(--line); }
+.pr-doc-n { font-size: 14.5px; color: var(--ink); }
+.pr-doc-n small { display: block; margin-top: 3px; font-size: 12.5px; color: var(--ink-3); }
+.pr-doc-v { font: 400 20px/1.1 var(--serif); letter-spacing: -.02em; color: var(--ink); text-align: right; white-space: nowrap; }
+.pr-doc-v b { font-weight: 400; }
+.pr-doc-v small, .pr-doc-v .pr-from { font: 400 12.5px/1 var(--font); letter-spacing: 0; color: var(--ink-3); }
+.pr-doc-l em { grid-column: 1 / -1; margin-top: 6px; font-style: normal; font-size: 12.5px; color: #8a6d3f; }
+.pr-doc-l em::before { content: '↳ '; color: var(--ink-4); }
+.pr-doc-tot { border-top-color: var(--ink) !important; }
+.pr-doc-tot .pr-doc-v { font-size: 23px; }
+.pr-tax { margin: 6px 0 0; font-size: 12px; line-height: 1.45; color: var(--ink-3); }
+
+/* the four steps, written out under the painting */
+.pr-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px clamp(20px, 3vw, 44px); margin: clamp(32px, 4vw, 48px) 0 0; padding: 0; list-style: none; }
+.pr-steps h3 { margin: 0; font: 500 15px/1.35 var(--font); color: var(--ink); }
+.pr-steps p { margin: 6px 0 0; font-size: 14px; line-height: 1.55; color: var(--ink-3); max-width: 36ch; }
+
+/* the licenses: one comparison table, the way a price list is printed. A label column on the left, the three licenses as
+   columns sharing one set of rows (subgrid) and one set of hairlines; the license most distributors take sits on a soft
+   band. No cards. Each license keeps its own labels for screen readers and for the stacked phone layout. */
+.pr-tiers { --px: clamp(18px, 2vw, 30px); display: grid; grid-template-columns: minmax(140px, .62fr) repeat(3, minmax(0, 1fr)); column-gap: 0;
+  margin-top: clamp(72px, 9vw, 120px); }
+.pr-labels, .pr-tile { display: grid; grid-row: span 7; grid-template-rows: subgrid; row-gap: 0; }
+.pr-labels span { align-self: stretch; font-size: 13px; line-height: 1.45; color: var(--ink-3); }
+.pr-labels span:nth-child(3) { align-self: end; padding-bottom: 6px; }
+.pr-labels span:nth-child(n+4), .pr-spec div { padding: 14px 0 15px; border-top: 1px solid rgb(20 20 20 / .09); }
+.pr-tile { padding: 30px var(--px) 4px; border-radius: 10px; }
+.pr-pick { background: var(--paper-2); }
+.pr-tile h3 { margin: 0; font: 400 clamp(26px, 2.2vw, 31px)/1.1 var(--serif); letter-spacing: -.03em; color: var(--ink); }
+.pr-for { margin: 8px 0 0; font-size: 14px; color: var(--ink-3); }
+.pr-amt { margin: clamp(32px, 3.6vw, 52px) 0 0; padding-bottom: 22px; font-size: 13.5px; color: var(--ink-3); }
+.pr-amt b { font: 400 clamp(36px, 3.2vw, 48px)/1 var(--serif); letter-spacing: -.04em; color: var(--ink); white-space: nowrap; }
+.pr-amt .pr-from { margin-right: 2px; }
+.pr-amt small { display: none; }
+.pr-spec { display: grid; grid-row: span 4; grid-template-rows: subgrid; row-gap: 0; margin: 0; }
+/* the row lines run across the whole tile, so they join into one line across the table */
+.pr-spec div { margin: 0 calc(-1 * var(--px)); padding-inline: var(--px); }
+.pr-spec dt { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.pr-spec dd { margin: 0; font-size: 14.5px; line-height: 1.45; color: var(--ink); }
+.pr-spec .pr-from { color: var(--ink-3); }
+.pr-all { margin: 18px 0 0; max-width: 92ch; font-size: 14px; line-height: 1.55; color: var(--ink-3); }
+
+.pr-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px 32px; margin-top: clamp(40px, 5vw, 64px);
+  padding-top: 28px; border-top: 1px solid var(--line); }
+.pr-foot p { margin: 0; max-width: 62ch; font-size: 14px; line-height: 1.55; color: var(--ink-3); }
+.pr-foot .cta-row { margin-top: 0; }
+
+/* lining, tabular figures for every price (after the font shorthands above, which reset it) */
+#pricing b, #pricing .pr-doc-v { font-variant-numeric: lining-nums tabular-nums; }
+
+@media (max-width: 1000px) {
+  .pr-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  /* the table stacks: each license with its own labels, the band kept on the one most take */
+  .pr-tiers { grid-template-columns: minmax(0, 1fr); max-width: 600px; row-gap: 8px; }
+  .pr-labels { display: none; }
+  .pr-tile { padding: 26px var(--px) 8px; box-shadow: inset 0 1px 0 var(--line-2); border-radius: 0; }
+  .pr-pick { border-radius: 10px; box-shadow: none; }
+  .pr-amt { margin-top: 24px; padding-bottom: 18px; }
+  .pr-amt small { display: inline; }
+  .pr-spec div { padding: 11px var(--px) 12px; }
+  .pr-spec dt { position: static; width: auto; height: auto; overflow: visible; clip-path: none; font-size: 12.5px; color: var(--ink-3); }
+  .pr-spec dd { margin-top: 2px; }
+}
+@media (max-width: 720px) {
+  /* the painting becomes a band, the document sits half on it */
+  .pr-stage { display: block; min-height: 0; padding: 200px 12px 12px; background: var(--paper-2); }
+  .pr-art { height: 320px; object-position: 12% 75%; }
+  .pr-doc { width: 100%; padding: 18px 18px 16px; }
+  .pr-steps { grid-template-columns: minmax(0, 1fr); }
+  .pr-foot .cta-row { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pr-art, .pr-doc { transform: none !important; transition: opacity 300ms ease !important; transition-delay: 0ms !important; }
+}
+@media print { .pricing { display: none; } }
