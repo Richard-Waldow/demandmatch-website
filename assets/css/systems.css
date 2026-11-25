@@ -25,7 +25,7 @@
 /* the stage */
 .sy-stage { position: relative; display: grid; grid-template-columns: minmax(0, 30fr) minmax(0, 7fr) minmax(0, 60fr); align-items: center; margin-top: clamp(2.4rem, 5vw, 3.6rem); padding: clamp(1.5rem, 4vw, 4rem) clamp(1rem, 3vw, 3.2rem) clamp(1.5rem, 3.4vw, 3.4rem) clamp(1rem, 4.5vw, 5.4rem); border-radius: 22px; overflow: hidden; isolation: isolate; background: #8d969c; }
 /* the painting: greyed and a touch darker while off, its own colour once the autopilot is on */
-.sy-art { position: absolute; inset: 0; z-index: -1; background: url("../art/river-port.jpg") 50% 55% / cover no-repeat; filter: saturate(.35) brightness(.9); transform: scale(1.03); transition: filter 1200ms var(--ease-out), transform 1600ms var(--ease-out); }
+.sy-art { position: absolute; inset: 0; z-index: -1; background: url("../art/river-port-1536.webp") 50% 55% / cover no-repeat; filter: saturate(.35) brightness(.9); transform: scale(1.03); transition: filter 1200ms var(--ease-out), transform 1600ms var(--ease-out); }
 .is-on .sy-art { filter: none; transform: none; }
 .sy-stage::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(180deg, rgb(20 30 40 / .06), rgb(20 30 40 / .14)); }
 

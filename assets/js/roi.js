@@ -97,7 +97,7 @@
         ${group(1, t('roi_g1'))}${group(2, t('roi_g2'))}${group(3, t('roi_g3'))}
       </div>
       <div class="roi-side"><aside class="roi-out">
-        <img class="roi-art" src="${window.SHARED_BASE || 'assets/'}art/roi-silos.jpg" alt="" loading="lazy" decoding="async">
+        <img class="roi-art" src="${window.SHARED_BASE || 'assets/'}art/roi-silos-1536.webp" alt="" loading="lazy" decoding="async">
         <div class="roi-memo">
         <p class="roi-memo-h"><span>${esc(t('roi_memo'))}</span><span class="roi-memo-c"></span></p>
         <p class="roi-verdict" aria-live="polite"></p>
