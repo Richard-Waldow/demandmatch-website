@@ -1,9 +1,9 @@
 # DemandMatch: Every tonne of stock finds its customer.
 
-> DemandMatch matches your inventory with your customers' demand, automatically. Software for distributors of chemicals, plastics and industrial goods: more sales, better margin, and your sales team only approves.
+> DemandMatch matches your inventory with your customers' demand, automatically. Software for distributors of chemicals, plastics and industrial goods with $1bn+ in revenue: more sales, better margin, and your sales team only approves.
 
 DemandMatch matches your inventory with your customers' demand, automatically. Your sales team sells more, at better margin, and only approves.
-For distributors of chemicals, plastics and industrial goods.
+For distributors of chemicals, plastics and industrial goods with $1bn+ in revenue.
 
 Website: https://demandmatch.io/en/ · Deutsch: https://demandmatch.io/ · Contact: hello@demandmatch.io
 
@@ -96,7 +96,7 @@ The first steps have fixed prices, and every paid step is credited to the next o
 
 All prices net, excl. VAT. Prices in US dollars for customers in the US, excl. sales tax.
 
-- **Fit check** (30 minutes): Free. A call after you have sent us a few facts: industry, revenue, ERP and size of your sales team. That way we only talk to companies it fits.
+- **Fit check** (30 minutes): Free. A call after you have sent us a few facts: industry, revenue, ERP and size of your sales team. We work with companies from $1bn in annual revenue, so we only talk where it fits.
 - **Value assessment** (3 weeks): €20,000 / $22,000. On one division's data: how much revenue is lost today, how much stock sits idle and how much margin is left open, in money. Credited in full to the pilot.
 - **Pilot** (30 days): from €60,000 / $66,000. One product family, one team, success criteria agreed in writing upfront. The price depends on scope. Credited 100% to year one if you sign within 30 days of the review.
 - **License** (From year 1): €90,000 / $99,000 per year + NaN%. Annual: a base plus 15% of the value measured in the value assessment and the pilot, at most a third of that value.
@@ -123,10 +123,10 @@ Setup €60,000 / $66,000 one-time, €20,000 / $22,000 for each further company
 
 | Revenue in scope | Companies | Value per year | License per year | You keep |
 | --- | --- | --- | --- | --- |
-| €150m | 1 | €297,000 | €99,000 (capped at ⅓) | 67% |
-| €600m | 1 | €1.2m | €268,000 | 77% |
+| €1bn | 1 | €2m | €387,000 | 80% |
 | €1.2bn | 3 | €2.4m | €506,000 | 79% |
 | €3bn | 6 | €5.9m | €1,130,000 | 81% |
+| €10bn | 12 | €19.8m | €3,387,000 | 83% |
 
 With the conservative assumptions of the business case, from year two. Run your own numbers in the business case above.
 
@@ -154,7 +154,7 @@ DemandMatch is software for B2B distribution. It matches your inventory with you
 
 ### Who is DemandMatch for?
 
-For distributors and wholesalers of chemicals, plastics and industrial goods, above all for heads of sales, field sales and inside sales teams who have to bring many requests and a lot of stock together.
+For distributors and wholesalers of chemicals, plastics and industrial goods with at least $1bn in annual revenue, above all for heads of sales, field sales and inside sales teams who have to bring many requests and a lot of stock together.
 
 ### What does DemandMatch bring to a sales team?
 

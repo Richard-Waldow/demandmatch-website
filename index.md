@@ -1,9 +1,9 @@
 # DemandMatch: Jede Tonne Bestand findet ihren Kunden.
 
-> DemandMatch gleicht Ihren Bestand automatisch mit dem Bedarf Ihrer Kunden ab. Software für Distributoren von Chemie, Kunststoffen und Industriebedarf: mehr Umsatz, bessere Marge, Ihr Vertrieb gibt nur noch frei.
+> DemandMatch gleicht Ihren Bestand automatisch mit dem Bedarf Ihrer Kunden ab. Software für Distributoren von Chemie, Kunststoffen und Industriebedarf ab 1 Mrd. € Umsatz: mehr Umsatz, bessere Marge, Ihr Vertrieb gibt nur noch frei.
 
 DemandMatch gleicht Ihren Bestand automatisch mit dem Bedarf Ihrer Kunden ab. Ihr Vertrieb verkauft mehr, mit besserer Marge, und gibt nur noch frei.
-Für Distributoren von Chemie, Kunststoffen und Industriebedarf.
+Für Distributoren von Chemie, Kunststoffen und Industriebedarf ab 1 Mrd. € Umsatz.
 
 Website: https://demandmatch.io/ · English: https://demandmatch.io/en/ · Kontakt: hello@demandmatch.io
 
@@ -96,7 +96,7 @@ Die ersten Schritte haben feste Preise, und jeder bezahlte Schritt wird auf den 
 
 Alle Preise netto, zzgl. MwSt. Preise in US-Dollar für Kunden in den USA, zzgl. Sales Tax.
 
-- **Fit-Check** (30 Minuten): Kostenlos. Ein Gespräch, nachdem Sie uns ein paar Eckdaten geschickt haben: Branche, Umsatz, ERP und Größe des Vertriebs. So sprechen wir nur mit Unternehmen, für die es passt.
+- **Fit-Check** (30 Minuten): Kostenlos. Ein Gespräch, nachdem Sie uns ein paar Eckdaten geschickt haben: Branche, Umsatz, ERP und Größe des Vertriebs. Wir arbeiten mit Unternehmen ab 1 Mrd. € Jahresumsatz, so sprechen wir nur, wo es passt.
 - **Potenzialanalyse** (3 Wochen): 20.000 € / 22.000 $. Auf den Daten eines Bereichs: wie viel Umsatz heute verloren geht, wie viel Bestand liegt und wie viel Marge offen bleibt, in Euro. Wird voll auf den Pilot angerechnet.
 - **Pilot** (30 Tage): ab 60.000 € / 66.000 $. Eine Produktfamilie, ein Team, Erfolgskriterien vorher schriftlich. Der Preis hängt vom Umfang ab. Wird zu 100 % auf das erste Jahr angerechnet, wenn Sie innerhalb von 30 Tagen nach der Auswertung unterschreiben.
 - **Lizenz** (Ab Jahr 1): 90.000 € / 99.000 $ pro Jahr + NaN %. Jährlich: eine Basis plus 15 % des Werts, den Potenzialanalyse und Pilot gemessen haben, höchstens ein Drittel dieses Werts.
@@ -123,10 +123,10 @@ Einrichtung einmalig 60.000 € / 66.000 $, 20.000 € / 22.000 $ für jede 
 
 | Umsatz im Umfang | Gesellschaften | Wert pro Jahr | Lizenz pro Jahr | Sie behalten |
 | --- | --- | --- | --- | --- |
-| 150 Mio. € | 1 | 297.000 € | 99.000 € (auf ⅓ begrenzt) | 67 % |
-| 600 Mio. € | 1 | 1,2 Mio. € | 268.000 € | 77 % |
+| 1 Mrd. € | 1 | 2 Mio. € | 387.000 € | 80 % |
 | 1,2 Mrd. € | 3 | 2,4 Mio. € | 506.000 € | 79 % |
 | 3 Mrd. € | 6 | 5,9 Mio. € | 1.130.000 € | 81 % |
+| 10 Mrd. € | 12 | 19,8 Mio. € | 3.387.000 € | 83 % |
 
 Mit den vorsichtigen Annahmen des Business Case, ab dem zweiten Jahr. Ihre eigenen Zahlen rechnen Sie im Business Case oben.
 
@@ -154,7 +154,7 @@ DemandMatch ist Software für den B2B-Handel. Sie gleicht Ihren Bestand automati
 
 ### Für wen ist DemandMatch gemacht?
 
-Für Distributoren und Großhändler von Chemie, Kunststoffen und Industriebedarf, vor allem für Vertriebsleitung, Außendienst und Innendienst, die viele Anfragen und viel Bestand zusammenbringen müssen.
+Für Distributoren und Großhändler von Chemie, Kunststoffen und Industriebedarf mit mindestens 1 Mrd. € Jahresumsatz, vor allem für Vertriebsleitung, Außendienst und Innendienst, die viele Anfragen und viel Bestand zusammenbringen müssen.
 
 ### Was bringt DemandMatch dem Vertrieb?
 

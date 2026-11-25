@@ -21,7 +21,7 @@ const PRICES = {
   },
   // the conservative case of the business case (the first preset in roi.js), used for the worked examples in the section
   example: { gm: 12, stock: 12, sales: 0.5, margin: 0.1, freed: 3.5, hold: 9,
-    rows: [[1.5e8, 1], [6e8, 1], [1.2e9, 3], [3e9, 6]] },  // revenue in scope, connected companies
+    rows: [[1e9, 1], [1.2e9, 3], [3e9, 6], [1e10, 12]] },   // revenue in scope, connected companies (we work from 1bn revenue)
   // one year's license for an agreed value (in the same currency); companies = connected companies with their own ERP
   fee(value, companies = 1, cur = 'eur') {
     const L = this.license, base = L.base[cur] + Math.max(0, companies - 1) * L.extra[cur];

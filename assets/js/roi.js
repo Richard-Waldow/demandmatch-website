@@ -22,9 +22,9 @@
   };
   const pct = (v, d = 0) => (de ? `${nf(v, d)} %` : `${nf(v, d)}%`).replace('-', '−');
 
-  // ------------------------------------------------------------------ inputs. "rev" runs on a log scale (€100m to €5bn)
-  const LOG = { min: 1e8, max: 5e9 };
-  const toRev = x => { const r = LOG.min * Math.pow(LOG.max / LOG.min, x / 1000); return r < 1e9 ? Math.round(r / 1e7) * 1e7 : Math.round(r / 5e7) * 5e7; };
+  // ------------------------------------------------------------------ inputs. "rev" runs on a log scale (€1bn, where we start, to €20bn)
+  const LOG = { min: 1e9, max: 2e10 };
+  const toRev = x => { const r = LOG.min * Math.pow(LOG.max / LOG.min, x / 1000); return r < 5e9 ? Math.round(r / 5e7) * 5e7 : Math.round(r / 5e8) * 5e8; };
   const fromRev = r => Math.round(1000 * Math.log(r / LOG.min) / Math.log(LOG.max / LOG.min));
   const IN = [
     { k: 'rev', g: 1, min: 0, max: 1000, step: 1, v: 1.2e9, log: true, f: v => eur(v) },

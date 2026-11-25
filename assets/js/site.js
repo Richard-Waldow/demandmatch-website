@@ -13,7 +13,7 @@
       cta: 'Demo anfragen', cta_try: 'Produkt ausprobieren', mail_subject: 'DemandMatch: Demo',
       h1: 'Jede Tonne Bestand findet ihren Kunden.',
       lead: 'DemandMatch gleicht Ihren Bestand automatisch mit dem Bedarf Ihrer Kunden ab. Ihr Vertrieb verkauft mehr, mit besserer Marge, und gibt nur noch frei.',
-      for: 'Für Distributoren von Chemie, Kunststoffen und Industriebedarf.',
+      for: 'Für Distributoren von Chemie, Kunststoffen und Industriebedarf ab 1 Mrd. € Umsatz.',
       cta_see: 'So sieht es aus',
       match_cap: 'Ein Posten Ware, den noch niemand gekauft hat. DemandMatch findet die Kunden, die genau das brauchen.',
       both_eyebrow: 'In beide Richtungen', both_h: 'Bedarf findet Bestand.<br><span class="mute">Bestand findet Bedarf.</span>',
@@ -84,7 +84,7 @@
       faq_eyebrow: 'Fragen und Antworten', faq_h: 'Was Sie über DemandMatch<br><span class="mute">wissen sollten.</span>',
       faq: [
         ['Was ist DemandMatch?', 'DemandMatch ist Software für den B2B-Handel. Sie gleicht Ihren Bestand automatisch mit dem Bedarf Ihrer Kunden ab: Zu jeder Anfrage aus E-Mail, Telefon oder CRM findet sie das passende Material, das Lager und die Marge und bereitet das Angebot vor. Umgekehrt findet sie für Überbestand und Ware im Zulauf die Kunden, die genau das kaufen. Ihr Vertrieb prüft und gibt frei.'],
-        ['Für wen ist DemandMatch gemacht?', 'Für Distributoren und Großhändler von Chemie, Kunststoffen und Industriebedarf, vor allem für Vertriebsleitung, Außendienst und Innendienst, die viele Anfragen und viel Bestand zusammenbringen müssen.'],
+        ['Für wen ist DemandMatch gemacht?', 'Für Distributoren und Großhändler von Chemie, Kunststoffen und Industriebedarf mit mindestens 1 Mrd. € Jahresumsatz, vor allem für Vertriebsleitung, Außendienst und Innendienst, die viele Anfragen und viel Bestand zusammenbringen müssen.'],
         ['Was bringt DemandMatch dem Vertrieb?', 'Mehr Umsatz, weil keine Anfrage liegen bleibt und kein Kunde vergessen wird. Bessere Marge, weil jedes Angebot mit Fracht, Lager und Ihren Preisregeln rechnet und liegende Ware verkauft statt abgeschrieben wird. Und weniger Handarbeit: Lesen, Abgleichen und Angebot schreiben laufen automatisch.'],
         ['Welchen ROI kann ein Distributor mit 1 Mrd. € Umsatz erwarten?', 'Bei 1,2 Mrd. € Umsatz und 12 % Bruttomarge rechnen wir mit 2,4 Mio. € (vorsichtig) bis 6,4 Mio. € (erwartet) pro Jahr aus mehr Umsatz, besserer Marge und früher verkauftem Bestand. Die Lizenz rechnet nur mit dem vorsichtigen Fall: rund 446.000 € pro Jahr ab dem zweiten Jahr. Mit Einrichtung und Eigenaufwand kostet das erste Jahr rund 360.000 € und amortisiert sich nach etwa 1,5 bis 4 Monaten. Frei werdende Vertriebszeit kommt dazu. Mit dem Rechner auf dieser Seite lassen sich alle Annahmen anpassen. In den ROI geht nur Geld ein, das wirklich ankommt; frei werdende Zeit zeigen wir daneben und rechnen sie nur, wenn Sie das wollen.'],
         ['Was kostet DemandMatch?', 'Der Fit-Check ist kostenlos. Die Potenzialanalyse kostet {assess.eur}, der Pilot über 30 Tage ab {pilot.eur}, je nach Umfang. Jeder bezahlte Schritt wird auf den nächsten angerechnet: die Potenzialanalyse voll auf den Pilot, der Pilot zu 100 % auf das erste Lizenzjahr, wenn Sie innerhalb von 30 Tagen nach der Auswertung unterschreiben. Die Lizenz folgt einer offenen Formel: eine Basis von {base.eur} pro Jahr für die erste Gesellschaft mit ihrem ERP ({extra.eur} für jede weitere) plus {share} des Werts pro Jahr, den wir in Potenzialanalyse und Pilot gemeinsam mit Ihren Daten messen, und zwar nur im vorsichtigen Fall. Sie ist nie höher als ein Drittel dieses Werts, Sie behalten also immer mindestens das Dreifache. Dazu einmalig {setup.eur} für die Einrichtung ({setupx.eur} je weitere Gesellschaft). Alle Preise netto zzgl. MwSt. In den USA: {assess.usd}, ab {pilot.usd}, Basis {base.usd} ({extra.usd} je weitere Gesellschaft), Einrichtung {setup.usd} ({setupx.usd}), zzgl. Sales Tax.'],
@@ -94,7 +94,7 @@
         ['Wie fängt man an?', 'Mit einem kostenlosen Fit-Check: Sie schicken uns vorab ein paar Eckdaten (Branche, Umsatz, ERP, Größe des Vertriebsteams), damit wir nur sprechen, wo es passt. Dann eine Potenzialanalyse auf den Daten eines Bereichs und ein Pilot von 30 Tagen auf Ihren echten Daten, für eine Produktfamilie und ein Team, mit vorab schriftlich vereinbarten Erfolgskriterien. Woche 1: lesend verbinden. Woche 2: Ihre echten Anfragen gegen Ihren echten Bestand abgleichen, mit Ihren Regeln zu Marge und Kunden. Woche 3 und 4: Ihr Team arbeitet damit, und wir messen gemeinsam, was es bringt.'],
         ['Wer steht hinter DemandMatch?', 'DemandMatch wurde in Berlin von Bing Cai (CEO, Staff Forward Deployed Engineer) und Richard von Waldow (Forward Deployed Engineer) gegründet. Kontakt: hello@demandmatch.io.']
       ],
-      meta_desc: 'DemandMatch gleicht Ihren Bestand automatisch mit dem Bedarf Ihrer Kunden ab. Software für Distributoren von Chemie, Kunststoffen und Industriebedarf: mehr Umsatz, bessere Marge, Ihr Vertrieb gibt nur noch frei.',
+      meta_desc: 'DemandMatch gleicht Ihren Bestand automatisch mit dem Bedarf Ihrer Kunden ab. Software für Distributoren von Chemie, Kunststoffen und Industriebedarf ab 1 Mrd. € Umsatz: mehr Umsatz, bessere Marge, Ihr Vertrieb gibt nur noch frei.',
       roi_eyebrow: 'Business Case', roi_h: 'Rechnen Sie selbst.<br><span class="mute">Mit Ihren Zahlen, nicht mit unseren.</span>',
       roi_sub: 'Jede Annahme ist sichtbar und verstellbar. In den ROI geht nur Geld ein, das wirklich ankommt. Frei werdende Zeit zeigen wir daneben, gerechnet wird sie nur, wenn Sie es wollen.',
       roi_presets: ['Vorsichtig', 'Erwartet', 'Ihre Zahlen'], roi_presets_label: 'Annahmen',
@@ -138,7 +138,7 @@
       pr_sub: 'Die ersten Schritte haben feste Preise, und jeder bezahlte Schritt wird auf den nächsten angerechnet. Die Lizenz folgt einer offenen Formel: eine Basis plus ein fester Anteil am Wert, den wir mit Ihren Daten messen.',
       pr_cur: 'Währung', pr_free: 'Kostenlos', pr_from: 'ab', pr_year: 'pro Jahr',
       pr_steps: [
-        ['30 Minuten', 'Fit-Check', 'free', 'Ein Gespräch, nachdem Sie uns ein paar Eckdaten geschickt haben: Branche, Umsatz, ERP und Größe des Vertriebs. So sprechen wir nur mit Unternehmen, für die es passt.'],
+        ['30 Minuten', 'Fit-Check', 'free', 'Ein Gespräch, nachdem Sie uns ein paar Eckdaten geschickt haben: Branche, Umsatz, ERP und Größe des Vertriebs. Wir arbeiten mit Unternehmen ab 1 Mrd. € Jahresumsatz, so sprechen wir nur, wo es passt.'],
         ['3 Wochen', 'Potenzialanalyse', 'assess', 'Auf den Daten eines Bereichs: wie viel Umsatz heute verloren geht, wie viel Bestand liegt und wie viel Marge offen bleibt, in Euro. Wird voll auf den Pilot angerechnet.'],
         ['30 Tage', 'Pilot', 'pilot', 'Eine Produktfamilie, ein Team, Erfolgskriterien vorher schriftlich. Der Preis hängt vom Umfang ab. Wird zu 100 % auf das erste Jahr angerechnet, wenn Sie innerhalb von 30 Tagen nach der Auswertung unterschreiben.'],
         ['Ab Jahr 1', 'Lizenz', 'license', 'Jährlich: eine Basis plus {share} des Werts, den Potenzialanalyse und Pilot gemessen haben, höchstens ein Drittel dieses Werts.']
@@ -179,7 +179,7 @@
       cta: 'Book a demo', cta_try: 'Try the product', mail_subject: 'DemandMatch: demo',
       h1: 'Every tonne of stock finds its customer.',
       lead: 'DemandMatch matches your inventory with your customers\' demand, automatically. Your sales team sells more, at better margin, and only approves.',
-      for: 'For distributors of chemicals, plastics and industrial goods.',
+      for: 'For distributors of chemicals, plastics and industrial goods with $1bn+ in revenue.',
       cta_see: 'See how it looks',
       match_cap: 'A lot of stock nobody has bought yet. DemandMatch finds the customers who need exactly that.',
       both_eyebrow: 'Both ways', both_h: 'Demand finds stock.<br><span class="mute">Stock finds demand.</span>',
@@ -250,7 +250,7 @@
       faq_eyebrow: 'Questions and answers', faq_h: 'What you should know<br><span class="mute">about DemandMatch.</span>',
       faq: [
         ['What is DemandMatch?', 'DemandMatch is software for B2B distribution. It matches your inventory with your customers\' demand automatically: for every request from email, phone or CRM it finds the right material, warehouse and margin and prepares the offer. The other way round, it finds the customers who buy exactly what sits in overstock or arrives inbound. Your sales team reviews and approves.'],
-        ['Who is DemandMatch for?', 'For distributors and wholesalers of chemicals, plastics and industrial goods, above all for heads of sales, field sales and inside sales teams who have to bring many requests and a lot of stock together.'],
+        ['Who is DemandMatch for?', 'For distributors and wholesalers of chemicals, plastics and industrial goods with at least $1bn in annual revenue, above all for heads of sales, field sales and inside sales teams who have to bring many requests and a lot of stock together.'],
         ['What does DemandMatch bring to a sales team?', 'More sales, because no request is left waiting and no customer is forgotten. Better margin, because every offer accounts for freight, storage and your pricing rules, and stock that sits gets sold instead of written off. And less manual work: reading, matching and writing the offer run automatically.'],
         ['What ROI can a distributor with €1bn revenue expect?', 'At €1.2bn revenue and 12% gross margin we expect €2.4m (conservative) to €6.4m (expected) a year from more sales, better margin and stock sold earlier. The license is priced on the conservative case only: about €446,000 a year from year two. With setup and own effort, year one costs about €360,000 and pays back in about 1.5 to 4 months. Freed sales time comes on top. The calculator on this page lets you adjust every assumption. Only money that actually arrives goes into the ROI; freed time is shown next to it and counted only if you choose to.'],
         ['How much does DemandMatch cost?', 'The fit check is free. The value assessment costs {assess.eur} and the 30-day pilot from {pilot.eur}, depending on scope. Every paid step is credited to the next one: the value assessment in full to the pilot, the pilot 100% to year one of the license if you sign within 30 days of the review. The license follows an open formula: a base of {base.eur} a year for the first company with its ERP ({extra.eur} for each further one) plus {share} of the annual value we measure together on your data in the value assessment and the pilot, in the conservative case only. It is never more than a third of that value, so you always keep at least three times what you pay. Setup is {setup.eur} one-time ({setupx.eur} for each further company). All prices net, excl. VAT. In the US: {assess.usd}, from {pilot.usd}, base {base.usd} ({extra.usd} for each further company), setup {setup.usd} ({setupx.usd}), excl. sales tax.'],
@@ -260,7 +260,7 @@
         ['How do we get started?', 'With a free fit check: you send us a few facts first (industry, revenue, ERP, size of your sales team), so we only talk where it fits. Then a value assessment on one division\'s data and a 30-day pilot on your real data, for one product family and one team, with success criteria agreed in writing upfront. Week 1: connect read-only. Week 2: match your real requests against your real stock, with your rules on margin and customers. Weeks 3 and 4: your team works with it, and together we measure what it brings.'],
         ['Who is behind DemandMatch?', 'DemandMatch was founded in Berlin by Bing Cai (CEO, Staff Forward Deployed Engineer) and Richard von Waldow (Forward Deployed Engineer). Contact: hello@demandmatch.io.']
       ],
-      meta_desc: 'DemandMatch matches your inventory with your customers\' demand, automatically. Software for distributors of chemicals, plastics and industrial goods: more sales, better margin, and your sales team only approves.',
+      meta_desc: 'DemandMatch matches your inventory with your customers\' demand, automatically. Software for distributors of chemicals, plastics and industrial goods with $1bn+ in revenue: more sales, better margin, and your sales team only approves.',
       roi_eyebrow: 'Business case', roi_h: 'Run the numbers yourself.<br><span class="mute">With your figures, not ours.</span>',
       roi_sub: 'Every assumption is visible and adjustable. Only money that actually arrives goes into the ROI. Freed time is shown next to it and counted only if you choose to.',
       roi_presets: ['Conservative', 'Expected', 'Your numbers'], roi_presets_label: 'Assumptions',
@@ -304,7 +304,7 @@
       pr_sub: 'The first steps have fixed prices, and every paid step is credited to the next one. The license follows an open formula: a base plus a fixed share of the value we measure on your data.',
       pr_cur: 'Currency', pr_free: 'Free', pr_from: 'from', pr_year: 'per year',
       pr_steps: [
-        ['30 minutes', 'Fit check', 'free', 'A call after you have sent us a few facts: industry, revenue, ERP and size of your sales team. That way we only talk to companies it fits.'],
+        ['30 minutes', 'Fit check', 'free', 'A call after you have sent us a few facts: industry, revenue, ERP and size of your sales team. We work with companies from $1bn in annual revenue, so we only talk where it fits.'],
         ['3 weeks', 'Value assessment', 'assess', 'On one division\'s data: how much revenue is lost today, how much stock sits idle and how much margin is left open, in money. Credited in full to the pilot.'],
         ['30 days', 'Pilot', 'pilot', 'One product family, one team, success criteria agreed in writing upfront. The price depends on scope. Credited 100% to year one if you sign within 30 days of the review.'],
         ['From year 1', 'License', 'license', 'Annual: a base plus {share} of the value measured in the value assessment and the pilot, at most a third of that value.']
