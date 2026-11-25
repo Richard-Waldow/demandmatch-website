@@ -505,7 +505,9 @@ html:has(.app-dlg[open]) { overflow: hidden; }
 .hero-gallery > .hero { grid-area: 1 / 1; }
 .hero-gallery > .match-sec { grid-area: 2 / 1; }
 .gallery-wallpaper { grid-area: 1 / 1 / 3 / 2; position: relative; z-index: -1; pointer-events: none;
-  -webkit-mask-image: linear-gradient(180deg, transparent, #000 18%, #000 78%, transparent); mask-image: linear-gradient(180deg, transparent, #000 18%, #000 78%, transparent); }
+  /* clear behind the headline, a hint by the lead, full from the buttons down, gone again under the board */
+  --wall-fade: linear-gradient(180deg, transparent 0, transparent 200px, rgb(0 0 0 / .22) 420px, #000 660px, #000 calc(100% - 220px), transparent);
+  -webkit-mask-image: var(--wall-fade); mask-image: var(--wall-fade); }
 .gallery-wallpaper img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 22% 60%; opacity: 0; transition: opacity 1400ms ease 250ms; }
 .ready .gallery-wallpaper img { opacity: .88; }
 .hero-stage, .ready .hero-stage { background: none; border-radius: 0; clip-path: none; transition: none; overflow: visible; }

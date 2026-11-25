@@ -40,10 +40,17 @@
     weclapp: tile('#fff', `<circle cx="24" cy="24" r="12" fill="#00b1a5"/>${txt('w', 24, 29.5, 15, '#fff', 800)}`),
     mail: tile('#3478f6', `<rect x="10" y="14" width="28" height="20" rx="3" fill="#fff"/><path d="M10.5 15.5L24 26l13.5-10.5" fill="none" stroke="#3478f6" stroke-width="2.4"/>`),
     bgpt: tile('#10a37f', `<path d="M24 11l2.8 7.7L34.5 21l-7.7 2.8L24 31.5l-2.8-7.7L13.5 21l7.7-2.3z" fill="#fff"/>${txt('GPT', 24, 41, 7.5)}`),
+    // the big icons, formerly borrowed from the film (film.js), which is no longer on the page
+    outlook: tile('#fff', `<rect x="18" y="10" width="22" height="28" rx="3" fill="#28a8ea"/><path d="M18 22l11 7 11-7v14a2 2 0 0 1-2 2H20a2 2 0 0 1-2-2z" fill="#0078d4"/><rect x="7" y="14" width="20" height="20" rx="3" fill="#0a64ad"/>${txt('O', 17, 29.5, 15)}`),
+    teams: tile('#fff', `<circle cx="33" cy="15" r="5" fill="#7b83eb"/><rect x="27" y="21" width="14" height="15" rx="6" fill="#7b83eb"/><rect x="7" y="13" width="23" height="23" rx="3" fill="#5059c9"/>${txt('T', 18.5, 30, 16)}`),
+    excel: tile('#fff', `<rect x="18" y="10" width="22" height="28" rx="3" fill="#21a366"/><path d="M29 10h9a2 2 0 0 1 2 2v8H29z" fill="#33c481"/><path d="M29 28h11v8a2 2 0 0 1-2 2h-9z" fill="#107c41"/><rect x="7" y="14" width="20" height="20" rx="3" fill="#107c41"/>${txt('X', 17, 29.5, 15)}`),
+    word: tile('#fff', `<rect x="18" y="10" width="22" height="28" rx="3" fill="#41a5ee"/><rect x="18" y="19" width="22" height="10" fill="#2b7cd3"/><rect x="18" y="29" width="22" height="9" fill="#185abd"/><rect x="7" y="14" width="20" height="20" rx="3" fill="#185abd"/>${txt('W', 17, 29, 14)}`),
+    phone: tile('#34c759', `<path d="M17 13c1.5-1 3-.5 3.6.9l1.6 3.5c.4 1-.1 2-.9 2.6l-1.4 1c1 2.6 3 4.7 5.6 5.7l1-1.4c.6-.8 1.7-1.2 2.6-.8l3.5 1.6c1.4.6 1.9 2.1.9 3.6l-1 1.4c-1.5 2-4.5 2.5-6.9 1.2-4.6-2.4-8.4-6.2-10.8-10.8-1.3-2.4-.8-5.4 1.2-6.9z" fill="#fff"/>`),
   };
-  window.SY_ICON = OWN;
   const LOGO = (n, c) => `<span class="fm-ic-wrap" style="background:#fff">${mask(n, c)}</span>`;
-  const art = k => window.FM_ICON?.[k] || OWN[k] || '';
+  OWN.whatsapp = LOGO('whatsapp', '#25d366'); OWN.sap = LOGO('sap', '#0a6ed1');
+  window.SY_ICON = OWN;
+  const art = k => OWN[k] || '';
   // [label, three big icons, the folder of nine small ones]
   const GROUPS = () => [
     [L('System of Communication', 'Kommunikation'), ['outlook', 'whatsapp', 'teams'],

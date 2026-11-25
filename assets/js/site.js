@@ -1,7 +1,7 @@
 /* DemandMatch, atelier edition. All page text (DE default, EN), the UI shim the product app reads (window.UI),
    entrance + scroll reveals, and the small product moments in the four cards. No libraries. */
 (() => {
-  const EMAIL = 'hello@waldowautomation.com';
+  const EMAIL = 'hello@demandmatch.io';
   const root = document.documentElement;
   const qa = (s, el = document) => [...el.querySelectorAll(s)];
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -92,7 +92,7 @@
         ['Schickt DemandMatch selbst Angebote an Kunden?', 'Nein. DemandMatch bereitet vor, ein Mensch entscheidet. Kein Angebot und keine E-Mail geht raus, bevor Ihr Vertrieb es gesehen und freigegeben hat.'],
         ['Was passiert mit unseren Daten?', 'DemandMatch greift nur lesend auf ERP, CRM und Postfach zu und ändert dort nichts. Ihre Daten bleiben, wo sie sind. Anbindung und Zugriffsrechte legen wir gemeinsam mit Ihrer IT fest.'],
         ['Wie fängt man an?', 'Mit einem kostenlosen Fit-Check, dann einer Potenzialanalyse auf den Daten eines Bereichs und einem Pilot von 30 Tagen auf Ihren echten Daten. Woche 1: lesend verbinden. Woche 2: Ihre echten Anfragen gegen Ihren echten Bestand abgleichen, mit Ihren Regeln zu Marge und Kunden. Woche 3 und 4: Ihr Team arbeitet damit, und wir messen gemeinsam, was es bringt.'],
-        ['Wer steht hinter DemandMatch?', 'DemandMatch wurde in Berlin von Richard von Waldow (Vertrieb und Produkt) und Bing Cai (Technik und Daten) gegründet. Kontakt: hello@waldowautomation.com.']
+        ['Wer steht hinter DemandMatch?', 'DemandMatch wurde in Berlin von Bing Cai (CEO, Staff Forward Deployed Engineer) und Richard von Waldow (Forward Deployed Engineer) gegründet. Kontakt: hello@demandmatch.io.']
       ],
       meta_desc: 'DemandMatch gleicht Ihren Bestand automatisch mit dem Bedarf Ihrer Kunden ab. Software für Distributoren von Chemie, Kunststoffen und Industriebedarf: mehr Umsatz, bessere Marge, Ihr Vertrieb gibt nur noch frei.',
       roi_eyebrow: 'Business Case', roi_h: 'Rechnen Sie selbst.<br><span class="mute">Mit Ihren Zahlen, nicht mit unseren.</span>',
@@ -151,7 +151,7 @@
       pr_tax_eur: 'Alle Preise netto, zzgl. MwSt.', pr_tax_usd: 'Preise in US-Dollar für Kunden in den USA, zzgl. Sales Tax.',
       pr_terms: 'Jährliche Zahlung im Voraus, Mindestlaufzeit 12 Monate. Potenzialanalyse und Pilot werden voll angerechnet.',
       pr_cta: 'Fit-Check anfragen', pr_roi: 'Business Case rechnen',
-      team: 'Gegründet in Berlin von', role_r: 'Vertrieb und Produkt', role_b: 'Technik und Daten',
+      team: 'Gegründet in Berlin von', role_r: 'Forward Deployed Engineer', role_b: 'CEO, Staff Forward Deployed Engineer',
       end_h: 'Der nächste Auftrag<br><span class="mute">liegt schon in Ihrem Postfach.</span>', end_try: 'Zurück zum Produkt',
       foot_tag: 'Bestand und Bedarf, automatisch abgeglichen. Für den B2B-Handel.', f_product: 'Produkt', f_company: 'Unternehmen', f_legal: 'Rechtliches',
       imprint: 'Impressum', privacy: 'Datenschutz', foot_note: 'Alle Daten in der Demo sind Beispieldaten.'
@@ -241,7 +241,7 @@
         ['Does DemandMatch send offers to customers by itself?', 'No. DemandMatch prepares, a person decides. No offer and no email goes out before your sales team has seen and approved it.'],
         ['What happens to our data?', 'DemandMatch has read-only access to ERP, CRM and inbox and changes nothing there. Your data stays where it is. We set up the connection and access rights together with your IT.'],
         ['How do we get started?', 'With a free fit check, then a value assessment on one division\'s data and a 30-day pilot on your real data. Week 1: connect read-only. Week 2: match your real requests against your real stock, with your rules on margin and customers. Weeks 3 and 4: your team works with it, and together we measure what it brings.'],
-        ['Who is behind DemandMatch?', 'DemandMatch was founded in Berlin by Richard von Waldow (sales and product) and Bing Cai (engineering and data). Contact: hello@waldowautomation.com.']
+        ['Who is behind DemandMatch?', 'DemandMatch was founded in Berlin by Bing Cai (CEO, Staff Forward Deployed Engineer) and Richard von Waldow (Forward Deployed Engineer). Contact: hello@demandmatch.io.']
       ],
       meta_desc: 'DemandMatch matches your inventory with your customers\' demand, automatically. Software for distributors of chemicals, plastics and industrial goods: more sales, better margin, and your sales team only approves.',
       roi_eyebrow: 'Business case', roi_h: 'Run the numbers yourself.<br><span class="mute">With your figures, not ours.</span>',
@@ -300,7 +300,7 @@
       pr_tax_eur: 'All prices net, excl. VAT.', pr_tax_usd: 'Prices in US dollars for customers in the US, excl. sales tax.',
       pr_terms: 'Paid annually in advance, 12-month minimum term. The value assessment and the pilot are credited in full.',
       pr_cta: 'Book a fit check', pr_roi: 'Run your business case',
-      team: 'Founded in Berlin by', role_r: 'Sales and product', role_b: 'Engineering and data',
+      team: 'Founded in Berlin by', role_r: 'Forward Deployed Engineer', role_b: 'CEO, Staff Forward Deployed Engineer',
       end_h: 'Your next order<br><span class="mute">is already in your inbox.</span>', end_try: 'Back to the product',
       foot_tag: 'Stock and demand, matched automatically. For B2B distribution.', f_product: 'Product', f_company: 'Company', f_legal: 'Legal',
       imprint: 'Imprint', privacy: 'Privacy', foot_note: 'All data in the demo is sample data.'

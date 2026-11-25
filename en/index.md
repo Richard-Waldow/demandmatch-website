@@ -5,7 +5,7 @@
 DemandMatch matches your inventory with your customers' demand, automatically. Your sales team sells more, at better margin, and only approves.
 For distributors of chemicals, plastics and industrial goods.
 
-Website: https://demandmatch.io/en/ · Deutsch: https://demandmatch.io/ · Contact: hello@waldowautomation.com
+Website: https://demandmatch.io/en/ · Deutsch: https://demandmatch.io/ · Contact: hello@demandmatch.io
 
 ## The problem
 
@@ -160,10 +160,10 @@ With a free fit check, then a value assessment on one division's data and a 30-d
 
 ### Who is behind DemandMatch?
 
-DemandMatch was founded in Berlin by Richard von Waldow (sales and product) and Bing Cai (engineering and data). Contact: hello@waldowautomation.com.
+DemandMatch was founded in Berlin by Bing Cai (CEO, Staff Forward Deployed Engineer) and Richard von Waldow (Forward Deployed Engineer). Contact: hello@demandmatch.io.
 
 ## Company
 
-Founded in Berlin by Richard von Waldow (Sales and product, https://www.linkedin.com/in/richard-von-waldow/) and Bing Cai (Engineering and data, https://www.linkedin.com/in/bingcai/).
+Founded in Berlin by Bing Cai (CEO, Staff Forward Deployed Engineer, https://www.linkedin.com/in/bingcai/) and Richard von Waldow (Forward Deployed Engineer, https://www.linkedin.com/in/richard-von-waldow/).
 
-Contact: hello@waldowautomation.com · https://demandmatch.io/en/
+Contact: hello@demandmatch.io · https://demandmatch.io/en/

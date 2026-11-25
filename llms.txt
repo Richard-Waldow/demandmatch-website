@@ -2,13 +2,13 @@
 
 > DemandMatch matches your inventory with your customers' demand, automatically. Software for distributors of chemicals, plastics and industrial goods: more sales, better margin, and your sales team only approves.
 
-DemandMatch is sales software for B2B distributors of chemicals, plastics and industrial goods, founded in Berlin by Richard von Waldow and Bing Cai.
+DemandMatch is sales software for B2B distributors of chemicals, plastics and industrial goods, founded in Berlin by Bing Cai and Richard von Waldow.
 It reads the systems a distributor already runs (ERP such as SAP, Oracle, Odoo or DATEV; CRM such as HubSpot; the inbox; messengers) read-only, and matches inventory with customer demand in both directions:
 
 - Demand finds stock: for every request from email, phone or CRM it finds the right material, warehouse and margin and prepares the offer.
 - Stock finds demand: for overstock and inbound goods it finds the customers who buy exactly that and prepares a personal message for each.
 
-A person in sales approves everything before it goes out. Companies start with a free fit check, then a value assessment and a 30-day pilot on their real data. Contact: hello@waldowautomation.com.
+A person in sales approves everything before it goes out. Companies start with a free fit check, then a value assessment and a 30-day pilot on their real data. Contact: hello@demandmatch.io.
 
 ## Pricing
 
