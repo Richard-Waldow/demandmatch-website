@@ -70,15 +70,6 @@ Heute holt Ihr Vertrieb den Kontext aus Outlook, Excel, SAP und dem CRM und glei
 
 Liest aus Ihren bestehenden Systemen: SAP, Oracle, Odoo, DATEV, HubSpot, Gmail, Outlook, WhatsApp, Slack.
 
-- **Nur lesend**: DemandMatch liest aus ERP, CRM und Postfach und ändert dort nichts.
-- **Ein Mensch gibt frei**: Kein Angebot und keine E-Mail geht raus, bevor Ihr Vertrieb es gesehen hat.
-- **Ihre Daten bleiben bei Ihnen**: Kein Umzug, keine Kopie Ihrer Systeme. Die Daten bleiben, wo sie sind.
-- **Mit Ihrer IT abgestimmt**: Anbindung und Rechte legen wir gemeinsam mit Ihrer IT fest.
-
-## Basisprodukt + Anpassung
-
-Was Sie gerade ausprobiert haben, ist das Basisprodukt. Ihre Lösung bauen wir auf Ihr Haus zu.
-
 ## Business Case: Rechnen Sie selbst. Mit Ihren Zahlen, nicht mit unseren.
 
 Jede Annahme ist sichtbar und verstellbar. In den ROI geht nur Geld ein, das wirklich ankommt. Frei werdende Zeit zeigen wir daneben, gerechnet wird sie nur, wenn Sie es wollen.
@@ -116,6 +107,10 @@ Alle Preise netto, zzgl. MwSt. Preise in US-Dollar für Kunden in den USA, zzgl.
 In jeder Lizenz: Abgleich in beide Richtungen, Angebote mit Marge, Fracht und Ihren Preisregeln, lesende Anbindung an ERP, CRM und Postfach, und nichts geht raus ohne Freigabe Ihres Teams.
 
 Jährliche Zahlung im Voraus, Mindestlaufzeit 12 Monate. Potenzialanalyse und Pilot werden voll angerechnet.
+
+## Basisprodukt + Anpassung
+
+Wir starten mit dem Basisprodukt. Ihre Lösung bauen wir auf Ihr Haus zu.
 
 ## In 30 Tagen im Einsatz. Mit Ihren echten Daten.
 

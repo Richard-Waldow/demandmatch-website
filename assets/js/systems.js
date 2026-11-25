@@ -123,11 +123,6 @@
       </main>
     </div>`;
 
-  // the processes the autopilot runs on top of them (from the former layer section)
-  const FLOWS = () => [
-    ['Inbound', L('Request to order', 'Anfrage bis Auftrag'), [L('Request & specification', 'Anfrage & Spezifikation'), L('Offer creation', 'Angebot erstellen'), L('Price inquiry', 'Preisanfrage'), L('Offer follow-up', 'Nachfassen'), L('Order entry', 'Auftrag anlegen'), L('Info requests', 'Info-Anfragen')]],
-    ['Outbound', L('Demand to order', 'Bedarf bis Auftrag'), [L('Pushed products', 'Push-Produkte'), L('Scarce supply', 'Knappes Inventar'), 'Check-ins', L('Pipeline planning', 'Pipeline-Planung')]],
-  ];
 
   // ------------------------------------------------------------------ page
   function render() {
@@ -143,7 +138,7 @@
           ${big.map(k => `<span class="sy-ic">${art(k)}</span>`).join('')}<span class="sy-ic sy-folder">${small.map(s => `<span>${s}</span>`).join('')}</span></div>`).join('')}</div>
         <div class="sy-lap"><div class="sy-lid"><div class="sy-screen"><span class="sy-notch"></span><div class="sy-fit"><div class="sy-canvas">${desktop()}${app()}</div></div></div></div><div class="sy-deck"><span></span></div></div>
       </div>
-      <div class="sy-flows rv">${FLOWS().map(([k, t, list]) => `<div class="sy-flow"><b><em>${k}</em>${t}</b><span>${list.map(x => `<i>${x}</i>`).join('')}</span></div>`).join('')}</div>
+      <div class="sy-try rv"><button class="sy-try-b" type="button" data-open-app><i class="ph-light ph-cursor-click" aria-hidden="true"></i><span>${window.UI.t('try')}</span></button></div>
     </div>`;
     host.querySelectorAll('.rv').forEach(el => (reduced || host.dataset.seen ? el.classList.add('in') : io.observe(el)));
     set(on); fit(); requestAnimationFrame(wires);

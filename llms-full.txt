@@ -70,15 +70,6 @@ Today your sales team pulls context from Outlook, Excel, SAP and the CRM and rec
 
 Reads from the systems you already run: SAP, Oracle, Odoo, DATEV, HubSpot, Gmail, Outlook, WhatsApp, Slack.
 
-- **Read-only**: DemandMatch reads from ERP, CRM and inbox and changes nothing there.
-- **A person approves**: No offer and no email goes out before your sales team has seen it.
-- **Your data stays with you**: No migration, no copy of your systems. The data stays where it is.
-- **Agreed with your IT**: We set up the connection and access rights together with your IT.
-
-## Base product + customisation
-
-What you just tried is the base product. Your solution is built around your company.
-
 ## Business case: Run the numbers yourself. With your figures, not ours.
 
 Every assumption is visible and adjustable. Only money that actually arrives goes into the ROI. Freed time is shown next to it and counted only if you choose to.
@@ -116,6 +107,10 @@ All prices net, excl. VAT. Prices in US dollars for customers in the US, excl. s
 Every license includes: matching both ways, offers with margin, freight and your pricing rules, read-only connection to ERP, CRM and inbox, and nothing goes out without your team's approval.
 
 Paid annually in advance, 12-month minimum term. The value assessment and the pilot are credited in full.
+
+## Base product + customisation
+
+We start from the base product. Your solution is built around your company.
 
 ## Live in 30 days. With your real data.
 
@@ -248,15 +243,6 @@ Heute holt Ihr Vertrieb den Kontext aus Outlook, Excel, SAP und dem CRM und glei
 
 Liest aus Ihren bestehenden Systemen: SAP, Oracle, Odoo, DATEV, HubSpot, Gmail, Outlook, WhatsApp, Slack.
 
-- **Nur lesend**: DemandMatch liest aus ERP, CRM und Postfach und ändert dort nichts.
-- **Ein Mensch gibt frei**: Kein Angebot und keine E-Mail geht raus, bevor Ihr Vertrieb es gesehen hat.
-- **Ihre Daten bleiben bei Ihnen**: Kein Umzug, keine Kopie Ihrer Systeme. Die Daten bleiben, wo sie sind.
-- **Mit Ihrer IT abgestimmt**: Anbindung und Rechte legen wir gemeinsam mit Ihrer IT fest.
-
-## Basisprodukt + Anpassung
-
-Was Sie gerade ausprobiert haben, ist das Basisprodukt. Ihre Lösung bauen wir auf Ihr Haus zu.
-
 ## Business Case: Rechnen Sie selbst. Mit Ihren Zahlen, nicht mit unseren.
 
 Jede Annahme ist sichtbar und verstellbar. In den ROI geht nur Geld ein, das wirklich ankommt. Frei werdende Zeit zeigen wir daneben, gerechnet wird sie nur, wenn Sie es wollen.
@@ -294,6 +280,10 @@ Alle Preise netto, zzgl. MwSt. Preise in US-Dollar für Kunden in den USA, zzgl.
 In jeder Lizenz: Abgleich in beide Richtungen, Angebote mit Marge, Fracht und Ihren Preisregeln, lesende Anbindung an ERP, CRM und Postfach, und nichts geht raus ohne Freigabe Ihres Teams.
 
 Jährliche Zahlung im Voraus, Mindestlaufzeit 12 Monate. Potenzialanalyse und Pilot werden voll angerechnet.
+
+## Basisprodukt + Anpassung
+
+Wir starten mit dem Basisprodukt. Ihre Lösung bauen wir auf Ihr Haus zu.
 
 ## In 30 Tagen im Einsatz. Mit Ihren echten Daten.
 

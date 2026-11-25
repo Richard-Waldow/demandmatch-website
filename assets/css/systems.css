@@ -170,10 +170,11 @@
 #systems.sy-snap, #systems.sy-snap * { transition: none !important; }
 @media (prefers-reduced-motion: reduce) { .sy-art { transition: none; transform: none; } .sy-ping { animation: none; opacity: 1; } .is-on .sy-wires .f { animation: none; opacity: 0; } }
 
-/* the processes under the stage, in the page's type */
-.sy-flows { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(20px, 4vw, 64px); margin-top: clamp(28px, 3.4vw, 44px); }
-.sy-flow b { display: flex; align-items: baseline; gap: 12px; font-family: var(--serif); font-weight: 400; font-size: clamp(20px, 1.8vw, 26px); letter-spacing: -.02em; color: var(--ink); }
-.sy-flow b em { font: 400 11px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); }
-.sy-flow > span { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-.sy-flow i { font-style: normal; font-size: 13px; color: var(--ink-2); padding: 6px 12px; border-radius: 99px; background: var(--paper-2); box-shadow: inset 0 0 0 1px var(--line); }
-@media (max-width: 760px) { .sy-flows { grid-template-columns: 1fr; } }
+/* under the stage: one ink pill that opens the real product (stage.js) */
+.sy-try { display: flex; justify-content: center; margin-top: clamp(28px, 3.4vw, 44px); }
+.sy-try-b { display: inline-flex; align-items: center; gap: 9px; height: 48px; padding: 0 22px 0 18px; border: 0; border-radius: 999px; background: var(--ink); color: #fff;
+  font: 500 15px/1 var(--font); cursor: pointer; box-shadow: 0 18px 36px -14px rgb(0 0 0 / .45); transition: transform 200ms var(--ease-out); }
+.sy-try-b .ph-light { font-size: 19px; }
+@media (hover: hover) and (pointer: fine) { .sy-try-b:hover { transform: translateY(-2px); } }
+.sy-try-b:active { transform: scale(.97); }
+.sy-try-b:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }

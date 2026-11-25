@@ -22,12 +22,13 @@
   // Where the painted container is, in the painting's own pixels (assets/art/unloading.jpg, 1536 x 1024):
   // its right edge (where the pellets leave) and its top right corner (where the lot card's leader line points).
   const ART = { w: 1536, h: 1024, out: [474, 648], top: [470, 598] };
-  const stage = board.closest('.sp-stage'), img = stage.querySelector('.sp-art img');
-  // map a painting pixel to board coordinates (object-fit: cover, object-position: 0% 50%)
+  // the painting is the full-bleed wallpaper behind the hero and the board (.gallery-wallpaper)
+  const img = document.querySelector('.gallery-wallpaper img');
+  // map a painting pixel to board coordinates, from where the image really is (object-fit: cover, its object-position in %)
   function fromArt([ax, ay]) {
-    const W = stage.clientWidth, H = stage.clientHeight, k = Math.max(W / ART.w, H / ART.h);
-    const x = ax * k, y = (H - ART.h * k) * .5 + ay * k;
-    return [x - board.offsetLeft, y - board.offsetTop];
+    const r = img.getBoundingClientRect(), b = board.getBoundingClientRect(), k = Math.max(r.width / ART.w, r.height / ART.h);
+    const [px, py] = getComputedStyle(img).objectPosition.split(' ').map(v => (parseFloat(v) || 0) / 100);
+    return [r.left - b.left + (r.width - ART.w * k) * px + ax * k, r.top - b.top + (r.height - ART.h * k) * py + ay * k];
   }
   // layout positions (offset*), so cards that are still sliding in do not bend the lines
   const pos = el => { let x = 0, y = 0; for (let n = el; n && n !== board; n = n.offsetParent) { x += n.offsetLeft; y += n.offsetTop; } return [x, y]; };
@@ -38,8 +39,10 @@
     const [x0, y0] = fromArt(ART.out), f = n => n.toFixed(1);
     let html = '';
     // leader: a fine dotted line from the lot card down to the container, like a note on a painting
-    const [lx, ly] = pos(lot), [tx, ty] = fromArt(ART.top);
-    html += `<path class="lead" d="M${f(lx + 18)} ${f(ly + lot.offsetHeight)} L${f(tx)} ${f(ty)}"/><circle class="lead-dot" cx="${f(tx)}" cy="${f(ty)}" r="3"/>`;
+    const [lx, ly] = pos(lot), [tx, ty] = fromArt(ART.top), lb = ly + lot.offsetHeight;
+    // from the card's bottom when the container hangs below it, otherwise from its left edge, level with the container
+    const [sx, sy] = ty > lb ? [lx + 18, lb] : [lx, Math.min(Math.max(ty, ly + 24), lb - 24)];
+    html += `<path class="lead" d="M${f(sx)} ${f(sy)} L${f(tx)} ${f(ty)}"/><circle class="lead-dot" cx="${f(tx)}" cy="${f(ty)}" r="3"/>`;
     [...list.children].forEach((li, i) => {
       const pin = li.querySelector('.sp-pin'), [px, py] = pos(pin);
       const x1 = px + pin.offsetWidth / 2, y1 = py + pin.offsetHeight / 2, mx = x0 + (x1 - x0) * .55;

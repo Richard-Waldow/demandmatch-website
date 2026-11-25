@@ -70,15 +70,6 @@ Today your sales team pulls context from Outlook, Excel, SAP and the CRM and rec
 
 Reads from the systems you already run: SAP, Oracle, Odoo, DATEV, HubSpot, Gmail, Outlook, WhatsApp, Slack.
 
-- **Read-only**: DemandMatch reads from ERP, CRM and inbox and changes nothing there.
-- **A person approves**: No offer and no email goes out before your sales team has seen it.
-- **Your data stays with you**: No migration, no copy of your systems. The data stays where it is.
-- **Agreed with your IT**: We set up the connection and access rights together with your IT.
-
-## Base product + customisation
-
-What you just tried is the base product. Your solution is built around your company.
-
 ## Business case: Run the numbers yourself. With your figures, not ours.
 
 Every assumption is visible and adjustable. Only money that actually arrives goes into the ROI. Freed time is shown next to it and counted only if you choose to.
@@ -116,6 +107,10 @@ All prices net, excl. VAT. Prices in US dollars for customers in the US, excl. s
 Every license includes: matching both ways, offers with margin, freight and your pricing rules, read-only connection to ERP, CRM and inbox, and nothing goes out without your team's approval.
 
 Paid annually in advance, 12-month minimum term. The value assessment and the pilot are credited in full.
+
+## Base product + customisation
+
+We start from the base product. Your solution is built around your company.
 
 ## Live in 30 days. With your real data.
 

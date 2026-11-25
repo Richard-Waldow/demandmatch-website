@@ -9,7 +9,7 @@
 /* the painting and the offer document on it */
 .pr-stage { position: relative; display: flex; align-items: center; justify-content: flex-end; min-height: clamp(560px, 48vw, 680px);
   margin-top: clamp(40px, 5vw, 64px); padding: clamp(24px, 4vw, 64px); border-radius: 10px; overflow: hidden; isolation: isolate; background: #e7e3da; }
-.pr-art { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 0% 70%;
+.pr-art { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 0% 60%;
   transform: scale(1.05); transition: transform 1800ms var(--ease-out); }
 .pr-stage.in .pr-art { transform: none; }
 .pr-doc { width: min(440px, 100%); padding: 22px 26px 20px; border-radius: 10px; background: rgb(255 255 255 / .93);
@@ -85,7 +85,7 @@
 @media (max-width: 720px) {
   /* the painting becomes a band, the document sits half on it */
   .pr-stage { display: block; min-height: 0; padding: 200px 12px 12px; background: var(--paper-2); }
-  .pr-art { height: 320px; object-position: 12% 75%; }
+  .pr-art { height: 320px; object-position: 18% 62%; }
   .pr-doc { width: 100%; padding: 18px 18px 16px; }
   .pr-steps { grid-template-columns: minmax(0, 1fr); }
   .pr-foot .cta-row { width: 100%; }

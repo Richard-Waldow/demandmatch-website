@@ -117,7 +117,7 @@
     "@id": "https://demandmatch.io/#product"
    },
    "primaryImageOfPage": "https://demandmatch.io/assets/art/unloading.jpg",
-   "dateModified": "2026-11-24"
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "SoftwareApplication",
@@ -546,7 +546,6 @@
  ]
 }
 </script>
-<link rel="stylesheet" href="../assets/css/film.css">
 <link rel="stylesheet" href="../assets/css/systems.css">
 <link rel="stylesheet" href="../assets/css/custom.css">
 <link rel="stylesheet" href="../assets/css/roi.css">
@@ -568,7 +567,6 @@
     </a>
     <nav class="nav" aria-label="Seiten">
       <a href="#value" data-t="nav_value">Value</a>
-      <a href="#product" data-t="nav_product">Product</a>
       <a href="#systems" data-t="nav_how">How it works</a>
       <a href="#pricing" data-t="nav_pricing">Pricing</a>
     </nav>
@@ -582,6 +580,9 @@
 <main id="main">
 
   <!-- HERO: the value in one line, who it is for, and the matching itself as the picture: one lot of stock finding its customers (surplus.js) -->
+  <div class="hero-gallery">
+  <!-- the painting, full-bleed behind the headline and the board, dissolving into the paper above and below -->
+  <div class="gallery-wallpaper" aria-hidden="true"><img src="../assets/art/unloading.jpg" alt="" decoding="async" fetchpriority="high"></div>
   <section class="hero wrap">
     <h1 class="h1" data-split="h1">Every tonne of stock finds its customer.</h1>
     <p class="lead in-hero" style="--d:5" data-t="lead">DemandMatch matches your inventory with your customers' demand, automatically. Your sales team sells more, at better margin, and only approves.</p>
@@ -594,7 +595,6 @@
   <section class="match-sec" id="match" aria-label="Matching">
     <div class="sp-stage-sec">
       <div class="sp-stage hero-stage">
-        <div class="sp-art" aria-hidden="true"><img src="../assets/art/unloading.jpg" alt="" decoding="async" fetchpriority="high"></div>
         <div class="sp-board" id="sp-board">
           <div class="sp-lot glass">
             <p class="sp-k" data-t="sp_lot_k">Not sold yet</p>
@@ -611,13 +611,14 @@
           <ol class="sp-list glass" data-ta="sp_list_label" aria-label="Customers who fit this stock"><li class="sp-row fit" style="--i:0"><span class="sp-pin" aria-hidden="true"></span><div class="sp-who"><b>Hanse Closures GmbH</b><p>Buys HDPE for closures every 3 weeks. Next call-off in about 9 days.</p><small>SAP history</small></div><div class="sp-out"><b>24 t</b><em>Fits</em></div></li><li class="sp-row fit" style="--i:1"><span class="sp-pin" aria-hidden="true"></span><div class="sp-who"><b>Weser Getränketechnik GmbH</b><p>Ran HMA 016 in spring. The same grade.</p><small>SAP history</small></div><div class="sp-out"><b>12 t</b><em>Fits</em></div></li><li class="sp-row maybe" style="--i:2"><span class="sp-pin" aria-hidden="true"></span><div class="sp-who"><b>Sauerland Haushaltswaren GmbH</b><p>Said on the phone that HDPE is worth a trial.</p><small>Call</small></div><div class="sp-out"><b>4 t</b><em>Maybe</em></div></li><li class="sp-row no" style="--i:3"><span class="sp-pin" aria-hidden="true"></span><div class="sp-who"><b>Emsland Rohrsysteme GmbH</b><p>Needs PE100 pipe grades. Not a substitute.</p><small>SAP</small></div><div class="sp-out"><em>Left out</em></div></li><li class="sp-row no" style="--i:4"><span class="sp-pin" aria-hidden="true"></span><div class="sp-who"><b>Folienwerk Nordheide GmbH</b><p>Film in LLDPE. This grade does not fit.</p><small>SAP</small></div><div class="sp-out"><em>Left out</em></div></li></ol>
           <div class="sp-foot glass">
             <p><b data-t="sp_sum_a">40 t to 3 customers, 2 left out on purpose.</b> <span data-t="sp_sum_b">Three personal emails wait for approval.</span></p>
-            <a class="btn btn-soft btn-sm" href="#product" data-open-push><span data-t="sp_open">See it in the product</span><span class="btn-ic" aria-hidden="true"><i class="ph-light ph-arrow-up-right"></i></span></a>
+            <a class="btn btn-soft btn-sm" href="#systems" data-open-push><span data-t="sp_open">See it in the product</span><span class="btn-ic" aria-hidden="true"><i class="ph-light ph-arrow-up-right"></i></span></a>
           </div>
         </div>
       </div>
       <p class="film-cap in-hero" style="--d:12" data-t="match_cap">A lot of stock nobody has bought yet. DemandMatch finds the customers who need exactly that.</p>
     </div>
   </section>
+  </div>
 
   <!-- WHY: what unmatched stock and unanswered demand cost, read line by line as you scroll -->
   <section class="why wrap" id="why">
@@ -730,65 +731,8 @@
     <p class="rule rv"><span class="rule-k" data-t="rule_eyebrow">Principle</span><span class="rule-t" data-t="rule">The autopilot prepares. Your sales team decides.</span></p>
   </section>
 
-  <!-- FILM: matching today by hand, and with DemandMatch (film.js, drawn frame by frame on a painted stage) -->
-  <section class="film-sec" id="film-sec" aria-label="Film">
-    <div class="sec-h film-h">
-      <h2 class="h2 rv" data-th="film_h">A morning in sales.<br><span class="mute">First by hand, then with DemandMatch.</span></h2>
-    </div>
-    <div class="film" id="film"></div>
-    <p class="film-cap" data-t="film_cap">Played with sample data.</p>
-  </section>
-
-  <!-- PRODUCT: try it. The real app as a glass window on an oil painting; tabs below jump to its screens. Plays in when it comes into view -->
-  <section class="stage-sec" id="product" aria-label="Produkt">
-    <div class="stage-h">
-      <h2 class="h2 rv" data-th="try_h">Try it yourself.<br><span class="mute">The real product, with sample data.</span></h2>
-    </div>
-    <div class="stage">
-      <div class="stage-art" aria-hidden="true"><img src="../assets/art/hero-harbour.jpg" alt="" decoding="async" loading="lazy"></div>
-      <div class="stage-in">
-        <div class="win" id="win">
-          <div class="win-app"></div>
-          <button class="win-try" type="button"><span><i class="ph-light ph-cursor-click" aria-hidden="true"></i><b data-t="try">Click to try it</b></span></button>
-          <button class="win-full" type="button" data-ta="full" aria-label="Fullscreen"><i class="ph-light ph-corners-out" aria-hidden="true"></i></button>
-        </div>
-        <div class="dock" id="dock">
-          <div class="dock-tabs" role="tablist" data-ta="tabs_label" aria-label="Areas of the product">
-            <span class="dock-ind" aria-hidden="true"></span><button type="button" role="tab" data-tab="today" aria-selected="true"><i class="ph-light ph-sun-horizon" aria-hidden="true"></i><span>Today</span></button><button type="button" role="tab" data-tab="inbox" aria-selected="false"><i class="ph-light ph-tray" aria-hidden="true"></i><span>Inbox</span></button><button type="button" role="tab" data-tab="offer" aria-selected="false"><i class="ph-light ph-file-text" aria-hidden="true"></i><span>Offer</span></button><button type="button" role="tab" data-tab="opps" aria-selected="false"><i class="ph-light ph-chart-bar-horizontal" aria-hidden="true"></i><span>Pipeline</span></button><button type="button" role="tab" data-tab="gpt" aria-selected="false"><i class="ph-light ph-chat-circle-text" aria-hidden="true"></i><span>Ask</span></button>
-          </div>
-          <p class="dock-line" aria-live="polite"><b>Today.</b> Your workday, ordered by what brings revenue. Every task with its reason and source.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS, for IT and operations: the systems graphic (systems.js), then the principles and the systems it reads from -->
+  <!-- HOW IT WORKS: the systems graphic (systems.js); under it "Click to try it" opens the real app in a window over the page (stage.js) -->
   <section class="sec-systems" id="systems"><div class="wrap"><h2 class="h2">Spread across three kinds of systems.<br><span class="mute">The autopilot makes it one list.</span></h2><p class="sub">Today your sales team pulls context from Outlook, Excel, SAP and the CRM and reconciles it in their heads. The autopilot reads from all of them and brings it together, from the first request to the order in SAP. Nothing is replaced.</p></div></section>
-  <section class="trust wrap" aria-label="Principles">
-    <ul class="trust-l rv">
-      <li><i class="ph-light ph-eye" aria-hidden="true"></i><b data-t="t1_h">Read-only</b><span data-t="t1_p">DemandMatch reads from ERP, CRM and inbox and changes nothing there.</span></li>
-      <li><i class="ph-light ph-hand-pointing" aria-hidden="true"></i><b data-t="t2_h">A person approves</b><span data-t="t2_p">No offer and no email goes out before your sales team has seen it.</span></li>
-      <li><i class="ph-light ph-lock-simple" aria-hidden="true"></i><b data-t="t3_h">Your data stays with you</b><span data-t="t3_p">No migration, no copy of your systems. The data stays where it is.</span></li>
-      <li><i class="ph-light ph-handshake" aria-hidden="true"></i><b data-t="t4_h">Agreed with your IT</b><span data-t="t4_p">We set up the connection and access rights together with your IT.</span></li>
-    </ul>
-    <div class="works rv">
-      <p class="works-h" data-t="works">Reads from the systems you already run</p>
-      <ul class="works-l">
-        <li><img src="../assets/logos/sap.svg" alt="" width="18" height="18"><span>SAP</span></li>
-        <li><img src="../assets/logos/oracle.svg" alt="" width="18" height="18"><span>Oracle</span></li>
-        <li><img src="../assets/logos/odoo.svg" alt="" width="18" height="18"><span>Odoo</span></li>
-        <li><img src="../assets/logos/datev.svg" alt="" width="18" height="18"><span>DATEV</span></li>
-        <li><img src="../assets/logos/hubspot.svg" alt="" width="18" height="18"><span>HubSpot</span></li>
-        <li><img src="../assets/logos/gmail.svg" alt="" width="18" height="18"><span>Gmail</span></li>
-        <li><img src="../assets/logos/whatsapp.svg" alt="" width="18" height="18"><span>WhatsApp</span></li>
-        <li><img src="../assets/logos/slack.svg" alt="" width="18" height="18"><span>Slack</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- CUSTOM: what you tried is the base product; base product + customisation = your solution, an app that assembles (custom.js) -->
-  <section class="sec-custom" id="custom"><div class="wrap"><h2 class="h2">What you just tried is the base product.<br><span class="mute">Your solution is built around your company.</span></h2></div></section>
-
   <!-- ROI: the business case a CFO runs with sliders (roi.js). The example and the formulas are written out for readers without scripts -->
   <section class="roi wrap" id="roi">
     <div class="sec-h">
@@ -807,7 +751,7 @@
       <p class="sub rv" data-t="pr_sub">Every step has a fixed price, and every paid step is credited to the next one. You never pay twice.</p>
     </div>
     <div class="pr-stage rv">
-      <img class="pr-art" src="../assets/art/pricing-scale.jpg" alt="" loading="lazy" decoding="async">
+      <img class="pr-art" src="../assets/art/pricing-hamburg.jpg" alt="" loading="lazy" decoding="async">
       <div class="pr-doc">
         <div class="pr-doc-h"><span>Your path to DemandMatch</span><div class="roi-seg roi-seg-s pr-cur" role="radiogroup" aria-label="Currency" hidden><button type="button" role="radio" data-cur="eur" aria-checked="false">€</button><button type="button" role="radio" data-cur="usd" aria-checked="true">$</button></div></div>
         <ol class="pr-doc-l"><li><span class="pr-doc-n">Fit check<small>30 minutes</small></span><span class="pr-doc-v">Free</span></li><li><span class="pr-doc-n">Value assessment<small>3 weeks</small></span><span class="pr-doc-v"><b data-eur="€20,000" data-usd="$22,000">$22,000</b></span><em>credited in full to the pilot</em></li><li><span class="pr-doc-n">Pilot<small>30 days</small></span><span class="pr-doc-v"><b data-eur="€60,000" data-usd="$66,000">$66,000</b></span><em>credited 100% to year one</em></li><li class="pr-doc-tot"><span class="pr-doc-n">License<small>From year 1</small></span><span class="pr-doc-v"><span class="pr-from">from</span> <b data-eur="€180,000" data-usd="$198,000">$198,000</b> <small>per year</small></span></li></ol>
@@ -825,6 +769,9 @@
       </div>
     </div>
   </section>
+
+  <!-- CUSTOM: base product + customisation = your solution, an app that assembles (custom.js). Sits right before the pilot -->
+  <section class="sec-custom" id="custom"><div class="wrap"><h2 class="h2">We start from the base product.<br><span class="mute">Your solution is built around your company.</span></h2></div></section>
 
   <!-- PILOT: thirty days as three steps written into the sky of a painting of three river locks (pilot-locks); the steps
        come in one after another, left to right, the way a barge passes the gates -->
@@ -871,11 +818,23 @@
       <h2 class="h2 rv" data-th="end_h">Your next order<br><span class="mute">is already in your inbox.</span></h2>
       <div class="cta-row rv" style="--d:1">
         <a href="mailto:hello@waldowautomation.com?subject=DemandMatch%3A%20demo" class="btn btn-ink" data-mail><span data-t="cta">Book a demo</span></a>
-        <a class="btn btn-soft" href="#product"><span data-t="end_try">Back to the product</span><span class="btn-ic" aria-hidden="true"><i class="ph-light ph-arrow-up"></i></span></a>
+        <button class="btn btn-soft" type="button" data-open-app><span data-t="cta_try">Try the product</span><span class="btn-ic" aria-hidden="true"><i class="ph-light ph-cursor-click"></i></span></button>
       </div>
     </div>
     <div class="close-art" aria-hidden="true"><img src="../assets/art/quay-evening.jpg" alt="" loading="lazy" decoding="async" data-close-art></div>
   </section>
+
+  <!-- THE PRODUCT: the real app with sample data, in a window over the page. Every [data-open-app] opens it, and the
+       other sections open a screen of it through the dm:open event (stage.js) -->
+  <dialog class="app-dlg" id="app-dlg" data-ta="try_dlg" aria-label="Try DemandMatch, with sample data">
+    <div class="win-tools">
+      <button class="win-full" type="button" data-ta="full" aria-label="Fullscreen"><i class="ph-light ph-corners-out" aria-hidden="true"></i></button>
+      <button class="win-close" type="button" data-ta="close_app" aria-label="Close"><i class="ph-light ph-x" aria-hidden="true"></i></button>
+    </div>
+    <div class="win" id="win">
+      <div class="win-app"></div>
+    </div>
+  </dialog>
 </main>
 
 <footer class="foot">
@@ -885,7 +844,7 @@
       <p data-t="foot_tag">Stock and demand, matched automatically. For B2B distribution.</p>
       <a href="mailto:hello@waldowautomation.com?subject=DemandMatch%3A%20demo" class="btn btn-ink btn-sm" data-mail><span data-t="cta">Book a demo</span></a>
     </div>
-    <div class="foot-c"><h3 data-t="f_product">Product</h3><a href="#value" data-t="nav_value">Value</a><a href="#product" data-t="nav_product">Product</a><a href="#systems" data-t="nav_how">How it works</a><a href="#roi" data-t="nav_roi">Business case</a><a href="#pricing" data-t="nav_pricing">Pricing</a><a href="#pilot" data-t="nav_pilot">Pilot</a><a href="#faq" data-t="nav_faq">FAQ</a></div>
+    <div class="foot-c"><h3 data-t="f_product">Product</h3><a href="#value" data-t="nav_value">Value</a><a href="#systems" data-t="nav_how">How it works</a><a href="#roi" data-t="nav_roi">Business case</a><a href="#pricing" data-t="nav_pricing">Pricing</a><a href="#pilot" data-t="nav_pilot">Pilot</a><a href="#faq" data-t="nav_faq">FAQ</a></div>
     <div class="foot-c"><h3 data-t="f_company">Company</h3><a href="https://www.linkedin.com/in/richard-von-waldow/" target="_blank" rel="noopener">Richard von Waldow</a><a href="https://www.linkedin.com/in/bingcai/" target="_blank" rel="noopener">Bing Cai</a><a href="mailto:hello@waldowautomation.com?subject=DemandMatch%3A%20demo" data-mail data-email>hello@waldowautomation.com</a></div>
   </div>
   <div class="wrap foot-base"><span>© 2026 DemandMatch</span><span data-t="foot_note">All data in the demo is sample data.</span><div class="lang" role="group" aria-label="Sprache / Language"><button type="button" data-lang="de" aria-pressed="false">DE</button><button type="button" data-lang="en" aria-pressed="true">EN</button></div></div>
@@ -898,7 +857,6 @@
 <script src="../assets/app/gantt.js"></script>
 <script src="../assets/app/ae.js"></script>
 <script src="../assets/app/app.js"></script>
-<script src="../assets/js/film.js"></script>
 <script src="../assets/js/systems.js"></script>
 <script src="../assets/js/stage.js"></script>
 <script src="../assets/js/surplus.js"></script>
