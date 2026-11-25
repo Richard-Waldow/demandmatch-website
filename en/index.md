@@ -93,12 +93,12 @@ Example for a distributor with €1.2bn revenue, 12% gross margin, stock at 12% 
 
 | Step | What happens | Duration | Price |
 | --- | --- | --- | --- |
-| Fit check | A call about your key facts: industry, revenue, ERP and sales team. Then a proposal with the scope. | 1 to 2 weeks | Free |
-| Value assessment | From a read-only data extract we calculate, in money, what is lost today. Result: the baseline and the business case. | 3 weeks | €20,000 (credited in full to the pilot) |
-| Pilot | One product family, one team, one country. Success criteria in writing upfront, then you decide. | 30 days | from €60,000 (credited 100% to year one) |
-| Implementation | Full connection to ERP, CRM and inbox in the first country, every product family, training for your team. | 2 to 3 months | €60,000 (one-time) |
-| License | Running, support and updates. At every renewal we measure the value again. | yearly | €90,000 + 15% (base plus a share of the measured value) |
-| Expansion | Each further country or company with its own ERP. | per country | + €30,000 a year (plus €20,000 one-time) |
+| Step 1: Fit check | A call about your key facts: industry, revenue, ERP and sales team. Then a proposal with the scope. | 1 to 2 weeks | Free |
+| Step 2: Value assessment | From a read-only data extract we calculate, in money, what is lost today. Result: the baseline and the business case. | 3 weeks | €20,000 (credited in full to the pilot) |
+| Step 3: Pilot | One product family, one team, one country. Success criteria in writing upfront, then you decide. | 30 days | from €60,000 (credited 100% to year one) |
+| Step 4: Implementation | Full connection to ERP, CRM and inbox in the first country, every product family, training for your team. | 2 to 3 months | €60,000 (one-time) |
+| Step 5: License | Running, support and updates. At every renewal we measure the value again. | yearly | €90,000 + 15% (base plus a share of the measured value) |
+| Step 6: Expansion | Each further country or company with its own ERP. | per country | + €30,000 a year (plus €20,000 one-time) |
 
 All prices net, excl. VAT. In the US the same prices apply in dollars × 1.1, excl. sales tax. Work out your value and your license in the business case above.
 

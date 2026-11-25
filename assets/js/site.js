@@ -74,7 +74,7 @@
       ],
       sp_fit: 'Passt', sp_maybe: 'Vielleicht', sp_no: 'Ausgelassen',
       sp_sum_a: '40 t an 3 Kunden, 2 bewusst ausgelassen.', sp_sum_b: 'Drei persönliche E-Mails warten auf Freigabe.', sp_open: 'Im Produkt ansehen',
-      st_h: 'Jeder Schritt, jeder Preis.', st_cols: ['Schritt', 'Was passiert', 'Dauer', 'Preis'],
+      st_h: 'Jeder Schritt, jeder Preis.', st_step: 'Schritt', st_ph: ['Bis zum Start', 'Im Betrieb'], st_cols: ['Schritt', 'Was passiert', 'Dauer', 'Preis'],
       st_rows: [
         ['Fit-Check', 'Ein Gespräch über Ihre Eckdaten: Branche, Umsatz, ERP und Vertrieb. Danach ein Vorschlag mit Umfang.', '1 bis 2 Wochen', 'Kostenlos', ''],
         ['Potenzialanalyse', 'Aus einem lesenden Datenauszug rechnen wir in Euro, was heute verloren geht. Ergebnis: Ausgangslage und Business Case.', '3 Wochen', '{assess.eur}', 'voll angerechnet auf den Pilot'],
@@ -244,7 +244,7 @@
       ],
       sp_fit: 'Fits', sp_maybe: 'Maybe', sp_no: 'Left out',
       sp_sum_a: '40 t to 3 customers, 2 left out on purpose.', sp_sum_b: 'Three personal emails wait for approval.', sp_open: 'See it in the product',
-      st_h: 'Every step, every price.', st_cols: ['Step', 'What happens', 'Duration', 'Price'],
+      st_h: 'Every step, every price.', st_step: 'Step', st_ph: ['Getting started', 'Running'], st_cols: ['Step', 'What happens', 'Duration', 'Price'],
       st_rows: [
         ['Fit check', 'A call about your key facts: industry, revenue, ERP and sales team. Then a proposal with the scope.', '1 to 2 weeks', 'Free', ''],
         ['Value assessment', 'From a read-only data extract we calculate, in money, what is lost today. Result: the baseline and the business case.', '3 weeks', '{assess.eur}', 'credited in full to the pilot'],

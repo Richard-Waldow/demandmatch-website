@@ -416,17 +416,43 @@ html:has(.app-dlg[open]) { overflow: hidden; }
 .pilot { padding-top: clamp(60px, 8vw, 110px); padding-bottom: clamp(110px, 13vw, 180px); }
 .pilot-h { max-width: 760px; }
 .pl-path { margin-top: clamp(28px, 3.4vw, 44px); }
-.pl-t { width: 100%; border-collapse: collapse; font-size: 14.5px; line-height: 1.5; font-variant-numeric: lining-nums tabular-nums; }
-.pl-t th, .pl-t td { padding: 16px 0 17px 28px; text-align: left; vertical-align: baseline; border-top: 1px solid var(--line); }
-.pl-t .c0 { padding-left: 0; }
-.pl-t thead th { padding-top: 0; border-top: 0; font-size: 13px; font-weight: 400; color: var(--ink-3); }
-.pl-t tbody th { font-weight: 500; color: var(--ink); white-space: nowrap; }
-.pl-t .c1 { max-width: 56ch; color: var(--ink-2); }
-.pl-t .c2 { color: var(--ink-3); white-space: nowrap; }
-.pl-t .c3 { text-align: right; white-space: nowrap; }
-.pl-t td b { font: 400 19px/1.2 var(--serif); letter-spacing: -.02em; color: var(--ink); }
-.pl-t td small { display: block; margin-top: 3px; font-size: 12.5px; color: #8a6d3f; }
-.pl-note { margin: 14px 0 0; font-size: 13px; line-height: 1.5; color: var(--ink-3); }
+/* every step as a numbered track. Above it two phases: getting started (steps 1 to 4, one-time, ink) and running
+   (license and expansion, yearly, sand). Each step is a column; subgrid keeps number, name, duration, text and price
+   on shared rows, so all prices sit on one line. The line between the numbers draws itself left to right once. */
+.pl-path { --g: clamp(20px, 2.2vw, 32px); }
+.pl-ph { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); column-gap: var(--g); margin-bottom: clamp(24px, 2.6vw, 34px); font-size: 13px; color: var(--ink-2); }
+.pl-ph span { grid-column: 1 / 5; padding-top: 10px; border-top: 1px solid var(--ink); }
+.pl-ph span + span { grid-column: 5 / 7; border-top-color: var(--sand); color: #8a6d3f; }
+.pl-st { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); grid-template-rows: repeat(6, auto); column-gap: var(--g); margin: 0; padding: 0; list-style: none; font-variant-numeric: lining-nums tabular-nums; }
+.pl-st li { position: relative; display: grid; grid-row: span 6; grid-template-rows: subgrid; align-content: start; }
+.pl-st li::before { content: ''; position: absolute; top: 20px; left: 52px; right: calc(8px - var(--g)); height: 1px; background: var(--line-2);
+  transform: scaleX(0); transform-origin: left; transition: transform 700ms var(--ease-out); transition-delay: calc(350ms + var(--i) * 110ms); }
+.pl-st li:last-child::before { content: none; }
+.pl-path.in .pl-st li::before { transform: none; }
+.pl-n { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--ink); color: #fff; font: 400 18px/1 var(--serif); }
+.pl-st li:nth-child(n+5) .pl-n { background: #fff; color: var(--ink); box-shadow: inset 0 0 0 1px var(--sand); }
+.pl-k { margin-top: 20px; font-size: 12.5px; color: var(--ink-3); }
+.pl-st h3 { margin: 4px 0 0; font: 400 clamp(22px, 1.9vw, 27px)/1.1 var(--serif); letter-spacing: -.03em; color: var(--ink); hyphens: auto; overflow-wrap: break-word; }
+.pl-dur { display: flex; align-items: center; gap: 6px; margin: 10px 0 0; font-size: 13px; color: var(--ink-2); }
+.pl-dur i { font-size: 15px; color: var(--ink-3); }
+.pl-what { margin: 12px 0 0; font-size: 14px; line-height: 1.5; color: var(--ink-2); text-wrap: pretty; }
+.pl-pr { align-self: start; margin: 22px 0 0; padding-top: 14px; border-top: 1px solid var(--line-2); }
+.pl-pr b { display: block; font: 400 clamp(21px, 1.8vw, 25px)/1.15 var(--serif); letter-spacing: -.025em; color: var(--ink); }
+.pl-pr small { display: block; margin-top: 4px; font-size: 12.5px; line-height: 1.4; color: #8a6d3f; }
+/* narrower screens: the track turns vertical, numbers on a line down the left, each step's text beside it */
+@media (max-width: 1000px) {
+  .pl-ph { display: none; }
+  .pl-st { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; }
+  .pl-st li { grid-row: auto; grid-template-rows: none; grid-template-columns: 40px minmax(0, 1fr); column-gap: 18px; padding-bottom: 34px; }
+  .pl-st li > * { grid-column: 2; }
+  .pl-st li > .pl-n { grid-column: 1; grid-row: 1 / span 6; }
+  .pl-st li::before { top: 48px; bottom: 8px; left: 20px; right: auto; width: 1px; height: auto; transform: scaleY(0); transform-origin: top; }
+  .pl-k { margin-top: 2px; }
+  .pl-pr { max-width: 46ch; margin-top: 16px; padding-top: 12px; }
+  .pl-what { max-width: 60ch; }
+}
+@media (prefers-reduced-motion: reduce) { .pl-st li::before { transform: none !important; transition: none !important; } }
+.pl-note { margin: clamp(24px, 2.6vw, 34px) 0 0; font-size: 13px; line-height: 1.5; color: var(--ink-3); }
 
 .team { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; margin-top: clamp(64px, 8vw, 110px); padding-top: 28px; border-top: 1px solid var(--line); }
 .team p { margin: 0; font-size: 13.5px; color: var(--ink-3); }
@@ -581,14 +607,6 @@ html:has(.app-dlg[open]) { overflow: hidden; }
   .dock-tabs button { padding: 11px 12px 12px; }
   .card-art { min-height: 360px; padding: 20px 12px; }
   .card-h { padding: 22px 20px 18px; }
-  /* the table stacks: step and price on one line, what happens and how long under it */
-  .pl-t thead { display: none; }
-  .pl-t tr { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 16px; padding: 14px 0 16px; border-top: 1px solid var(--line); }
-  .pl-t th, .pl-t td { padding: 0; border: 0; }
-  .pl-t .c0 { grid-row: 1; grid-column: 1; }
-  .pl-t .c3 { grid-row: 1 / span 2; grid-column: 2; }
-  .pl-t .c1 { grid-column: 1 / -1; margin-top: 6px; }
-  .pl-t .c2 { grid-column: 1 / -1; margin-top: 4px; font-size: 13px; }
   .rule { flex-direction: column; gap: 12px; }
   .foot-base { flex-direction: column; }
   .top .lang { display: none; }

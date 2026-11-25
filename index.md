@@ -93,12 +93,12 @@ Beispiel für einen Distributor mit 1,2 Mrd. € Umsatz, 12 % Bruttomarge, 12 % 
 
 | Schritt | Was passiert | Dauer | Preis |
 | --- | --- | --- | --- |
-| Fit-Check | Ein Gespräch über Ihre Eckdaten: Branche, Umsatz, ERP und Vertrieb. Danach ein Vorschlag mit Umfang. | 1 bis 2 Wochen | Kostenlos |
-| Potenzialanalyse | Aus einem lesenden Datenauszug rechnen wir in Euro, was heute verloren geht. Ergebnis: Ausgangslage und Business Case. | 3 Wochen | 20.000 € (voll angerechnet auf den Pilot) |
-| Pilot | Eine Produktfamilie, ein Team, ein Land. Erfolgskriterien vorher schriftlich, danach entscheiden Sie. | 30 Tage | ab 60.000 € (zu 100 % angerechnet auf Jahr 1) |
-| Einführung | Volle Anbindung an ERP, CRM und Postfach im ersten Land, alle Produktfamilien, Schulung Ihres Teams. | 2 bis 3 Monate | 60.000 € (einmalig) |
-| Lizenz | Betrieb, Support und Updates. Bei jeder Verlängerung messen wir den Wert neu. | jährlich | 90.000 € + 15 % (Basis plus Anteil am gemessenen Wert) |
-| Erweiterung | Jedes weitere Land oder jede weitere Gesellschaft mit eigenem ERP. | je Land | + 30.000 € pro Jahr (dazu 20.000 € einmalig) |
+| Schritt 1: Fit-Check | Ein Gespräch über Ihre Eckdaten: Branche, Umsatz, ERP und Vertrieb. Danach ein Vorschlag mit Umfang. | 1 bis 2 Wochen | Kostenlos |
+| Schritt 2: Potenzialanalyse | Aus einem lesenden Datenauszug rechnen wir in Euro, was heute verloren geht. Ergebnis: Ausgangslage und Business Case. | 3 Wochen | 20.000 € (voll angerechnet auf den Pilot) |
+| Schritt 3: Pilot | Eine Produktfamilie, ein Team, ein Land. Erfolgskriterien vorher schriftlich, danach entscheiden Sie. | 30 Tage | ab 60.000 € (zu 100 % angerechnet auf Jahr 1) |
+| Schritt 4: Einführung | Volle Anbindung an ERP, CRM und Postfach im ersten Land, alle Produktfamilien, Schulung Ihres Teams. | 2 bis 3 Monate | 60.000 € (einmalig) |
+| Schritt 5: Lizenz | Betrieb, Support und Updates. Bei jeder Verlängerung messen wir den Wert neu. | jährlich | 90.000 € + 15 % (Basis plus Anteil am gemessenen Wert) |
+| Schritt 6: Erweiterung | Jedes weitere Land oder jede weitere Gesellschaft mit eigenem ERP. | je Land | + 30.000 € pro Jahr (dazu 20.000 € einmalig) |
 
 Alle Preise netto zzgl. MwSt. Ihren Wert und Ihre Lizenz rechnen Sie im Business Case oben.
 
