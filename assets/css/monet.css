@@ -1,0 +1,238 @@
+/* DemandMatch, Monet edition. Loaded last, over site.css / roi.css / systems.css.
+   The paintings carry the colour (soft impressionist, cobalt / violet / viridian / rose / cadmium), the interface stays
+   Apple-quiet: one surface per card, hairlines at half a pixel, large radii, no frames inside frames.
+   Headlines in Schibsted Grotesk, text in Geist. The same five paint colours return in the product's small signals
+   (status dots, chart segments, step numbers), so the UI and the paintings read as one world. */
+
+:root {
+  --serif: 'Schibsted Grotesk', 'Geist', ui-sans-serif, system-ui, sans-serif;
+  --surface: #f5f5f7; --band: #f5f5f7; --paper-2: #f5f5f7; --paper-3: #ebebef;
+  --cobalt: #2c57c9; --cobalt-ink: #1f45a6;
+  --viridian: #0c7c5e; --viridian-ink: #0b6b52;
+  --rose: #d6527c; --rose-ink: #a93a60;
+  --cadmium: #ea8a2c; --cadmium-ink: #9a5410;
+  --violet: #6d4fd0; --violet-ink: #5639b5;
+  --gold: #d9a22a;
+  --hair: 0 0 0 .5px rgb(0 0 0 / .1);
+  --lift: 0 0 0 .5px rgb(0 0 0 / .08), 0 2px 6px rgb(20 30 60 / .05), 0 24px 48px -24px rgb(20 30 60 / .28);
+  --blue: var(--cobalt); --sand: var(--cadmium); --sand-ink: var(--cadmium-ink);
+}
+::selection { background: rgb(44 87 201 / .18); }
+
+/* ------------------------------------------------------------------ type: one grotesk for everything that is said */
+.h1, .h2, .say, .card-h h3 { font-weight: 500; }
+.h1 { letter-spacing: -.04em; line-height: .98; }
+.h2 { letter-spacing: -.04em; line-height: 1.02; }
+.say { font-weight: 500; letter-spacing: -.04em; line-height: 1.04; }
+.card-h h3 { letter-spacing: -.03em; }
+.brand-word { font-weight: 600; font-size: 20px; letter-spacing: -.04em; }
+.sp-lot h2, .faq-i h3, .ge-l h3, .pl-st h3 { font-weight: 500; }
+.faq-i h3 { letter-spacing: -.02em; }
+.sp-t b, .sp-out b, .ui-match-f b, .roi-f b, .pl-pr b { font-weight: 500; letter-spacing: -.035em; }
+.roi-verdict { font-weight: 400; letter-spacing: -.015em; }
+.roi-verdict b { font-weight: 500; }
+.team .av { font-weight: 500; }
+
+/* ------------------------------------------------------------------ cards: ONE surface, image flush to its edges */
+.card { padding: 0; border-radius: 28px; background: var(--surface); box-shadow: none; overflow: hidden; isolation: isolate;
+  transition: transform 500ms var(--ease-out), box-shadow 500ms var(--ease-out); }
+.band .card { background: #fff; }
+.card-core { border-radius: 0; background: none; box-shadow: none; }
+.card-h { padding: 34px 34px 26px; }
+.card-h p { color: var(--ink-2); }
+.card-art { margin: 0; border-radius: 0; min-height: 460px; background: #cdd5ea; }
+.card-art > img { transform: scale(1.08); }
+@media (hover: hover) and (pointer: fine) {
+  .card:hover { transform: translateY(-4px); box-shadow: 0 30px 60px -36px rgb(20 30 60 / .35); }
+  .card:hover .card-art > img { transform: scale(1.035); }
+}
+@media (max-width: 720px) { .card { border-radius: 22px; } .card-h { padding: 24px 22px 20px; } .card-art { min-height: 380px; } }
+
+/* the small product pieces on the paintings: white, half-pixel edge, one soft shadow */
+.ui, .ask { border-radius: 18px; background: rgb(255 255 255 / .94); box-shadow: var(--lift); }
+.card .ui-asks { background: none; box-shadow: none; }
+.ask { border-radius: 16px; }
+.ask-h i { background: var(--viridian); } .ask-h i.blue { background: var(--cobalt); } .ask-h i.sand { background: var(--cadmium); }
+.card.play .ui-src li i { background: var(--viridian); }
+.ui-src li { border-top-color: rgb(0 0 0 / .06); }
+.bar { height: 5px; background: rgb(0 0 0 / .06); }
+.bar i { background: var(--cobalt); }
+.mrow + .mrow .bar i { background: var(--violet); opacity: .55; }
+.mrow em.ok, .b-ink.done { background: rgb(15 138 105 / .12); color: var(--viridian-ink); }
+.btn-soft { background: rgb(0 0 0 / .05); }
+@media (hover: hover) and (pointer: fine) { .btn-soft:hover { background: rgb(0 0 0 / .085); } }
+.b-soft { background: rgb(0 0 0 / .05); }
+.chips span { background: var(--surface); }
+
+/* ------------------------------------------------------------------ hero: the painting brighter, the board in the same quiet glass */
+.ready .gallery-wallpaper img { opacity: 1; }
+.glass { background: rgb(255 255 255 / .82); -webkit-backdrop-filter: blur(20px) saturate(1.6); backdrop-filter: blur(20px) saturate(1.6); box-shadow: var(--lift); }
+.sp-list, .sp-foot { border-radius: 22px; }
+.sp-lot { border-radius: 8px 8px 18px 18px; background: rgb(255 255 255 / .9); box-shadow: var(--lift); }
+.sp-row { border-radius: 14px; }
+.sp-row + .sp-row { box-shadow: 0 -.5px 0 rgb(0 0 0 / .1); }
+.sp-pin { box-shadow: 0 0 0 1.5px var(--cobalt); }
+.sp-row.maybe .sp-pin { box-shadow: 0 0 0 1.5px var(--cadmium); }
+.sp-row.fit em { background: rgb(15 138 105 / .12); color: var(--viridian-ink); }
+.sp-row.maybe em { background: rgb(234 138 44 / .16); color: var(--cadmium-ink); }
+.sp-row.no em { background: rgb(0 0 0 / .05); }
+.sp-flow .ln.fit { stroke: rgb(44 87 201 / .8); }
+.sp-flow .ln.maybe { stroke: rgb(234 138 44 / .85); }
+.sp-flow .pel { stroke: var(--cobalt); stroke-width: 1.4; }
+.sp-flow .pel.maybe { stroke: var(--cadmium); }
+.sp-lot .sp-k { color: var(--cadmium-ink); background: rgb(234 138 44 / .16); box-shadow: inset 0 0 0 .5px rgb(154 84 16 / .35); }
+.sp-lot .sp-k::before { background: var(--cadmium); box-shadow: 0 0 0 3px rgb(234 138 44 / .2); }
+
+/* ------------------------------------------------------------------ systems: the painting in its own colour, also while off */
+.sy-art { filter: saturate(.75) brightness(.97); }
+.sy-stage { border-radius: 28px; }
+
+/* ------------------------------------------------------------------ business case: five clearly different paint colours, thicker bars */
+.roi-in { border-radius: 24px; background: var(--surface); }
+.roi-out { border-radius: 24px; background: #c9d3ec; }
+.roi-memo { border-radius: 18px; box-shadow: var(--lift); }
+.roi-bar { gap: 3px; height: 8px; border-radius: 0; background: none; overflow: visible; }
+.roi-bar i { border-radius: 99px; min-width: 0; }
+.roi-bar i:nth-child(1), .roi-leg .c0, .roi-leg .s0 { background: var(--viridian); }
+.roi-split .roi-bar i:nth-child(2), .roi-leg .s1 { background: var(--violet); }
+.roi-src i:nth-child(1), .roi-leg .c0 { background: var(--cobalt); }
+.roi-src i:nth-child(2), .roi-leg .c1 { background: var(--rose); }
+.roi-src i:nth-child(3), .roi-leg .c2 { background: var(--gold); }
+.roi-leg i { width: 10px; height: 10px; border-radius: 3px; }
+.roi-leg li { grid-template-columns: 10px 1fr auto; }
+.roi-sw input:checked + span { background: #34c759; }
+.roi-seg { background: rgb(0 0 0 / .06); }
+.roi-in .roi-seg { background: rgb(0 0 0 / .06); }
+.roi-r input[type="range"]::-webkit-slider-runnable-track { background: linear-gradient(to right, var(--cobalt) var(--p), rgb(0 0 0 / .1) var(--p)); }
+.roi-r input[type="range"]::-moz-range-progress { background: var(--cobalt); }
+.roi-r input[type="range"]::-webkit-slider-thumb { width: 18px; height: 18px; margin-top: -8px; background: #fff; box-shadow: 0 0 0 .5px rgb(0 0 0 / .12), 0 2px 6px rgb(0 0 0 / .18); }
+.roi-r input[type="range"]::-moz-range-thumb { width: 18px; height: 18px; background: #fff; box-shadow: 0 0 0 .5px rgb(0 0 0 / .12), 0 2px 6px rgb(0 0 0 / .18); }
+.roi-r input[type="range"]:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 .5px rgb(0 0 0 / .12), 0 0 0 4px rgb(44 87 201 / .3); }
+
+/* ------------------------------------------------------------------ every step, every price
+   A painted band runs edge to edge behind the heading; the steps stand on it as cards. Two groups: getting started
+   (steps 1 to 4, cobalt) in four columns, running (license and expansion, viridian) as two wide cards below. */
+.pilot { position: relative; isolation: isolate; }
+.pl-art { position: absolute; z-index: -1; top: 0; left: 50%; width: 100vw; margin-left: -50vw; height: clamp(520px, 52vw, 760px); overflow: hidden; pointer-events: none;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0, rgb(0 0 0 / .5) 14%, #000 34%, #000 62%, transparent 100%);
+  mask-image: linear-gradient(180deg, transparent 0, rgb(0 0 0 / .5) 14%, #000 34%, #000 62%, transparent 100%); }
+.pl-art img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
+.pilot-h .h2 { max-width: 16ch; }
+.pl-path { --g: 14px; display: grid; gap: clamp(28px, 3vw, 40px); margin-top: clamp(150px, 16vw, 260px); }
+.pl-grp { --c: var(--cobalt); --c-ink: var(--cobalt-ink); --c-soft: rgb(44 87 201 / .1); }
+.pl-grp + .pl-grp { --c: var(--viridian); --c-ink: var(--viridian-ink); --c-soft: rgb(15 138 105 / .11); }
+.pl-ph { display: inline-flex; align-items: center; gap: 9px; margin: 0 0 14px; padding: 8px 14px 8px 12px; border-radius: 99px; font: 500 13.5px/1 var(--font); color: var(--ink);
+  background: rgb(255 255 255 / .9); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); box-shadow: var(--hair); }
+.pl-ph::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
+.pl-st { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: none; gap: var(--g); margin: 0; padding: 0; list-style: none; font-variant-numeric: lining-nums tabular-nums; }
+.pl-st li { position: relative; display: flex; flex-direction: column; grid-row: auto; padding: 26px 24px 24px; border-radius: 26px;
+  background: rgb(255 255 255 / .9); -webkit-backdrop-filter: blur(24px) saturate(1.6); backdrop-filter: blur(24px) saturate(1.6); box-shadow: var(--lift);
+  transition: opacity 800ms var(--ease-out), transform 900ms var(--ease-out), box-shadow 400ms var(--ease-out);
+  transition-delay: calc(150ms + var(--i) * 90ms); }
+.ready .pl-path:not(.in) .pl-st li { opacity: 0; transform: translateY(24px); }
+.pl-st li::before { content: none; }
+@media (hover: hover) and (pointer: fine) {
+  .pl-path.in .pl-st li:hover { transform: translateY(-4px); transition-delay: 0ms; box-shadow: 0 0 0 .5px rgb(0 0 0 / .08), 0 34px 60px -28px rgb(20 30 60 / .4); }
+}
+.pl-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.pl-n { display: inline-flex; width: auto; height: 32px; padding: 0 13px; border-radius: 99px; background: var(--c); color: #fff; font: 500 14px/1 var(--font); letter-spacing: 0; white-space: nowrap; }
+.pl-st li:nth-child(n+5) .pl-n, .pl-grp + .pl-grp .pl-n { background: var(--c); color: #fff; box-shadow: none; border-radius: 99px; }
+.pl-dur { margin: 0; padding: 6px 11px 6px 9px; border-radius: 99px; background: var(--c-soft); color: var(--c-ink); font: 500 12.5px/1 var(--font); white-space: nowrap; }
+.pl-dur i { color: var(--c-ink); font-size: 14px; }
+.pl-st h3 { margin-top: 26px; font-size: clamp(22px, 1.8vw, 26px); letter-spacing: -.03em; hyphens: manual; }
+.pl-what { flex: 1; margin-top: 10px; color: var(--ink-2); }
+.pl-pr { align-self: stretch; margin-top: 22px; padding-top: 16px; border-top: .5px solid rgb(0 0 0 / .12); }
+.pl-pr b { font-size: clamp(22px, 1.9vw, 27px); }
+.pl-pr small { color: var(--c-ink); font-weight: 500; }
+/* running: two wide cards, the price to the right of the text */
+.pl-grp + .pl-grp .pl-st { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 1101px) {
+  .pl-grp + .pl-grp .pl-st li { display: grid; grid-template-columns: minmax(0, 1fr) max-content; grid-template-rows: auto auto 1fr; column-gap: 28px; }
+  .pl-grp + .pl-grp .pl-st li > .pl-top { grid-area: 1 / 1 / 2 / 3; }
+  .pl-grp + .pl-grp .pl-st li > h3 { grid-area: 2 / 1; } .pl-grp + .pl-grp .pl-st li > .pl-what { grid-area: 3 / 1; }
+  .pl-grp + .pl-grp .pl-st li > .pl-pr { grid-area: 2 / 2 / 4 / 3; align-self: end; margin: 26px 0 0; padding: 0 0 2px 24px; white-space: nowrap; border-top: 0; border-left: .5px solid rgb(0 0 0 / .12); }
+}
+.pl-note { margin-top: 4px; }
+@media (max-width: 1100px) {
+  .pl-st { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 1000px) {
+  .pl-st li { display: flex; grid-template-columns: none; padding-bottom: 24px; }
+  .pl-st li > * { grid-column: auto; }
+  .pl-st li > .pl-n { grid-row: auto; }
+  .pl-ph { display: flex; }
+}
+@media (max-width: 640px) {
+  .pl-st, .pl-grp + .pl-grp .pl-st { grid-template-columns: minmax(0, 1fr); }
+  .pl-path { margin-top: clamp(110px, 30vw, 180px); }
+}
+@media (prefers-reduced-motion: reduce) { .pl-st li { opacity: 1; transform: none !important; transition: none !important; } }
+
+.team a:hover { background: rgb(0 0 0 / .05); }
+.team .av { background: var(--surface); }
+.band .team .av { background: #fff; }
+
+/* ------------------------------------------------------------------ germany: six points as one Apple-style feature viewer.
+   Left the six names (hover or click), right a large painting that pans to a new place for each point, with the
+   point's text on a glass card. Keyboard: arrow keys move between the names. Narrow screens: all six as cards. */
+.ge { display: grid; grid-template-columns: minmax(260px, 5fr) minmax(0, 8fr); gap: clamp(20px, 3vw, 48px); margin-top: clamp(40px, 5vw, 64px); align-items: stretch; }
+.ge-tabs { display: flex; flex-direction: column; justify-content: center; gap: 2px; }
+.ge-tab { --c: var(--cobalt); position: relative; display: flex; align-items: center; gap: 16px; width: 100%; padding: 14px 18px; border: 0; border-radius: 18px;
+  background: none; text-align: left; cursor: pointer; color: var(--ink-3); -webkit-tap-highlight-color: transparent;
+  transition: background-color 300ms var(--ease-out), color 300ms ease, transform 140ms var(--ease-out); }
+.ge-tab:active { transform: scale(.985); }
+.ge-tab i { display: grid; place-items: center; flex: none; width: 40px; height: 40px; border-radius: 12px; font-size: 21px; color: var(--ink-3);
+  background: rgb(0 0 0 / .04); transition: background-color 300ms ease, color 300ms ease; }
+.ge-tab span { font: 500 clamp(20px, 1.9vw, 26px)/1.15 var(--serif); letter-spacing: -.03em; }
+.ge-tab[aria-selected="true"] { background: #fff; color: var(--ink); box-shadow: var(--lift); }
+.ge-tab[aria-selected="true"] i { background: var(--c); color: #fff; }
+@media (hover: hover) and (pointer: fine) { .ge-tab:not([aria-selected="true"]):hover { color: var(--ink); background: rgb(255 255 255 / .6); } }
+.ge-tab:focus-visible { outline: 2px solid var(--c); outline-offset: 2px; }
+.ge-tab:nth-child(2), .ge-p:nth-of-type(2) { --c: var(--viridian); } .ge-tab:nth-child(3), .ge-p:nth-of-type(3) { --c: var(--violet); }
+.ge-tab:nth-child(4), .ge-p:nth-of-type(4) { --c: var(--rose); } .ge-tab:nth-child(5), .ge-p:nth-of-type(5) { --c: var(--cadmium); } .ge-tab:nth-child(6), .ge-p:nth-of-type(6) { --c: var(--gold); }
+
+.ge-stage { position: relative; min-height: clamp(520px, 44vw, 640px); border-radius: 32px; overflow: hidden; isolation: isolate; background: #9fb3d9; }
+.ge-art { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%;
+  transform-origin: var(--pan, 20% 40%); transform: scale(var(--zoom, 1.18));
+  transition: transform-origin 1800ms var(--ease-out), transform 1800ms var(--ease-out); }
+.ge-p { --c: var(--cobalt); position: absolute; left: clamp(14px, 2vw, 24px); right: clamp(14px, 2vw, 24px); bottom: clamp(14px, 2vw, 24px); max-width: 560px;
+  padding: 26px 28px 28px; border-radius: 22px; background: rgb(255 255 255 / .86); -webkit-backdrop-filter: blur(24px) saturate(1.6); backdrop-filter: blur(24px) saturate(1.6);
+  box-shadow: var(--lift); opacity: 0; transform: translateY(14px); visibility: hidden;
+  transition: opacity 450ms var(--ease-out), transform 600ms var(--ease-out), visibility 0s linear 450ms; }
+.ge-p.on { opacity: 1; transform: none; visibility: visible; transition-delay: 120ms, 120ms, 0s; }
+.ge-p i { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 13px; background: var(--c); color: #fff; font-size: 23px; }
+.ge-p h3 { margin: 18px 0 0; font: 500 clamp(24px, 2.2vw, 32px)/1.1 var(--serif); letter-spacing: -.035em; color: var(--ink); }
+.ge-p p { margin: 10px 0 0; font-size: 15.5px; line-height: 1.55; color: var(--ink-2); text-wrap: pretty; }
+/* no script: the viewer is not built, all six stay as cards */
+.ge:not(.js) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.ge:not(.js) .ge-tabs { display: none; }
+.ge:not(.js) .ge-stage { display: contents; }
+.ge:not(.js) .ge-art { display: none; }
+.ge:not(.js) .ge-p { position: static; max-width: none; opacity: 1; transform: none; visibility: visible; background: #fff; }
+@media (max-width: 900px) {
+  .ge.js { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .ge.js .ge-tabs { flex-direction: row; justify-content: flex-start; gap: 6px; margin: 0 calc(-1 * var(--gut)); padding: 4px var(--gut) 8px;
+    overflow-x: auto; scroll-snap-type: x proximity; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .ge.js .ge-tabs::-webkit-scrollbar { display: none; }
+  .ge.js .ge-tab { flex: none; width: auto; gap: 10px; padding: 8px 14px 8px 8px; border-radius: 99px; scroll-snap-align: start; background: rgb(255 255 255 / .7); }
+  .ge.js .ge-tab i { width: 30px; height: 30px; border-radius: 99px; font-size: 17px; }
+  .ge.js .ge-tab span { font-size: 16px; white-space: nowrap; }
+  .ge.js .ge-stage { min-height: 0; display: grid; padding: 210px 10px 10px; border-radius: 26px; }
+  .ge.js .ge-art { height: 100%; }
+  .ge.js .ge-p { grid-area: 1 / 1; position: relative; left: auto; right: auto; bottom: auto; max-width: none; padding: 22px 20px 24px; }
+}
+@media (prefers-reduced-motion: reduce) { .ge-art, .ge-p { transition: opacity 200ms ease !important; } }
+
+/* ------------------------------------------------------------------ faq + footer: half-pixel hairlines */
+.faq-l, .faq-i { border-color: rgb(0 0 0 / .1); }
+.foot, .foot-base, .team { border-color: rgb(0 0 0 / .08); }
+
+/* the new paintings keep their subject in the upper part, so the product pieces sit low on the card */
+.card-c .card-art, .card-w .card-art { place-items: end center; padding-top: 140px; padding-bottom: 28px; }
+.card-c .card-art > img { object-position: 45% 10%; }
+
+/* the close gets the same room above it as every other section, so its sentence does not sit on the band's edge */
+@media screen { .close-in { padding-top: var(--sec-y); } }
+
+/* business case: the painting shows above the memo on every width, so its silos are seen, not only its edge */
+@media (min-width: 1001px) { .roi-out { padding-top: clamp(150px, 13vw, 220px); } .roi-art { object-position: 50% 0%; } }

@@ -25,7 +25,7 @@
 <link rel="icon" href="../assets/logo/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600&display=swap">
 <link rel="preload" href="../assets/fonts/Geist-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" href="../assets/art/unloading-1536.webp" imagesrcset="../assets/art/unloading-640.webp 640w, ../assets/art/unloading-1024.webp 1024w, ../assets/art/unloading-1536.webp 1536w" imagesizes="100vw" fetchpriority="high">
 <script type="application/ld+json">
@@ -435,6 +435,7 @@
 <link rel="stylesheet" href="../assets/app/ae.css?v=27780c25">
 <link rel="stylesheet" href="../assets/app/gantt.css?v=93a75ad0">
 <link rel="stylesheet" href="../assets/css/site.css?v=0dae5c35">
+<link rel="stylesheet" href="../assets/css/monet.css?v=2398e295">
 </head>
 <body>
 <a class="skip" href="#main" data-t="skip">Skip to content</a>
@@ -618,19 +619,23 @@
 
   <!-- PILOT: every step from the fit check to expansion, each with its price (rendered by the build from T.st_rows) -->
   <section class="pilot wrap band" id="pilot">
+    <div class="pl-art" aria-hidden="true"><img src="../assets/art/pipeline-1536.webp" srcset="../assets/art/pipeline-1024.webp 1024w, ../assets/art/pipeline-1536.webp 1536w" sizes="100vw" alt="" loading="lazy" decoding="async"></div>
     <div class="pilot-h">
       <h2 class="h2 rv" data-th="st_h">Every step, every price.</h2>
     </div>
     <div class="pl-path rv">
-      <div class="pl-ph" aria-hidden="true"><span>Getting started</span><span>Running</span></div>
-      <ol class="pl-st">
-        <li style="--i:0"><span class="pl-n" aria-hidden="true">1</span><small class="pl-k">Step 1</small><h3>Fit check</h3><p class="pl-dur"><i class="ph-light ph-clock" aria-hidden="true"></i>1 to 2 weeks</p><p class="pl-what">A call about your key facts: industry, revenue, ERP and sales team. Then a proposal with the scope.</p><p class="pl-pr"><b>Free</b></p></li>
-        <li style="--i:1"><span class="pl-n" aria-hidden="true">2</span><small class="pl-k">Step 2</small><h3>Value assessment</h3><p class="pl-dur"><i class="ph-light ph-clock" aria-hidden="true"></i>3 weeks</p><p class="pl-what">From a read-only data extract we calculate, in money, what is lost today. Result: the baseline and the business case.</p><p class="pl-pr"><b>€20,000</b><small>credited in full to the pilot</small></p></li>
-        <li style="--i:2"><span class="pl-n" aria-hidden="true">3</span><small class="pl-k">Step 3</small><h3>Pilot</h3><p class="pl-dur"><i class="ph-light ph-clock" aria-hidden="true"></i>30 days</p><p class="pl-what">One product family, one team, one country. Success criteria in writing upfront, then you decide.</p><p class="pl-pr"><b>from €60,000</b><small>credited 100% to year one</small></p></li>
-        <li style="--i:3"><span class="pl-n" aria-hidden="true">4</span><small class="pl-k">Step 4</small><h3>Implementation</h3><p class="pl-dur"><i class="ph-light ph-clock" aria-hidden="true"></i>2 to 3 months</p><p class="pl-what">Full connection to ERP, CRM and inbox in the first country, every product family, training for your team.</p><p class="pl-pr"><b>€60,000</b><small>one-time</small></p></li>
-        <li style="--i:4"><span class="pl-n" aria-hidden="true">5</span><small class="pl-k">Step 5</small><h3>License</h3><p class="pl-dur"><i class="ph-light ph-arrows-clockwise" aria-hidden="true"></i>yearly</p><p class="pl-what">Running, support and updates. At every renewal we measure the value again.</p><p class="pl-pr"><b>€90,000 + 15%</b><small>base plus a share of the measured value</small></p></li>
-        <li style="--i:5"><span class="pl-n" aria-hidden="true">6</span><small class="pl-k">Step 6</small><h3>Expansion</h3><p class="pl-dur"><i class="ph-light ph-globe-simple" aria-hidden="true"></i>per country</p><p class="pl-what">Each further country or company with its own ERP.</p><p class="pl-pr"><b>+ €30,000 a year</b><small>plus €20,000 one-time</small></p></li>
-      </ol>
+      <div class="pl-grp"><p class="pl-ph">Getting started</p>
+        <ol class="pl-st">
+          <li style="--i:0"><div class="pl-top"><span class="pl-n">Step 1</span><p class="pl-dur"><i class="ph-light ph-clock" aria-hidden="true"></i>1 to 2 weeks</p></div><h3>Fit check</h3><p class="pl-what">A call about your key facts: industry, revenue, ERP and sales team. Then a proposal with the scope.</p><p class="pl-pr"><b>Free</b></p></li>
+          <li style="--i:1"><div class="pl-top"><span class="pl-n">Step 2</span><p class="pl-dur"><i class="ph-light ph-clock" aria-hidden="true"></i>3 weeks</p></div><h3>Value assessment</h3><p class="pl-what">From a read-only data extract we calculate, in money, what is lost today. Result: the baseline and the business case.</p><p class="pl-pr"><b>€20,000</b><small>credited in full to the pilot</small></p></li>
+          <li style="--i:2"><div class="pl-top"><span class="pl-n">Step 3</span><p class="pl-dur"><i class="ph-light ph-clock" aria-hidden="true"></i>30 days</p></div><h3>Pilot</h3><p class="pl-what">One product family, one team, one country. Success criteria in writing upfront, then you decide.</p><p class="pl-pr"><b>from €60,000</b><small>credited 100% to year one</small></p></li>
+          <li style="--i:3"><div class="pl-top"><span class="pl-n">Step 4</span><p class="pl-dur"><i class="ph-light ph-clock" aria-hidden="true"></i>2 to 3 months</p></div><h3>Implementation</h3><p class="pl-what">Full connection to ERP, CRM and inbox in the first country, every product family, training for your team.</p><p class="pl-pr"><b>€60,000</b><small>one-time</small></p></li>
+        </ol></div>
+      <div class="pl-grp"><p class="pl-ph">Running</p>
+        <ol class="pl-st" start="5">
+          <li style="--i:4"><div class="pl-top"><span class="pl-n">Step 5</span><p class="pl-dur"><i class="ph-light ph-arrows-clockwise" aria-hidden="true"></i>yearly</p></div><h3>License</h3><p class="pl-what">Running, support and updates. At every renewal we measure the value again.</p><p class="pl-pr"><b>€90,000 + 15%</b><small>base plus a share of the measured value</small></p></li>
+          <li style="--i:5"><div class="pl-top"><span class="pl-n">Step 6</span><p class="pl-dur"><i class="ph-light ph-globe-simple" aria-hidden="true"></i>per country</p></div><h3>Expansion</h3><p class="pl-what">Each further country or company with its own ERP.</p><p class="pl-pr"><b>+ €30,000 a year</b><small>plus €20,000 one-time</small></p></li>
+        </ol></div>
       <p class="pl-note">All prices net, excl. VAT. In the US the same prices apply in dollars × 1.1, excl. sales tax. Work out your value and your license in the business case above.</p>
     </div>
     <div class="team rv">
@@ -662,16 +667,27 @@
        inbox, one country first, the price in steps), so it is in the plan from the start. Rendered by the build from T.ge_items -->
   <section class="germany wrap band" id="germany">
     <div class="sec-h">
-      <h2 class="h2 rv" data-th="ge_h">Built for German companies.<br><span class="mute">Works council and data protection planned in.</span></h2>
+      <h2 class="h2 rv" id="ge-h" data-th="ge_h">Built for German companies.<br><span class="mute">Works council and data protection planned in.</span></h2>
     </div>
-    <ul class="ge-l">
-      <li class="rv" style="--d:0"><i class="ph-light ph-users-three" aria-hidden="true"></i><h3>Works council</h3><p>In Germany, software that shows what individual employees do needs the works council's agreement. We give you an information pack: which data DemandMatch uses, who sees what, and why. We plan 4 to 8 weeks for it, alongside the value assessment.</p></li>
-      <li class="rv" style="--d:1"><i class="ph-light ph-shield-check" aria-hidden="true"></i><h3>Data protection</h3><p>A data processing agreement under Art. 28 GDPR, the details for your record of processing and, where needed, the documents for a data protection impact assessment. Where the data is processed is written into the contract. Your data protection officer has it all before the pilot.</p></li>
-      <li class="rv" style="--d:2"><i class="ph-light ph-lock-key" aria-hidden="true"></i><h3>IT security</h3><p>We answer your security questionnaire and show that access is read-only. We set up accounts and rights with your IT and document every connection.</p></li>
-      <li class="rv" style="--d:0"><i class="ph-light ph-envelope-simple" aria-hidden="true"></i><h3>Inbox</h3><p>We only read the mailboxes and folders you release, such as the sales inbox. If private use of email is allowed, we clear that first with data protection and the works council.</p></li>
-      <li class="rv" style="--d:1"><i class="ph-light ph-map-pin" aria-hidden="true"></i><h3>One country first</h3><p>We start where your ERP already runs, usually Germany. Other countries and newly acquired companies follow, one at a time.</p></li>
-      <li class="rv" style="--d:2"><i class="ph-light ph-stairs" aria-hidden="true"></i><h3>Price in steps</h3><p>The license grows with the scope: one country first, then the group. Each step fits your budget and your approvals, and the decision rests on measured numbers.</p></li>
-    </ul>
+    <div class="ge" data-ge>
+      <div class="ge-tabs" role="tablist" aria-labelledby="ge-h">
+        <button class="ge-tab" type="button" role="tab" id="ge-t0" aria-controls="ge-p0" aria-selected="true" tabindex="0"><i class="ph-light ph-users-three" aria-hidden="true"></i><span>Works council</span></button>
+        <button class="ge-tab" type="button" role="tab" id="ge-t1" aria-controls="ge-p1" aria-selected="false" tabindex="-1"><i class="ph-light ph-shield-check" aria-hidden="true"></i><span>Data protection</span></button>
+        <button class="ge-tab" type="button" role="tab" id="ge-t2" aria-controls="ge-p2" aria-selected="false" tabindex="-1"><i class="ph-light ph-lock-key" aria-hidden="true"></i><span>IT security</span></button>
+        <button class="ge-tab" type="button" role="tab" id="ge-t3" aria-controls="ge-p3" aria-selected="false" tabindex="-1"><i class="ph-light ph-envelope-simple" aria-hidden="true"></i><span>Inbox</span></button>
+        <button class="ge-tab" type="button" role="tab" id="ge-t4" aria-controls="ge-p4" aria-selected="false" tabindex="-1"><i class="ph-light ph-map-pin" aria-hidden="true"></i><span>One country first</span></button>
+        <button class="ge-tab" type="button" role="tab" id="ge-t5" aria-controls="ge-p5" aria-selected="false" tabindex="-1"><i class="ph-light ph-stairs" aria-hidden="true"></i><span>Price in steps</span></button>
+      </div>
+      <div class="ge-stage">
+        <img class="ge-art" src="../assets/art/rhine-works-1536.webp" srcset="../assets/art/rhine-works-1024.webp 1024w, ../assets/art/rhine-works-1536.webp 1536w" sizes="(max-width: 900px) 100vw, 60vw" alt="" loading="lazy" decoding="async">
+        <div class="ge-p on" role="tabpanel" id="ge-p0" aria-labelledby="ge-t0"><i class="ph-light ph-users-three" aria-hidden="true"></i><h3>Works council</h3><p>In Germany, software that shows what individual employees do needs the works council's agreement. We give you an information pack: which data DemandMatch uses, who sees what, and why. We plan 4 to 8 weeks for it, alongside the value assessment.</p></div>
+        <div class="ge-p" role="tabpanel" id="ge-p1" aria-labelledby="ge-t1"><i class="ph-light ph-shield-check" aria-hidden="true"></i><h3>Data protection</h3><p>A data processing agreement under Art. 28 GDPR, the details for your record of processing and, where needed, the documents for a data protection impact assessment. Where the data is processed is written into the contract. Your data protection officer has it all before the pilot.</p></div>
+        <div class="ge-p" role="tabpanel" id="ge-p2" aria-labelledby="ge-t2"><i class="ph-light ph-lock-key" aria-hidden="true"></i><h3>IT security</h3><p>We answer your security questionnaire and show that access is read-only. We set up accounts and rights with your IT and document every connection.</p></div>
+        <div class="ge-p" role="tabpanel" id="ge-p3" aria-labelledby="ge-t3"><i class="ph-light ph-envelope-simple" aria-hidden="true"></i><h3>Inbox</h3><p>We only read the mailboxes and folders you release, such as the sales inbox. If private use of email is allowed, we clear that first with data protection and the works council.</p></div>
+        <div class="ge-p" role="tabpanel" id="ge-p4" aria-labelledby="ge-t4"><i class="ph-light ph-map-pin" aria-hidden="true"></i><h3>One country first</h3><p>We start where your ERP already runs, usually Germany. Other countries and newly acquired companies follow, one at a time.</p></div>
+        <div class="ge-p" role="tabpanel" id="ge-p5" aria-labelledby="ge-t5"><i class="ph-light ph-stairs" aria-hidden="true"></i><h3>Price in steps</h3><p>The license grows with the scope: one country first, then the group. Each step fits your budget and your approvals, and the decision rests on measured numbers.</p></div>
+      </div>
+    </div>
   </section>
 
   <!-- CLOSE: one sentence, one button, the last painting -->
@@ -721,8 +737,9 @@
 <script src="../assets/app/app.js?v=376f35ef"></script>
 <script src="../assets/js/systems.js?v=04cfc745"></script>
 <script src="../assets/js/stage.js?v=49cb733a"></script>
-<script src="../assets/js/surplus.js?v=2bca5a12"></script>
+<script src="../assets/js/surplus.js?v=a53b309f"></script>
 <script src="../assets/js/pricing.js?v=b378a930"></script><!-- the price config the business case uses -->
 <script src="../assets/js/roi.js?v=91215b75"></script>
+<script src="../assets/js/monet.js?v=a0bc6b14"></script>
 </body>
 </html>
