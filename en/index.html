@@ -429,13 +429,12 @@
 }
 </script>
 <link rel="stylesheet" href="../assets/css/systems.css?v=dd639c92">
-<link rel="stylesheet" href="../assets/css/custom.css?v=59999fb2">
 <link rel="stylesheet" href="../assets/css/roi.css?v=d7a66eef">
 <link rel="stylesheet" href="../assets/icons/style.css?v=2a36dc2a">
 <link rel="stylesheet" href="../assets/app/app.css?v=a8d8a2b7">
 <link rel="stylesheet" href="../assets/app/ae.css?v=27780c25">
 <link rel="stylesheet" href="../assets/app/gantt.css?v=93a75ad0">
-<link rel="stylesheet" href="../assets/css/site.css?v=40d67c5c">
+<link rel="stylesheet" href="../assets/css/site.css?v=595ee7ca">
 </head>
 <body>
 <a class="skip" href="#main" data-t="skip">Skip to content</a>
@@ -620,24 +619,12 @@
     <details class="roi-how"><summary data-t="roi_how">How we calculate</summary><ol><li>Gross profit from captured requests = revenue × extra revenue % × gross margin.</li><li>Margin uplift = revenue × margin points.</li><li>Lower holding cost = revenue × stock % × share sold earlier × holding cost. The capital released and avoided write-downs are not counted.</li><li>Value per year = (gross profit from captured requests + margin uplift + lower holding cost) × share of the business run through DemandMatch.</li><li>Freed capacity = people × time freed × cost per person. It only counts if you include it.</li><li>Year 1 brings 50% of the value (ramp-up), years 2 and 3 bring 100% each.</li><li>License per year = base (€90,000 for the first company, €30,000 for each further one) + 15% of the conservative value, at most a third of that value. If your own assumptions are below the conservative case, yours apply. Freed capacity never counts.</li><li>In year one the license counts half the value, as the ramp-up does. Setup €60,000 one-time, €20,000 for each further company.</li><li>Cost in year 1 = year-one license + setup + own effort (days × €800). Years 2 and 3 = license. The pilot is credited to year 1.</li><li>3-year ROI = (3-year value − 3-year cost) ÷ 3-year cost. Payback = the month in which cumulative value exceeds cumulative cost.</li></ol></details>
   </section>
 
-  <!-- CUSTOM: base product + customisation = your solution, an app that assembles (custom.js). Sits right before the pilot -->
-  <section class="sec-custom" id="custom"><div class="wrap"><h2 class="h2">We start from the base product.<br><span class="mute">Your solution is built around your company.</span></h2></div></section>
-
-  <!-- PILOT: thirty days as three steps written into the sky of a painting of three river locks (pilot-locks); the steps
-       come in one after another, left to right, the way a barge passes the gates -->
+  <!-- PILOT: every step from the fit check to expansion, each with its price (rendered by the build from T.st_rows) -->
   <section class="pilot wrap" id="pilot">
     <div class="pilot-h">
-      <h2 class="h2 rv" data-th="p_h">Live in 30 days.<br><span class="mute">With your real data.</span></h2>
+      <h2 class="h2 rv" data-th="st_h">Every step, every price.</h2>
     </div>
-    <div class="pl-stage" data-play>
-      <img class="pl-art" src="../assets/art/pilot-locks.jpg" alt="" loading="lazy" decoding="async">
-      <ol class="pl-steps">
-        <li style="--i:0"><small data-t="p1_w">Week 1</small><h3 data-t="p1_h">Connect</h3><p data-t="p1_p">Read-only access to ERP, CRM and inbox. Your data stays where it is.</p></li>
-        <li style="--i:1"><small data-t="p2_w">Week 2</small><h3 data-t="p2_h">Match</h3><p data-t="p2_p">Your real requests against your real stock, with your rules on margin and customers.</p></li>
-        <li style="--i:2"><small data-t="p3_w">Weeks 3 and 4</small><h3 data-t="p3_h">Work</h3><p data-t="p3_p">Your team works with it and approves. Together we measure what it brings.</p></li>
-      </ol>
-    </div>
-    <div class="pl-path rv"><h3>Every step, every price.</h3>
+    <div class="pl-path rv">
       <table class="pl-t"><thead><tr><th scope="col" class="c0">Step</th><th scope="col" class="c1">What happens</th><th scope="col" class="c2">Duration</th><th scope="col" class="c3">Price</th></tr></thead><tbody>
         <tr><th scope="row" class="c0">Fit check</th><td class="c1">A call about your key facts: industry, revenue, ERP and sales team. Then a proposal with the scope.</td><td class="c2">1 to 2 weeks</td><td class="c3"><b>Free</b></td></tr>
         <tr><th scope="row" class="c0">Value assessment</th><td class="c1">From a read-only data extract we calculate, in money, what is lost today. Result: the baseline and the business case.</td><td class="c2">3 weeks</td><td class="c3"><b>€20,000</b><small>credited in full to the pilot</small></td></tr>
@@ -712,7 +699,7 @@
 </footer>
 
 <script>window.SHARED_BASE = '../assets/';</script>
-<script src="../assets/js/site.js?v=09567dd2"></script>
+<script src="../assets/js/site.js?v=16323882"></script>
 <script src="../assets/app/engine.js?v=8505b732"></script>
 <script src="../assets/app/sample.js?v=45050d6c"></script>
 <script src="../assets/app/gantt.js?v=104f4347"></script>
@@ -721,7 +708,6 @@
 <script src="../assets/js/systems.js?v=8d6f148d"></script>
 <script src="../assets/js/stage.js?v=49cb733a"></script>
 <script src="../assets/js/surplus.js?v=2bca5a12"></script>
-<script src="../assets/js/custom.js?v=68f6af62"></script>
 <script src="../assets/js/pricing.js?v=b378a930"></script><!-- the price config the business case uses -->
 <script src="../assets/js/roi.js?v=90241ccd"></script>
 </body>

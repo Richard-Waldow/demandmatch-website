@@ -89,19 +89,7 @@ Example for a distributor with €1.2bn revenue, 12% gross margin, stock at 12% 
 - Cost in year 1 = year-one license + setup + own effort (days × €800). Years 2 and 3 = license. The pilot is credited to year 1.
 - 3-year ROI = (3-year value − 3-year cost) ÷ 3-year cost. Payback = the month in which cumulative value exceeds cumulative cost.
 
-## Base product + customisation
-
-We start from the base product. Your solution is built around your company.
-
-## Live in 30 days. With your real data.
-
-No system change, no big project. We connect read-only and work alongside your team.
-
-- **Week 1, Connect**: Read-only access to ERP, CRM and inbox. Your data stays where it is.
-- **Week 2, Match**: Your real requests against your real stock, with your rules on margin and customers.
-- **Weeks 3 and 4, Work**: Your team works with it and approves. Together we measure what it brings.
-
-### Every step, every price.
+## Every step, every price.
 
 | Step | What happens | Duration | Price |
 | --- | --- | --- | --- |

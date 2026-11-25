@@ -89,19 +89,7 @@ Example for a distributor with €1.2bn revenue, 12% gross margin, stock at 12% 
 - Cost in year 1 = year-one license + setup + own effort (days × €800). Years 2 and 3 = license. The pilot is credited to year 1.
 - 3-year ROI = (3-year value − 3-year cost) ÷ 3-year cost. Payback = the month in which cumulative value exceeds cumulative cost.
 
-## Base product + customisation
-
-We start from the base product. Your solution is built around your company.
-
-## Live in 30 days. With your real data.
-
-No system change, no big project. We connect read-only and work alongside your team.
-
-- **Week 1, Connect**: Read-only access to ERP, CRM and inbox. Your data stays where it is.
-- **Week 2, Match**: Your real requests against your real stock, with your rules on margin and customers.
-- **Weeks 3 and 4, Work**: Your team works with it and approves. Together we measure what it brings.
-
-### Every step, every price.
+## Every step, every price.
 
 | Step | What happens | Duration | Price |
 | --- | --- | --- | --- |
@@ -260,19 +248,7 @@ Beispiel für einen Distributor mit 1,2 Mrd. € Umsatz, 12 % Bruttomarge, 12 % 
 - Kosten Jahr 1 = Lizenz Jahr 1 + Einrichtung + Eigenaufwand (Personentage × 800 €). Jahr 2 und 3 = Lizenz. Der Pilot wird auf Jahr 1 angerechnet.
 - ROI über 3 Jahre = (Wert über 3 Jahre − Kosten über 3 Jahre) ÷ Kosten über 3 Jahre. Amortisation = der Monat, in dem der kumulierte Wert die kumulierten Kosten übersteigt.
 
-## Basisprodukt + Anpassung
-
-Wir starten mit dem Basisprodukt. Ihre Lösung bauen wir auf Ihr Haus zu.
-
-## In 30 Tagen im Einsatz. Mit Ihren echten Daten.
-
-Kein Systemwechsel, kein Großprojekt. Wir verbinden uns lesend und arbeiten mit Ihrem Team.
-
-- **Woche 1, Verbinden**: Lesender Zugriff auf ERP, CRM und Postfach. Ihre Daten bleiben, wo sie sind.
-- **Woche 2, Abgleichen**: Ihre echten Anfragen gegen Ihren echten Bestand, mit Ihren Regeln zu Marge und Kunden.
-- **Woche 3 und 4, Arbeiten**: Ihr Team arbeitet damit und gibt frei. Wir messen gemeinsam, was es bringt.
-
-### Jeder Schritt, jeder Preis.
+## Jeder Schritt, jeder Preis.
 
 | Schritt | Was passiert | Dauer | Preis |
 | --- | --- | --- | --- |

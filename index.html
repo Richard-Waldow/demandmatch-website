@@ -429,13 +429,12 @@
 }
 </script>
 <link rel="stylesheet" href="assets/css/systems.css?v=dd639c92">
-<link rel="stylesheet" href="assets/css/custom.css?v=59999fb2">
 <link rel="stylesheet" href="assets/css/roi.css?v=d7a66eef">
 <link rel="stylesheet" href="assets/icons/style.css?v=2a36dc2a">
 <link rel="stylesheet" href="assets/app/app.css?v=a8d8a2b7">
 <link rel="stylesheet" href="assets/app/ae.css?v=27780c25">
 <link rel="stylesheet" href="assets/app/gantt.css?v=93a75ad0">
-<link rel="stylesheet" href="assets/css/site.css?v=40d67c5c">
+<link rel="stylesheet" href="assets/css/site.css?v=595ee7ca">
 </head>
 <body>
 <a class="skip" href="#main" data-t="skip">Zum Inhalt</a>
@@ -620,24 +619,12 @@
     <details class="roi-how"><summary data-t="roi_how">So rechnen wir</summary><ol><li>Rohertrag aus gewonnenen Anfragen = Umsatz × zusätzlicher Umsatz in % × Bruttomarge.</li><li>Margenplus = Umsatz × Prozentpunkte Margenplus.</li><li>Geringere Lagerkosten = Umsatz × Lagerbestand in % × früher verkaufter Anteil × Lagerhaltungskosten. Das dabei frei werdende Kapital und vermiedene Abschreibungen rechnen wir nicht mit.</li><li>Wert pro Jahr = (Rohertrag aus gewonnenen Anfragen + Margenplus + geringere Lagerkosten) × Anteil des Geschäfts mit DemandMatch.</li><li>Frei werdende Kapazität = Mitarbeitende × frei werdende Zeit × Kosten pro Person. Sie zählt nur mit, wenn Sie sie einrechnen.</li><li>Jahr 1 bringt 50 % des Werts (Anlauf), Jahr 2 und 3 je 100 %.</li><li>Lizenz pro Jahr = Basis (90.000 € für die erste Gesellschaft, 30.000 € je weitere) + 15 % des vorsichtigen Werts, höchstens ein Drittel dieses Werts. Liegen Ihre eigenen Annahmen unter dem vorsichtigen Fall, gelten Ihre. Frei werdende Kapazität zählt nie.</li><li>Im ersten Jahr zählt für die Lizenz der halbe Wert, wie beim Anlauf. Einrichtung einmalig 60.000 €, 20.000 € je weitere Gesellschaft.</li><li>Kosten Jahr 1 = Lizenz Jahr 1 + Einrichtung + Eigenaufwand (Personentage × 800 €). Jahr 2 und 3 = Lizenz. Der Pilot wird auf Jahr 1 angerechnet.</li><li>ROI über 3 Jahre = (Wert über 3 Jahre − Kosten über 3 Jahre) ÷ Kosten über 3 Jahre. Amortisation = der Monat, in dem der kumulierte Wert die kumulierten Kosten übersteigt.</li></ol></details>
   </section>
 
-  <!-- CUSTOM: base product + customisation = your solution, an app that assembles (custom.js). Sits right before the pilot -->
-  <section class="sec-custom" id="custom"><div class="wrap"><h2 class="h2">Wir starten mit dem Basisprodukt.<br><span class="mute">Ihre Lösung bauen wir auf Ihr Haus zu.</span></h2></div></section>
-
-  <!-- PILOT: thirty days as three steps written into the sky of a painting of three river locks (pilot-locks); the steps
-       come in one after another, left to right, the way a barge passes the gates -->
+  <!-- PILOT: every step from the fit check to expansion, each with its price (rendered by the build from T.st_rows) -->
   <section class="pilot wrap" id="pilot">
     <div class="pilot-h">
-      <h2 class="h2 rv" data-th="p_h">In 30 Tagen im Einsatz.<br><span class="mute">Mit Ihren echten Daten.</span></h2>
+      <h2 class="h2 rv" data-th="st_h">Jeder Schritt, jeder Preis.</h2>
     </div>
-    <div class="pl-stage" data-play>
-      <img class="pl-art" src="assets/art/pilot-locks.jpg" alt="" loading="lazy" decoding="async">
-      <ol class="pl-steps">
-        <li style="--i:0"><small data-t="p1_w">Woche 1</small><h3 data-t="p1_h">Verbinden</h3><p data-t="p1_p">Lesender Zugriff auf ERP, CRM und Postfach. Ihre Daten bleiben, wo sie sind.</p></li>
-        <li style="--i:1"><small data-t="p2_w">Woche 2</small><h3 data-t="p2_h">Abgleichen</h3><p data-t="p2_p">Ihre echten Anfragen gegen Ihren echten Bestand, mit Ihren Regeln zu Marge und Kunden.</p></li>
-        <li style="--i:2"><small data-t="p3_w">Woche 3 und 4</small><h3 data-t="p3_h">Arbeiten</h3><p data-t="p3_p">Ihr Team arbeitet damit und gibt frei. Wir messen gemeinsam, was es bringt.</p></li>
-      </ol>
-    </div>
-    <div class="pl-path rv"><h3>Jeder Schritt, jeder Preis.</h3>
+    <div class="pl-path rv">
       <table class="pl-t"><thead><tr><th scope="col" class="c0">Schritt</th><th scope="col" class="c1">Was passiert</th><th scope="col" class="c2">Dauer</th><th scope="col" class="c3">Preis</th></tr></thead><tbody>
         <tr><th scope="row" class="c0">Fit-Check</th><td class="c1">Ein Gespräch über Ihre Eckdaten: Branche, Umsatz, ERP und Vertrieb. Danach ein Vorschlag mit Umfang.</td><td class="c2">1 bis 2 Wochen</td><td class="c3"><b>Kostenlos</b></td></tr>
         <tr><th scope="row" class="c0">Potenzialanalyse</th><td class="c1">Aus einem lesenden Datenauszug rechnen wir in Euro, was heute verloren geht. Ergebnis: Ausgangslage und Business Case.</td><td class="c2">3 Wochen</td><td class="c3"><b>20.000 €</b><small>voll angerechnet auf den Pilot</small></td></tr>
@@ -712,7 +699,7 @@
 </footer>
 
 <script>window.SHARED_BASE = 'assets/';</script>
-<script src="assets/js/site.js?v=09567dd2"></script>
+<script src="assets/js/site.js?v=16323882"></script>
 <script src="assets/app/engine.js?v=8505b732"></script>
 <script src="assets/app/sample.js?v=45050d6c"></script>
 <script src="assets/app/gantt.js?v=104f4347"></script>
@@ -721,7 +708,6 @@
 <script src="assets/js/systems.js?v=8d6f148d"></script>
 <script src="assets/js/stage.js?v=49cb733a"></script>
 <script src="assets/js/surplus.js?v=2bca5a12"></script>
-<script src="assets/js/custom.js?v=68f6af62"></script>
 <script src="assets/js/pricing.js?v=b378a930"></script><!-- the price config the business case uses -->
 <script src="assets/js/roi.js?v=90241ccd"></script>
 </body>

@@ -74,10 +74,6 @@
       ],
       sp_fit: 'Passt', sp_maybe: 'Vielleicht', sp_no: 'Ausgelassen',
       sp_sum_a: '40 t an 3 Kunden, 2 bewusst ausgelassen.', sp_sum_b: 'Drei persönliche E-Mails warten auf Freigabe.', sp_open: 'Im Produkt ansehen',
-      cu_eyebrow: 'Basisprodukt + Anpassung',
-      cu_h: 'Wir starten mit dem Basisprodukt.<br><span class="mute">Ihre Lösung bauen wir auf Ihr Haus zu.</span>',
-      p_eyebrow: 'Pilot', p_h: 'In 30 Tagen im Einsatz.<br><span class="mute">Mit Ihren echten Daten.</span>',
-      p_sub: 'Kein Systemwechsel, kein Großprojekt. Wir verbinden uns lesend und arbeiten mit Ihrem Team.',
       st_h: 'Jeder Schritt, jeder Preis.', st_cols: ['Schritt', 'Was passiert', 'Dauer', 'Preis'],
       st_rows: [
         ['Fit-Check', 'Ein Gespräch über Ihre Eckdaten: Branche, Umsatz, ERP und Vertrieb. Danach ein Vorschlag mit Umfang.', '1 bis 2 Wochen', 'Kostenlos', ''],
@@ -88,9 +84,6 @@
         ['Erweiterung', 'Jedes weitere Land oder jede weitere Gesellschaft mit eigenem ERP.', 'je Land', '+ {extra.eur} pro Jahr', 'dazu {setupx.eur} einmalig']
       ],
       st_note: 'Alle Preise netto zzgl. MwSt. Ihren Wert und Ihre Lizenz rechnen Sie im Business Case oben.',
-      p1_w: 'Woche 1', p1_h: 'Verbinden', p1_p: 'Lesender Zugriff auf ERP, CRM und Postfach. Ihre Daten bleiben, wo sie sind.',
-      p2_w: 'Woche 2', p2_h: 'Abgleichen', p2_p: 'Ihre echten Anfragen gegen Ihren echten Bestand, mit Ihren Regeln zu Marge und Kunden.',
-      p3_w: 'Woche 3 und 4', p3_h: 'Arbeiten', p3_p: 'Ihr Team arbeitet damit und gibt frei. Wir messen gemeinsam, was es bringt.',
       faq_eyebrow: 'Fragen und Antworten', faq_h: 'Was Sie über DemandMatch<br><span class="mute">wissen sollten.</span>',
       faq: [
         ['Was ist DemandMatch?', 'DemandMatch ist Software für den B2B-Handel. Sie gleicht Ihren Bestand automatisch mit dem Bedarf Ihrer Kunden ab: Zu jeder Anfrage aus E-Mail, Telefon oder CRM findet sie das passende Material, das Lager und die Marge und bereitet das Angebot vor. Umgekehrt findet sie für Überbestand und Ware im Zulauf die Kunden, die genau das kaufen. Ihr Vertrieb prüft und gibt frei.'],
@@ -251,10 +244,6 @@
       ],
       sp_fit: 'Fits', sp_maybe: 'Maybe', sp_no: 'Left out',
       sp_sum_a: '40 t to 3 customers, 2 left out on purpose.', sp_sum_b: 'Three personal emails wait for approval.', sp_open: 'See it in the product',
-      cu_eyebrow: 'Base product + customisation',
-      cu_h: 'We start from the base product.<br><span class="mute">Your solution is built around your company.</span>',
-      p_eyebrow: 'Pilot', p_h: 'Live in 30 days.<br><span class="mute">With your real data.</span>',
-      p_sub: 'No system change, no big project. We connect read-only and work alongside your team.',
       st_h: 'Every step, every price.', st_cols: ['Step', 'What happens', 'Duration', 'Price'],
       st_rows: [
         ['Fit check', 'A call about your key facts: industry, revenue, ERP and sales team. Then a proposal with the scope.', '1 to 2 weeks', 'Free', ''],
@@ -265,9 +254,6 @@
         ['Expansion', 'Each further country or company with its own ERP.', 'per country', '+ {extra.eur} a year', 'plus {setupx.eur} one-time']
       ],
       st_note: 'All prices net, excl. VAT. In the US the same prices apply in dollars × 1.1, excl. sales tax. Work out your value and your license in the business case above.',
-      p1_w: 'Week 1', p1_h: 'Connect', p1_p: 'Read-only access to ERP, CRM and inbox. Your data stays where it is.',
-      p2_w: 'Week 2', p2_h: 'Match', p2_p: 'Your real requests against your real stock, with your rules on margin and customers.',
-      p3_w: 'Weeks 3 and 4', p3_h: 'Work', p3_p: 'Your team works with it and approves. Together we measure what it brings.',
       faq_eyebrow: 'Questions and answers', faq_h: 'What you should know<br><span class="mute">about DemandMatch.</span>',
       faq: [
         ['What is DemandMatch?', 'DemandMatch is software for B2B distribution. It matches your inventory with your customers\' demand automatically: for every request from email, phone or CRM it finds the right material, warehouse and margin and prepares the offer. The other way round, it finds the customers who buy exactly what sits in overstock or arrives inbound. Your sales team reviews and approves.'],

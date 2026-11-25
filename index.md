@@ -89,19 +89,7 @@ Beispiel für einen Distributor mit 1,2 Mrd. € Umsatz, 12 % Bruttomarge, 12 % 
 - Kosten Jahr 1 = Lizenz Jahr 1 + Einrichtung + Eigenaufwand (Personentage × 800 €). Jahr 2 und 3 = Lizenz. Der Pilot wird auf Jahr 1 angerechnet.
 - ROI über 3 Jahre = (Wert über 3 Jahre − Kosten über 3 Jahre) ÷ Kosten über 3 Jahre. Amortisation = der Monat, in dem der kumulierte Wert die kumulierten Kosten übersteigt.
 
-## Basisprodukt + Anpassung
-
-Wir starten mit dem Basisprodukt. Ihre Lösung bauen wir auf Ihr Haus zu.
-
-## In 30 Tagen im Einsatz. Mit Ihren echten Daten.
-
-Kein Systemwechsel, kein Großprojekt. Wir verbinden uns lesend und arbeiten mit Ihrem Team.
-
-- **Woche 1, Verbinden**: Lesender Zugriff auf ERP, CRM und Postfach. Ihre Daten bleiben, wo sie sind.
-- **Woche 2, Abgleichen**: Ihre echten Anfragen gegen Ihren echten Bestand, mit Ihren Regeln zu Marge und Kunden.
-- **Woche 3 und 4, Arbeiten**: Ihr Team arbeitet damit und gibt frei. Wir messen gemeinsam, was es bringt.
-
-### Jeder Schritt, jeder Preis.
+## Jeder Schritt, jeder Preis.
 
 | Schritt | Was passiert | Dauer | Preis |
 | --- | --- | --- | --- |
