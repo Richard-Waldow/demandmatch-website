@@ -77,6 +77,7 @@
 /* off: the desktop */
 .sy-files { position: absolute; top: 14px; left: 0; right: 0; display: flex; justify-content: space-around; padding: 0 40px; }
 .sy-files span { display: flex; flex-direction: column; align-items: center; gap: 4px; width: 110px; font-size: 11px; color: #fff; text-shadow: 0 1px 2px rgb(0 0 0 / .5); }
+.sy-files b { padding: 1px 6px; border-radius: 4px; background: rgb(20 35 50 / .55); font-weight: 400; text-shadow: none; }
 .sy-files i { position: relative; width: 34px; height: 42px; border-radius: 3px; background: #fff; box-shadow: 0 2px 4px rgb(0 0 0 / .25); }
 .sy-files i::after { content: ""; position: absolute; left: 4px; right: 4px; bottom: 5px; height: 8px; border-radius: 2px; background: #2b7cd3; }
 .sy-files i.x::after { background: #107c41; } .sy-files i.p::after { background: #e5322d; }
@@ -104,7 +105,7 @@
 .sy-xl { left: 880px; top: 84px; width: 380px; height: 430px; }
 .sy-grid { display: grid; grid-template-columns: 26px repeat(4, 1fr); font-size: 12px; }
 .sy-grid span { padding: 5px 7px; border-right: 1px solid #e3e5e8; border-bottom: 1px solid #e3e5e8; white-space: nowrap; overflow: hidden; }
-.sy-grid .h { background: #f3f4f6; color: #777; text-align: center; }
+.sy-grid .h { background: #f3f4f6; color: #5f5f66; text-align: center; }
 .sy-grid .y { background: #fff3b0; } .sy-grid .r { background: #ffd6d2; }
 .sy-tm { left: 600px; top: 300px; z-index: 2; width: 440px; height: 320px; }
 .sy-chat { display: flex; flex-direction: column; gap: 14px; height: calc(100% - 36px); padding: 16px; background: #f5f5f8; }
@@ -112,7 +113,7 @@
 .sy-chat p i { display: grid; place-items: center; flex: none; width: 30px; height: 30px; border-radius: 50%; background: #c5c8f0; color: #3b40a0; font-size: 11px; font-style: normal; font-weight: 600; }
 .sy-chat p span { padding: 7px 11px; border-radius: 8px; background: #fff; box-shadow: 0 1px 2px rgb(0 0 0 / .08); }
 .sy-chat p b { display: block; font-size: 11.5px; font-weight: 600; color: #555; }
-.sy-input { margin-top: auto; padding: 10px 12px; border-radius: 6px; background: #fff; border-bottom: 2px solid #5b5fc7; color: #999; font-size: 12.5px; }
+.sy-input { margin-top: auto; padding: 10px 12px; border-radius: 6px; background: #fff; border-bottom: 2px solid #5b5fc7; color: #6b6b72; font-size: 12.5px; }
 .sy-pdf { left: 270px; top: 150px; z-index: 1; width: 350px; height: 640px; }
 .sy-page { padding: 22px 26px; }
 .sy-ph { display: flex; flex-direction: column; gap: 4px; padding-bottom: 12px; margin-bottom: 14px; border-bottom: 3px solid #111; }

@@ -82,7 +82,7 @@
   const bar = (k, title, cls = '') => `<div class="sy-tt ${cls}">${sic(k)}<b>${title}</b><span class="sy-dots"><i></i><i></i><i></i></span></div>`;
 
   const desktop = () => `<div class="sy-desk">
-      <div class="sy-files">${FILES.map(f => `<span><i class="${/xlsx$/.test(f) ? 'x' : /pdf$/.test(f) ? 'p' : 'w'}"></i>${f}</span>`).join('')}</div>
+      <div class="sy-files">${FILES.map(f => `<span><i class="${/xlsx$/.test(f) ? 'x' : /pdf$/.test(f) ? 'p' : 'w'}"></i><b>${f}</b></span>`).join('')}</div>
       <div class="sy-w sy-ol" style="--d:0">${bar('outlook', `Outlook · ${L('Inbox', 'Posteingang')}`)}<em class="sy-badge">47</em>
         <div class="sy-olb"><nav><b>${L('Inbox', 'Posteingang')} <u>47</u></b><span>${L('Sent', 'Gesendet')}</span><span>${L('Drafts', 'Entwürfe')} <u>6</u></span><span>${L('Follow up', 'Nachfassen')}</span><span>${L('Archive', 'Archiv')}</span></nav>
         <ul>${MAILS().map(([w, s, t, u]) => `<li class="${u ? 'u' : ''}"><b>${w}</b><span>${s}</span><time>${t}</time></li>`).join('')}</ul></div></div>
