@@ -124,7 +124,8 @@
 .roi-mini { display: none; }
 @media (max-width: 1000px) {
   .roi-sheet { grid-template-columns: minmax(0, 1fr); }
-  .roi-out { position: static; padding-top: 180px; }
+  /* not sticky in one column, but still the frame for its painting: static would let the painting spill over the inputs */
+  .roi-out { position: relative; padding-top: 180px; }
   .roi-art { object-position: 10% 45%; }
   .roi-mini { position: sticky; top: 64px; z-index: 2; display: flex; justify-content: space-between; gap: 12px; margin: 16px 0 0; padding: 10px 14px;
     border-radius: 10px; background: rgb(255 255 255 / .95); box-shadow: 0 0 0 1px var(--line), 0 10px 24px -14px rgb(20 35 50 / .35); font-size: 13px; color: var(--ink);
