@@ -6,7 +6,7 @@
 
 :root {
   --serif: 'Schibsted Grotesk', 'Geist', ui-sans-serif, system-ui, sans-serif;
-  --surface: #f5f5f7; --band: #f5f5f7; --paper-2: #f5f5f7; --paper-3: #ebebef;
+  --surface: #f5f5f7; --band: #f5f5f7;
   --cobalt: #2c57c9; --cobalt-ink: #1f45a6;
   --viridian: #0c7c5e; --viridian-ink: #0b6b52;
   --rose: #d6527c; --rose-ink: #a93a60;
@@ -21,7 +21,7 @@
 
 /* ------------------------------------------------------------------ type: one grotesk for everything that is said */
 .h1, .h2, .say, .card-h h3 { font-weight: 500; }
-.h1 { letter-spacing: -.04em; line-height: .98; }
+.h1 { letter-spacing: -.045em; line-height: .98; }
 .h2 { letter-spacing: -.04em; line-height: 1.02; }
 .say { font-weight: 500; letter-spacing: -.04em; line-height: 1.04; }
 .card-h h3 { letter-spacing: -.03em; }
@@ -89,7 +89,7 @@
 
 /* ------------------------------------------------------------------ business case: five clearly different paint colours, thicker bars */
 .roi-in { border-radius: 24px; background: var(--surface); }
-.roi-out { border-radius: 24px; background: #c9d3ec; }
+.roi-out { border-radius: 24px; }
 .roi-memo { border-radius: 18px; box-shadow: var(--lift); }
 .roi-bar { gap: 3px; height: 8px; border-radius: 0; background: none; overflow: visible; }
 .roi-bar i { border-radius: 99px; min-width: 0; }
@@ -127,30 +127,31 @@
 .pl-st { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: none; gap: var(--g); margin: 0; padding: 0; list-style: none; font-variant-numeric: lining-nums tabular-nums; }
 .pl-st li { position: relative; display: flex; flex-direction: column; grid-row: auto; padding: 26px 24px 24px; border-radius: 26px;
   background: rgb(255 255 255 / .9); -webkit-backdrop-filter: blur(24px) saturate(1.6); backdrop-filter: blur(24px) saturate(1.6); box-shadow: var(--lift);
-  transition: opacity 800ms var(--ease-out), transform 900ms var(--ease-out), box-shadow 400ms var(--ease-out);
+  opacity: 0; transform: translateY(24px); transition: opacity 800ms var(--ease-out), transform 900ms var(--ease-out), box-shadow 400ms var(--ease-out);
   transition-delay: calc(150ms + var(--i) * 90ms); }
-.ready .pl-path:not(.in) .pl-st li { opacity: 0; transform: translateY(24px); }
+.pl-path.in .pl-st li { opacity: 1; transform: none; }
 .pl-st li::before { content: none; }
 @media (hover: hover) and (pointer: fine) {
   .pl-path.in .pl-st li:hover { transform: translateY(-4px); transition-delay: 0ms; box-shadow: 0 0 0 .5px rgb(0 0 0 / .08), 0 34px 60px -28px rgb(20 30 60 / .4); }
 }
 .pl-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
-.pl-n { display: inline-flex; width: auto; height: 32px; padding: 0 13px; border-radius: 99px; background: var(--c); color: #fff; font: 500 14px/1 var(--font); letter-spacing: 0; white-space: nowrap; }
-.pl-st li:nth-child(n+5) .pl-n, .pl-grp + .pl-grp .pl-n { background: var(--c); color: #fff; box-shadow: none; border-radius: 99px; }
+.pl-n { width: 44px; height: 44px; background: var(--c); color: #fff; font: 500 19px/1 var(--serif); letter-spacing: -.02em; }
+.pl-st li:nth-child(n+5) .pl-n, .pl-grp + .pl-grp .pl-n { background: var(--c); color: #fff; box-shadow: none; }
 .pl-dur { margin: 0; padding: 6px 11px 6px 9px; border-radius: 99px; background: var(--c-soft); color: var(--c-ink); font: 500 12.5px/1 var(--font); white-space: nowrap; }
 .pl-dur i { color: var(--c-ink); font-size: 14px; }
-.pl-st h3 { margin-top: 26px; font-size: clamp(22px, 1.8vw, 26px); letter-spacing: -.03em; hyphens: manual; }
+.pl-k { margin-top: 26px; color: var(--ink-3); }
+.pl-st h3 { margin-top: 4px; font-size: clamp(22px, 1.8vw, 26px); letter-spacing: -.03em; hyphens: manual; }
 .pl-what { flex: 1; margin-top: 10px; color: var(--ink-2); }
-.pl-pr { align-self: stretch; margin-top: 22px; padding-top: 16px; border-top: .5px solid rgb(0 0 0 / .12); }
+.pl-pr { margin-top: 22px; padding-top: 16px; border-top: .5px solid rgb(0 0 0 / .12); }
 .pl-pr b { font-size: clamp(22px, 1.9vw, 27px); }
 .pl-pr small { color: var(--c-ink); font-weight: 500; }
 /* running: two wide cards, the price to the right of the text */
 .pl-grp + .pl-grp .pl-st { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media (min-width: 1101px) {
-  .pl-grp + .pl-grp .pl-st li { display: grid; grid-template-columns: minmax(0, 1fr) max-content; grid-template-rows: auto auto 1fr; column-gap: 28px; }
-  .pl-grp + .pl-grp .pl-st li > .pl-top { grid-area: 1 / 1 / 2 / 3; }
-  .pl-grp + .pl-grp .pl-st li > h3 { grid-area: 2 / 1; } .pl-grp + .pl-grp .pl-st li > .pl-what { grid-area: 3 / 1; }
-  .pl-grp + .pl-grp .pl-st li > .pl-pr { grid-area: 2 / 2 / 4 / 3; align-self: end; margin: 26px 0 0; padding: 0 0 2px 24px; white-space: nowrap; border-top: 0; border-left: .5px solid rgb(0 0 0 / .12); }
+  .pl-grp + .pl-grp .pl-st li { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 19ch); grid-template-rows: auto auto auto 1fr; column-gap: 28px; }
+  .pl-grp + .pl-grp .pl-st li > .pl-top { grid-area: 1 / 1; } .pl-grp + .pl-grp .pl-st li > .pl-k { grid-area: 2 / 1; }
+  .pl-grp + .pl-grp .pl-st li > h3 { grid-area: 3 / 1; } .pl-grp + .pl-grp .pl-st li > .pl-what { grid-area: 4 / 1; }
+  .pl-grp + .pl-grp .pl-st li > .pl-pr { grid-area: 1 / 2 / 5 / 3; align-self: end; margin: 0; padding: 0 0 2px 24px; border-top: 0; border-left: .5px solid rgb(0 0 0 / .12); }
 }
 .pl-note { margin-top: 4px; }
 @media (max-width: 1100px) {
@@ -161,6 +162,7 @@
   .pl-st li > * { grid-column: auto; }
   .pl-st li > .pl-n { grid-row: auto; }
   .pl-ph { display: flex; }
+  .pl-k { margin-top: 20px; }
 }
 @media (max-width: 640px) {
   .pl-st, .pl-grp + .pl-grp .pl-st { grid-template-columns: minmax(0, 1fr); }
@@ -210,16 +212,12 @@
 .ge:not(.js) .ge-art { display: none; }
 .ge:not(.js) .ge-p { position: static; max-width: none; opacity: 1; transform: none; visibility: visible; background: #fff; }
 @media (max-width: 900px) {
-  .ge.js { grid-template-columns: minmax(0, 1fr); gap: 14px; }
-  .ge.js .ge-tabs { flex-direction: row; justify-content: flex-start; gap: 6px; margin: 0 calc(-1 * var(--gut)); padding: 4px var(--gut) 8px;
-    overflow-x: auto; scroll-snap-type: x proximity; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
-  .ge.js .ge-tabs::-webkit-scrollbar { display: none; }
-  .ge.js .ge-tab { flex: none; width: auto; gap: 10px; padding: 8px 14px 8px 8px; border-radius: 99px; scroll-snap-align: start; background: rgb(255 255 255 / .7); }
-  .ge.js .ge-tab i { width: 30px; height: 30px; border-radius: 99px; font-size: 17px; }
-  .ge.js .ge-tab span { font-size: 16px; white-space: nowrap; }
-  .ge.js .ge-stage { min-height: 0; display: grid; padding: 210px 10px 10px; border-radius: 26px; }
-  .ge.js .ge-art { height: 100%; }
-  .ge.js .ge-p { grid-area: 1 / 1; position: relative; left: auto; right: auto; bottom: auto; max-width: none; padding: 22px 20px 24px; }
+  .ge, .ge.js { grid-template-columns: minmax(0, 1fr); }
+  .ge.js .ge-tabs { display: none; }
+  .ge.js .ge-stage { display: grid; gap: 12px; min-height: 0; padding: 200px 12px 12px; border-radius: 26px; }
+  .ge.js .ge-art { --pan: 30% 40% !important; --zoom: 1 !important; height: 260px; -webkit-mask-image: linear-gradient(#000 60%, transparent); mask-image: linear-gradient(#000 60%, transparent); }
+  .ge.js .ge-p { position: relative; left: auto; right: auto; bottom: auto; max-width: none; opacity: 1; transform: none; visibility: visible; padding: 22px; background: rgb(255 255 255 / .94); }
+  .ge.js .ge-stage { background: var(--surface); }
 }
 @media (prefers-reduced-motion: reduce) { .ge-art, .ge-p { transition: opacity 200ms ease !important; } }
 
@@ -229,10 +227,4 @@
 
 /* the new paintings keep their subject in the upper part, so the product pieces sit low on the card */
 .card-c .card-art, .card-w .card-art { place-items: end center; padding-top: 140px; padding-bottom: 28px; }
-.card-c .card-art > img { object-position: 45% 10%; }
-
-/* the close gets the same room above it as every other section, so its sentence does not sit on the band's edge */
-@media screen { .close-in { padding-top: var(--sec-y); } }
-
-/* business case: the painting shows above the memo on every width, so its silos are seen, not only its edge */
-@media (min-width: 1001px) { .roi-out { padding-top: clamp(150px, 13vw, 220px); } .roi-art { object-position: 50% 0%; } }
+.card-c .card-art > img { object-position: 70% 30%; }
