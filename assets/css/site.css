@@ -603,3 +603,16 @@ html:has(.app-dlg[open]) { overflow: hidden; }
   .bar i { transition: none; }
   .ui-mail-b mark { transition: none; }
 }
+
+/* ------------------------------------------------------------------ section rhythm
+   Every section gets the same room above and below, and the page alternates white with a warm band, so each section
+   reads as its own room: hero and the problem on white, then the two directions (band), the value (white), the systems
+   (band), the business case (white), every step and price (band), the FAQ and the close on white. The band runs edge
+   to edge (border-image paints past the box without clipping or scrolling) while the content keeps the page width.
+   On the band the pale second line of a headline is a step darker, so it keeps the same contrast as on white. */
+:root { --sec-y: clamp(80px, 9vw, 136px); --band: #f1efea; }
+@media screen {
+  #why, #both, #value, #systems, #roi, #pilot, #faq { padding-top: var(--sec-y); padding-bottom: var(--sec-y); }
+  .band { background: var(--band); border-image: conic-gradient(var(--band) 0 0) fill 0 // 0 100vmax; }
+  .band .mute { color: #b8b5ae; }
+}
