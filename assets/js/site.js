@@ -15,7 +15,6 @@
       lead: 'DemandMatch gleicht Ihren Bestand automatisch mit dem Bedarf Ihrer Kunden ab. Ihr Vertrieb verkauft mehr, mit besserer Marge, und gibt nur noch frei.',
       for: 'Für Chemie-, Kunststoff- und Industriedistributoren ab 1 Mrd. € Umsatz.',
       cta_see: 'So sieht es aus',
-      match_cap: 'Ein Posten Ware, den noch niemand gekauft hat. DemandMatch findet die Kunden, die genau das brauchen.',
       both_eyebrow: 'In beide Richtungen', both_h: 'Bedarf findet Bestand.<br><span class="mute">Bestand findet Bedarf.</span>',
       b1_k: 'Wenn eine Anfrage kommt', b1_h: 'Die Anfrage findet den richtigen Bestand.', b1_p: 'Aus jeder E-Mail und jedem Anruf: welches Material, aus welchem Lager, mit welcher Marge. In Minuten statt Stunden.',
       b2_k: 'Wenn Ware liegt', b2_h: 'Der Bestand findet seine Kunden.', b2_p: 'Überbestand und Ware im Zulauf gehen an die Kunden, die genau das kaufen, bevor sie altert oder abgeschrieben wird.',
@@ -59,7 +58,6 @@
       c4_t2: 'Nachfassen', c4_m2: 'Harzer Kunststoff hat seit 9 Tagen nicht geantwortet. Entwurf liegt bereit.', c4_ok2: 'Senden',
       c4_t3: 'Preisstaffel', c4_m3: 'Medplast fragt nur den Preis an: Staffel für 1, 3 und 5 t ist vorbereitet.', c4_ok3: 'Freigeben',
       c4_view: 'Ansehen', c4_sent: 'Gesendet',
-      rule_eyebrow: 'Prinzip', rule: 'Der Autopilot bereitet vor. Entscheiden tut Ihr Vertrieb.',
       sp_eyebrow: 'Andersherum',
       sp_h: 'Ihr Bestand findet<br><span class="mute">seine Kunden von selbst.</span>',
       sp_sub: 'Ware im Zulauf, die noch niemand gekauft hat. Überbestand, der seit Wochen liegt. DemandMatch sieht, welche Kunden genau das brauchen, und bereitet jedem eine persönliche Nachricht vor.',
@@ -74,6 +72,15 @@
       ],
       sp_fit: 'Passt', sp_maybe: 'Vielleicht', sp_no: 'Ausgelassen',
       sp_sum_a: '40 t an 3 Kunden, 2 bewusst ausgelassen.', sp_sum_b: 'Drei persönliche E-Mails warten auf Freigabe.', sp_open: 'Im Produkt ansehen',
+      ge_h: 'Gemacht für deutsche Unternehmen.<br><span class="mute">Betriebsrat und Datenschutz im Plan.</span>',
+      ge_items: [
+        ['users-three', 'Betriebsrat', 'Software, die zeigt, was einzelne Mitarbeitende tun, braucht in Deutschland die Zustimmung des Betriebsrats. Sie bekommen von uns ein Informationspaket: welche Daten DemandMatch nutzt, wer was sieht und wofür. Wir planen dafür 4 bis 8 Wochen ein, parallel zur Potenzialanalyse.'],
+        ['shield-check', 'Datenschutz', 'Auftragsverarbeitungsvertrag nach Art. 28 DSGVO, Angaben für Ihr Verarbeitungsverzeichnis und, wo nötig, Unterlagen für die Datenschutz-Folgenabschätzung. Wo die Daten verarbeitet werden, steht im Vertrag. Ihr Datenschutzbeauftragter hat alles vor dem Pilot.'],
+        ['lock-key', 'IT-Sicherheit', 'Wir beantworten Ihren Sicherheitsfragebogen und zeigen, dass der Zugriff nur lesend ist. Zugänge und Rechte legen wir mit Ihrer IT fest und dokumentieren jede Verbindung.'],
+        ['envelope-simple', 'Postfach', 'Wir lesen nur die Postfächer und Ordner, die Sie freigeben, etwa das Vertriebspostfach. Ist die private Nutzung der E-Mail erlaubt, klären wir das vorab mit Datenschutz und Betriebsrat.'],
+        ['map-pin', 'Ein Land zuerst', 'Wir starten dort, wo Ihr ERP schon läuft, meist in Deutschland. Weitere Länder und neu gekaufte Gesellschaften kommen danach, eine nach der anderen.'],
+        ['stairs', 'Preis in Stufen', 'Die Lizenz wächst mit dem Umfang: erst ein Land, dann die Gruppe. So passt jeder Schritt in Ihr Budget und Ihre Freigaben, und entschieden wird auf gemessenen Zahlen.']
+      ],
       st_h: 'Jeder Schritt, jeder Preis.', st_step: 'Schritt', st_ph: ['Bis zum Start', 'Im Betrieb'], st_cols: ['Schritt', 'Was passiert', 'Dauer', 'Preis'],
       st_rows: [
         ['Fit-Check', 'Ein Gespräch über Ihre Eckdaten: Branche, Umsatz, ERP und Vertrieb. Danach ein Vorschlag mit Umfang.', '1 bis 2 Wochen', 'Kostenlos', ''],
@@ -185,7 +192,6 @@
       lead: 'DemandMatch matches your inventory with your customers\' demand, automatically. Your sales team sells more, at better margin, and only approves.',
       for: 'For chemical, plastics and industrial distributors with $1bn+ revenue.',
       cta_see: 'See how it looks',
-      match_cap: 'A lot of stock nobody has bought yet. DemandMatch finds the customers who need exactly that.',
       both_eyebrow: 'Both ways', both_h: 'Demand finds stock.<br><span class="mute">Stock finds demand.</span>',
       b1_k: 'When a request comes in', b1_h: 'The request finds the right stock.', b1_p: 'From every email and call: which material, from which warehouse, at what margin. In minutes, not hours.',
       b2_k: 'When stock sits', b2_h: 'The stock finds its customers.', b2_p: 'Overstock and inbound goods go to the customers who buy exactly that, before they age or get written off.',
@@ -229,7 +235,6 @@
       c4_t2: 'Follow-up', c4_m2: 'Harzer Kunststoff has not replied for 9 days. A draft is ready.', c4_ok2: 'Send',
       c4_t3: 'Price scale', c4_m3: 'Medplast only asks for a price: a scale for 1, 3 and 5 t is prepared.', c4_ok3: 'Approve',
       c4_view: 'View', c4_sent: 'Sent',
-      rule_eyebrow: 'Principle', rule: 'The autopilot prepares. Your sales team decides.',
       sp_eyebrow: 'The other way round',
       sp_h: 'Your stock finds<br><span class="mute">its customers by itself.</span>',
       sp_sub: 'Inbound goods nobody has bought yet. Surplus that has sat for weeks. DemandMatch sees which customers need exactly that, and prepares a personal message for each of them.',
@@ -244,6 +249,15 @@
       ],
       sp_fit: 'Fits', sp_maybe: 'Maybe', sp_no: 'Left out',
       sp_sum_a: '40 t to 3 customers, 2 left out on purpose.', sp_sum_b: 'Three personal emails wait for approval.', sp_open: 'See it in the product',
+      ge_h: 'Built for German companies.<br><span class="mute">Works council and data protection planned in.</span>',
+      ge_items: [
+        ['users-three', 'Works council', 'In Germany, software that shows what individual employees do needs the works council\'s agreement. We give you an information pack: which data DemandMatch uses, who sees what, and why. We plan 4 to 8 weeks for it, alongside the value assessment.'],
+        ['shield-check', 'Data protection', 'A data processing agreement under Art. 28 GDPR, the details for your record of processing and, where needed, the documents for a data protection impact assessment. Where the data is processed is written into the contract. Your data protection officer has it all before the pilot.'],
+        ['lock-key', 'IT security', 'We answer your security questionnaire and show that access is read-only. We set up accounts and rights with your IT and document every connection.'],
+        ['envelope-simple', 'Inbox', 'We only read the mailboxes and folders you release, such as the sales inbox. If private use of email is allowed, we clear that first with data protection and the works council.'],
+        ['map-pin', 'One country first', 'We start where your ERP already runs, usually Germany. Other countries and newly acquired companies follow, one at a time.'],
+        ['stairs', 'Price in steps', 'The license grows with the scope: one country first, then the group. Each step fits your budget and your approvals, and the decision rests on measured numbers.']
+      ],
       st_h: 'Every step, every price.', st_step: 'Step', st_ph: ['Getting started', 'Running'], st_cols: ['Step', 'What happens', 'Duration', 'Price'],
       st_rows: [
         ['Fit check', 'A call about your key facts: industry, revenue, ERP and sales team. Then a proposal with the scope.', '1 to 2 weeks', 'Free', ''],

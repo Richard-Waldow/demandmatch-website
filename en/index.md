@@ -38,8 +38,6 @@ Every offer accounts for freight, storage and your pricing rules. And stock that
 
 Reading, matching, writing the offer: it runs by itself, on the systems you already have. Your team only approves.
 
-Principle: The autopilot prepares. Your sales team decides.
-
 ## Example: stock finds its customers
 
 HDPE food grade (Not sold yet). Inbound week 49 and Hamburg stock.
@@ -147,6 +145,15 @@ With a free fit check: you send us a few facts first (industry, revenue, ERP, si
 ### Who is behind DemandMatch?
 
 DemandMatch was founded in Berlin by Bing Cai (CEO, Staff Forward Deployed Engineer) and Richard von Waldow (Forward Deployed Engineer). Contact: hello@demandmatch.io.
+
+## Built for German companies. Works council and data protection planned in.
+
+- **Works council**: In Germany, software that shows what individual employees do needs the works council's agreement. We give you an information pack: which data DemandMatch uses, who sees what, and why. We plan 4 to 8 weeks for it, alongside the value assessment.
+- **Data protection**: A data processing agreement under Art. 28 GDPR, the details for your record of processing and, where needed, the documents for a data protection impact assessment. Where the data is processed is written into the contract. Your data protection officer has it all before the pilot.
+- **IT security**: We answer your security questionnaire and show that access is read-only. We set up accounts and rights with your IT and document every connection.
+- **Inbox**: We only read the mailboxes and folders you release, such as the sales inbox. If private use of email is allowed, we clear that first with data protection and the works council.
+- **One country first**: We start where your ERP already runs, usually Germany. Other countries and newly acquired companies follow, one at a time.
+- **Price in steps**: The license grows with the scope: one country first, then the group. Each step fits your budget and your approvals, and the decision rests on measured numbers.
 
 ## Company
 

@@ -38,8 +38,6 @@ Jedes Angebot rechnet mit Fracht, Lager und Ihren Preisregeln. Und Ware, die lie
 
 Lesen, abgleichen, Angebot schreiben: das läuft von selbst, auf Ihren bestehenden Systemen. Ihr Team gibt nur frei.
 
-Prinzip: Der Autopilot bereitet vor. Entscheiden tut Ihr Vertrieb.
-
 ## Beispiel: Ware findet ihre Kunden
 
 HDPE Lebensmittel (Noch nicht verkauft). Zulauf KW 49 und Lager Hamburg.
@@ -147,6 +145,15 @@ Mit einem kostenlosen Fit-Check: Sie schicken uns vorab ein paar Eckdaten (Branc
 ### Wer steht hinter DemandMatch?
 
 DemandMatch wurde in Berlin von Bing Cai (CEO, Staff Forward Deployed Engineer) und Richard von Waldow (Forward Deployed Engineer) gegründet. Kontakt: hello@demandmatch.io.
+
+## Gemacht für deutsche Unternehmen. Betriebsrat und Datenschutz im Plan.
+
+- **Betriebsrat**: Software, die zeigt, was einzelne Mitarbeitende tun, braucht in Deutschland die Zustimmung des Betriebsrats. Sie bekommen von uns ein Informationspaket: welche Daten DemandMatch nutzt, wer was sieht und wofür. Wir planen dafür 4 bis 8 Wochen ein, parallel zur Potenzialanalyse.
+- **Datenschutz**: Auftragsverarbeitungsvertrag nach Art. 28 DSGVO, Angaben für Ihr Verarbeitungsverzeichnis und, wo nötig, Unterlagen für die Datenschutz-Folgenabschätzung. Wo die Daten verarbeitet werden, steht im Vertrag. Ihr Datenschutzbeauftragter hat alles vor dem Pilot.
+- **IT-Sicherheit**: Wir beantworten Ihren Sicherheitsfragebogen und zeigen, dass der Zugriff nur lesend ist. Zugänge und Rechte legen wir mit Ihrer IT fest und dokumentieren jede Verbindung.
+- **Postfach**: Wir lesen nur die Postfächer und Ordner, die Sie freigeben, etwa das Vertriebspostfach. Ist die private Nutzung der E-Mail erlaubt, klären wir das vorab mit Datenschutz und Betriebsrat.
+- **Ein Land zuerst**: Wir starten dort, wo Ihr ERP schon läuft, meist in Deutschland. Weitere Länder und neu gekaufte Gesellschaften kommen danach, eine nach der anderen.
+- **Preis in Stufen**: Die Lizenz wächst mit dem Umfang: erst ein Land, dann die Gruppe. So passt jeder Schritt in Ihr Budget und Ihre Freigaben, und entschieden wird auf gemessenen Zahlen.
 
 ## Unternehmen
 

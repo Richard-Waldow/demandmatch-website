@@ -38,8 +38,6 @@ Every offer accounts for freight, storage and your pricing rules. And stock that
 
 Reading, matching, writing the offer: it runs by itself, on the systems you already have. Your team only approves.
 
-Principle: The autopilot prepares. Your sales team decides.
-
 ## Example: stock finds its customers
 
 HDPE food grade (Not sold yet). Inbound week 49 and Hamburg stock.
@@ -148,6 +146,15 @@ With a free fit check: you send us a few facts first (industry, revenue, ERP, si
 
 DemandMatch was founded in Berlin by Bing Cai (CEO, Staff Forward Deployed Engineer) and Richard von Waldow (Forward Deployed Engineer). Contact: hello@demandmatch.io.
 
+## Built for German companies. Works council and data protection planned in.
+
+- **Works council**: In Germany, software that shows what individual employees do needs the works council's agreement. We give you an information pack: which data DemandMatch uses, who sees what, and why. We plan 4 to 8 weeks for it, alongside the value assessment.
+- **Data protection**: A data processing agreement under Art. 28 GDPR, the details for your record of processing and, where needed, the documents for a data protection impact assessment. Where the data is processed is written into the contract. Your data protection officer has it all before the pilot.
+- **IT security**: We answer your security questionnaire and show that access is read-only. We set up accounts and rights with your IT and document every connection.
+- **Inbox**: We only read the mailboxes and folders you release, such as the sales inbox. If private use of email is allowed, we clear that first with data protection and the works council.
+- **One country first**: We start where your ERP already runs, usually Germany. Other countries and newly acquired companies follow, one at a time.
+- **Price in steps**: The license grows with the scope: one country first, then the group. Each step fits your budget and your approvals, and the decision rests on measured numbers.
+
 ## Company
 
 Founded in Berlin by Bing Cai (CEO, Staff Forward Deployed Engineer, https://www.linkedin.com/in/bingcai/) and Richard von Waldow (Forward Deployed Engineer, https://www.linkedin.com/in/richard-von-waldow/).
@@ -196,8 +203,6 @@ Jedes Angebot rechnet mit Fracht, Lager und Ihren Preisregeln. Und Ware, die lie
 ### Automatisch
 
 Lesen, abgleichen, Angebot schreiben: das läuft von selbst, auf Ihren bestehenden Systemen. Ihr Team gibt nur frei.
-
-Prinzip: Der Autopilot bereitet vor. Entscheiden tut Ihr Vertrieb.
 
 ## Beispiel: Ware findet ihre Kunden
 
@@ -306,6 +311,15 @@ Mit einem kostenlosen Fit-Check: Sie schicken uns vorab ein paar Eckdaten (Branc
 ### Wer steht hinter DemandMatch?
 
 DemandMatch wurde in Berlin von Bing Cai (CEO, Staff Forward Deployed Engineer) und Richard von Waldow (Forward Deployed Engineer) gegründet. Kontakt: hello@demandmatch.io.
+
+## Gemacht für deutsche Unternehmen. Betriebsrat und Datenschutz im Plan.
+
+- **Betriebsrat**: Software, die zeigt, was einzelne Mitarbeitende tun, braucht in Deutschland die Zustimmung des Betriebsrats. Sie bekommen von uns ein Informationspaket: welche Daten DemandMatch nutzt, wer was sieht und wofür. Wir planen dafür 4 bis 8 Wochen ein, parallel zur Potenzialanalyse.
+- **Datenschutz**: Auftragsverarbeitungsvertrag nach Art. 28 DSGVO, Angaben für Ihr Verarbeitungsverzeichnis und, wo nötig, Unterlagen für die Datenschutz-Folgenabschätzung. Wo die Daten verarbeitet werden, steht im Vertrag. Ihr Datenschutzbeauftragter hat alles vor dem Pilot.
+- **IT-Sicherheit**: Wir beantworten Ihren Sicherheitsfragebogen und zeigen, dass der Zugriff nur lesend ist. Zugänge und Rechte legen wir mit Ihrer IT fest und dokumentieren jede Verbindung.
+- **Postfach**: Wir lesen nur die Postfächer und Ordner, die Sie freigeben, etwa das Vertriebspostfach. Ist die private Nutzung der E-Mail erlaubt, klären wir das vorab mit Datenschutz und Betriebsrat.
+- **Ein Land zuerst**: Wir starten dort, wo Ihr ERP schon läuft, meist in Deutschland. Weitere Länder und neu gekaufte Gesellschaften kommen danach, eine nach der anderen.
+- **Preis in Stufen**: Die Lizenz wächst mit dem Umfang: erst ein Land, dann die Gruppe. So passt jeder Schritt in Ihr Budget und Ihre Freigaben, und entschieden wird auf gemessenen Zahlen.
 
 ## Unternehmen
 
