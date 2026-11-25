@@ -15,12 +15,11 @@ A person in sales approves everything before it goes out. Companies start with a
 All prices net (excl. VAT in Europe, excl. sales tax in the US). Every paid step is credited in full to the next one.
 
 - Fit check (30 minutes): Free
-- Value assessment (3 weeks): €20,000 / $22,000
-- Pilot (30 days): €60,000 / $66,000
-- License Division (To start with one division): €180,000 / $198,000 per year, plus implementation from €60,000 / $66,000 one-time. One business unit or one country; revenue in scope up to €400m; sales users up to 60.
-- License Group (Typical at about €1bn revenue): €450,000 / $495,000 per year, plus implementation from €150,000 / $165,000 one-time. All divisions and countries; revenue in scope up to €2bn; sales users up to 500.
-- License Global (For groups with several companies): from €600,000 / $660,000 per year, plus implementation from €150,000 / $165,000 one-time. Several ERP systems, single sign-on, a dedicated contact; revenue in scope above €2bn; sales users by agreement.
-- Every license includes: matching both ways, offers with margin, freight and your pricing rules, read-only connection to ERP, CRM and inbox, and nothing goes out without your team's approval.
+- Value assessment (3 weeks): €20,000 / $25,000
+- Pilot (30 days): €60,000 / $65,000
+- Annual license, by revenue in scope (like tax brackets, each rate counts only for the revenue inside its band): Up to €1bn: €45,000 per €100m; €1bn to €3bn: €20,000 per €100m; Above €3bn: €10,000 per €100m; Minimum license: €180,000 per year. In US dollars the same rates per $100m, minimum $200,000 per year.
+- Onboarding: 30% of the annual license, at least €60,000 / $65,000; included in a 3-year term, charged in year one on a 1-year term.
+- Every license includes every feature, for every customer: matching both ways, offers with margin, freight and your pricing rules, read-only connection to ERP, CRM and inbox, several ERP systems, single sign-on and unlimited sales users (fair use). How complex your system landscape is goes into onboarding, not the license. Nothing goes out without your team's approval.
 - Paid annually in advance, 12-month minimum term. The value assessment and the pilot are credited in full.
 - Business case calculator: https://demandmatch.io/en/#roi
 

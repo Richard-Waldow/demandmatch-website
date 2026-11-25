@@ -1,13 +1,13 @@
-/* #roi: the business case (roi.js), in the language of the pricing section. The inputs sit on a flat tile; the result is a
-   short memo for a CFO, lying on an oil painting (roi-silos) that stays in view while the inputs scroll. The memo opens with
-   one sentence, the verdict, and only then the detail: value per year, license in proportion, where the value comes from,
-   freed capacity, the three years, the cost line. Sentence-case labels throughout, no section numbers, no metric tiles.
-   The serif is kept for the verdict and the larger figures; inputs read in the text face with tabular figures. */
-.roi { padding-top: clamp(100px, 12vw, 170px); padding-bottom: clamp(40px, 6vw, 80px); }
-.roi .sec-h .sub { max-width: 60ch; }
-.roi-static { margin: clamp(40px, 5vw, 64px) 0 0; max-width: 80ch; color: var(--ink-2); }
+/* #roi: the business case (pricing.js), inside the pricing section, on the revenue set in the price tool above. The inputs
+   sit on a flat tile; the result is a short memo for a CFO, lying on an oil painting (roi-silos) that stays in view while the
+   inputs scroll. The memo opens with the four figures (value per year, value per unit of license, payback, 3-year ROI), then
+   the one-time cash release on its own, set apart because it is never counted, then where the value comes from, freed
+   capacity, the three years, the cost line. Sentence-case labels, no section numbers. The serif is kept for the larger
+   figures; inputs read in the text face with tabular figures. */
+.roi { padding: 0; }
+.roi-static { margin: clamp(32px, 4vw, 48px) 0 0; max-width: 80ch; color: var(--ink-2); }
 
-.roi-sheet { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 2px; margin-top: clamp(40px, 5vw, 64px); }
+.roi-sheet { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 2px; margin-top: clamp(32px, 4vw, 48px); }
 .roi-in { padding: clamp(24px, 3vw, 44px); border-radius: 10px; background: var(--paper-2); }
 .roi-side { min-width: 0; }
 
@@ -21,15 +21,18 @@
   box-shadow: 0 0 0 1px rgb(20 20 20 / .05), 0 40px 80px -40px rgb(25 35 45 / .55); }
 .roi-memo-h { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; margin: 0; font-size: 13px; color: var(--ink-2); }
 .roi-memo-c { color: var(--ink-3); }
-.roi-verdict { margin: 12px 0 0; font: 400 clamp(21px, 1.8vw, 26px)/1.28 var(--serif); letter-spacing: -.02em; color: var(--ink-3); text-wrap: pretty; }
-.roi-verdict b { font-weight: 400; color: var(--ink); white-space: nowrap; }
-
 .roi-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; margin: 18px 0 0; }
 .roi-f { padding: 12px 0 14px; border-top: 1px solid var(--line); }
 .roi-f dt { font-size: 13px; color: var(--ink-3); }
 .roi-f dd { margin: 6px 0 0; }
 .roi-f b { display: block; font: 400 clamp(24px, 2vw, 30px)/1.05 var(--serif); letter-spacing: -.03em; color: var(--ink); white-space: nowrap; }
 .roi-f small { display: block; margin-top: 6px; font-size: 12.5px; line-height: 1.4; color: var(--ink-3); }
+
+/* the one-time cash release: set apart in the sand tone, because it is never part of value, payback or ROI */
+.roi-cash { margin: 6px 0 0; padding: 11px 14px; border-radius: 8px; background: rgb(214 158 62 / .14); box-shadow: inset 0 0 0 1px rgb(176 120 34 / .24);
+  font-size: 13.5px; line-height: 1.45; color: #6f4a12; font-variant-numeric: lining-nums tabular-nums; text-wrap: pretty; }
+.roi-assume { margin: 12px 0 4px; font-size: 12.5px; line-height: 1.5; color: var(--ink-3); text-wrap: pretty; }
+.roi-g-h { margin: 12px 0 0; font-size: 12.5px; line-height: 1.45; color: var(--ink-3); }
 
 .roi-blk { padding: 14px 0; border-top: 1px solid var(--line); }
 .roi-h { margin: 0 0 12px; font-size: 13.5px; font-weight: 500; color: var(--ink); }
@@ -95,18 +98,19 @@
 .roi-r .roi-seg { justify-self: start; margin-top: 8px; }
 .roi-r small { grid-column: 1 / -1; font-size: 12.5px; color: var(--ink-3); }
 
-/* the slider: a hairline track, ink up to the value, a small solid ink thumb */
-.roi-r input[type="range"] { -webkit-appearance: none; appearance: none; width: 100%; height: 22px; margin: 2px 0 0; background: none; cursor: pointer; --p: 50%; }
-.roi-r input[type="range"]::-webkit-slider-runnable-track { height: 2px; border-radius: 2px; background: linear-gradient(to right, var(--ink) var(--p), rgb(20 20 20 / .14) var(--p)); }
-.roi-r input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 13px; height: 13px; margin-top: -5.5px; border-radius: 50%; background: var(--ink);
+/* the slider: a hairline track, ink up to the value, a small solid ink thumb. The revenue slider is taller, for a thumb on a phone */
+.pq-range { height: 32px; margin: 0; }
+:is(.roi-r input[type="range"], .pq-range) { -webkit-appearance: none; appearance: none; width: 100%; height: 22px; margin: 2px 0 0; background: none; cursor: pointer; --p: 50%; }
+:is(.roi-r input[type="range"], .pq-range)::-webkit-slider-runnable-track { height: 2px; border-radius: 2px; background: linear-gradient(to right, var(--ink) var(--p), rgb(20 20 20 / .14) var(--p)); }
+:is(.roi-r input[type="range"], .pq-range)::-webkit-slider-thumb { -webkit-appearance: none; width: 13px; height: 13px; margin-top: -5.5px; border-radius: 50%; background: var(--ink);
   box-shadow: 0 0 0 3px var(--paper-2); transition: transform 140ms var(--ease-out); }
-.roi-r input[type="range"]::-moz-range-track { height: 2px; border-radius: 2px; background: rgb(20 20 20 / .14); }
-.roi-r input[type="range"]::-moz-range-progress { height: 2px; border-radius: 2px; background: var(--ink); }
-.roi-r input[type="range"]::-moz-range-thumb { width: 13px; height: 13px; border: 0; border-radius: 50%; background: var(--ink); box-shadow: 0 0 0 3px var(--paper-2); }
-.roi-r input[type="range"]:active::-webkit-slider-thumb { transform: scale(1.25); }
-.roi-r input[type="range"]:focus-visible { outline: none; }
-.roi-r input[type="range"]:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 3px var(--paper-2), 0 0 0 6px rgb(20 20 20 / .18); }
-.roi-r input[type="range"]:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 3px var(--paper-2), 0 0 0 6px rgb(20 20 20 / .18); }
+:is(.roi-r input[type="range"], .pq-range)::-moz-range-track { height: 2px; border-radius: 2px; background: rgb(20 20 20 / .14); }
+:is(.roi-r input[type="range"], .pq-range)::-moz-range-progress { height: 2px; border-radius: 2px; background: var(--ink); }
+:is(.roi-r input[type="range"], .pq-range)::-moz-range-thumb { width: 13px; height: 13px; border: 0; border-radius: 50%; background: var(--ink); box-shadow: 0 0 0 3px var(--paper-2); }
+:is(.roi-r input[type="range"], .pq-range):active::-webkit-slider-thumb { transform: scale(1.25); }
+:is(.roi-r input[type="range"], .pq-range):focus-visible { outline: none; }
+:is(.roi-r input[type="range"], .pq-range):focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 3px var(--paper-2), 0 0 0 6px rgb(20 20 20 / .18); }
+:is(.roi-r input[type="range"], .pq-range):focus-visible::-moz-range-thumb { box-shadow: 0 0 0 3px var(--paper-2), 0 0 0 6px rgb(20 20 20 / .18); }
 
 /* how we calculate */
 .roi-how { margin-top: 22px; }
@@ -122,7 +126,7 @@
 .roi-mini { display: none; }
 @media (max-width: 1000px) {
   .roi-sheet { grid-template-columns: minmax(0, 1fr); }
-  .roi-out { position: static; padding-top: 180px; }
+  .roi-out { position: relative; top: auto; padding-top: 180px; }
   .roi-art { object-position: 10% 45%; }
   .roi-mini { position: sticky; top: 64px; z-index: 2; display: flex; justify-content: space-between; gap: 12px; margin: 16px 0 0; padding: 10px 14px;
     border-radius: 10px; background: rgb(255 255 255 / .95); box-shadow: 0 0 0 1px var(--line), 0 10px 24px -14px rgb(20 35 50 / .35); font-size: 13px; color: var(--ink);
@@ -138,18 +142,19 @@
 
 /* print: only the business case, both columns, all values, no painting */
 @media print {
-  .top, .skip, footer, main > *:not(#roi) { display: none !important; }
+  .top, .skip, footer, main > *:not(#pricing), #pricing > *:not(.pq-h):not(#pq-app):not(#roi) { display: none !important; }
   .rv { opacity: 1 !important; transform: none !important; filter: none !important; }
-  .roi { padding: 0; }
+  .pricing { padding: 0; }
+  .pq-h { margin-top: 24px; }
+  .pq { grid-template-columns: 1fr 1fr; }
   .roi-sheet { grid-template-columns: 1fr 1fr; }
   .roi-out { position: static; padding: 0; background: none; }
   .roi-art { display: none; }
   .roi-memo { box-shadow: 0 0 0 1px var(--line); }
-  .roi-presets, .roi-mini, .roi-act, .roi-r input { display: none !important; }
+  .roi-presets, .roi-mini, .roi-act, .roi-r input, .pq-range, .pq-chips, .pq-help { display: none !important; }
   .roi-how ol { display: block; }
   .roi-how summary::after { content: none; }
 }
 
-/* lining figures in the serif (the font shorthands above reset font-variant): proportional in the sentence, tabular in the figures */
-#roi .roi-verdict { font-variant-numeric: lining-nums proportional-nums; }
-#roi .roi-f b { font-variant-numeric: lining-nums tabular-nums; }
+/* lining, tabular figures in the serif (the font shorthands above reset font-variant) */
+#pricing .roi-f b, #pricing .pq-num { font-variant-numeric: lining-nums tabular-nums; }
