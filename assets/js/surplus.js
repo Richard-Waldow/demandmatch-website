@@ -22,7 +22,7 @@
 
   // Where the painted container is, in the painting's own pixels (assets/art/unloading.jpg, 1536 x 1024):
   // its right edge (where the pellets leave) and its lower right corner (where the lot tag's string is tied).
-  const ART = { w: 1536, h: 1024, out: [473, 650], tie: [455, 696] };
+  const ART = { w: 1536, h: 1024, out: [472, 648], tie: [452, 692] };
   // the painting is the full-bleed wallpaper behind the hero and the board (.gallery-wallpaper)
   const img = document.querySelector('.gallery-wallpaper img');
   // map a painting pixel to board coordinates, from where the image really is (object-fit: cover, its object-position in %)
