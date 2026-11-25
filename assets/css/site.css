@@ -523,8 +523,10 @@ html:has(.app-dlg[open]) { overflow: hidden; }
 .sp-lot { width: 236px; padding: 12px 18px; border-radius: 6px 6px 14px 14px;
   background: rgb(250 250 248 / .9); -webkit-backdrop-filter: blur(14px) saturate(1.2); backdrop-filter: blur(14px) saturate(1.2);
   box-shadow: 0 0 0 1px var(--line), 0 24px 40px -28px rgb(20 35 50 / .45); }
-.sp-lot::before { content: ''; position: absolute; left: 16px; top: 10px; width: 12px; height: 12px; border-radius: 50%; background: var(--paper-2, #f1f1ee); box-shadow: inset 0 0 0 1.5px var(--line-2, rgb(20 20 20 / .2)); }
-.sp-lot .sp-k { margin-left: 20px; font: 500 11.5px/16px var(--font); letter-spacing: 0; text-transform: none; }
+/* the status is the point of the tag: an amber pill with a solid dot, "not sold yet" */
+.sp-lot .sp-k { display: inline-flex; align-items: center; gap: 7px; margin: 2px 0 0 -2px; padding: 4px 11px 4px 9px; border-radius: 99px;
+  font: 600 12.5px/16px var(--font); letter-spacing: 0; text-transform: none; color: #6f4a12; background: rgb(214 158 62 / .2); box-shadow: inset 0 0 0 1px rgb(176 120 34 / .28); }
+.sp-lot .sp-k::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: #c07f1c; box-shadow: 0 0 0 3px rgb(192 127 28 / .18); }
 .sp-lot h2 { margin-top: 10px; font-size: 22px; }
 .sp-lot .sp-grade { margin-top: 4px; }
 .sp-lot .sp-t { margin-top: 12px; } .sp-lot .sp-t b { font-size: 44px; } .sp-lot .sp-t span { font-size: 16px; }

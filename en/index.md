@@ -42,7 +42,7 @@ Principle: The autopilot prepares. Your sales team decides.
 
 ## Example: stock finds its customers
 
-HDPE food grade (Not sold yet). Inbound week 49 and Hamburg stock. Special price −€40/t until month end. Released by product management.
+HDPE food grade (Not sold yet). Inbound week 49 and Hamburg stock.
 
 - Hanse Closures GmbH: Fits, 24 t. Buys HDPE for closures every 3 weeks. Next call-off in about 9 days. (SAP history)
 - Weser Getränketechnik GmbH: Fits, 12 t. Ran HMA 016 in spring. The same grade. (SAP history)

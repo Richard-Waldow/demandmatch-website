@@ -42,7 +42,7 @@ Prinzip: Der Autopilot bereitet vor. Entscheiden tut Ihr Vertrieb.
 
 ## Beispiel: Ware findet ihre Kunden
 
-HDPE Lebensmittel (Noch nicht verkauft). Zulauf KW 49 und Lager Hamburg. Sonderpreis −40 €/t bis Monatsende. Freigegeben vom Produktmanagement.
+HDPE Lebensmittel (Noch nicht verkauft). Zulauf KW 49 und Lager Hamburg.
 
 - Hanse Closures GmbH: Passt, 24 t. Kauft alle 3 Wochen HDPE für Verschlüsse. Nächster Abruf in etwa 9 Tagen. (SAP-Historie)
 - Weser Getränketechnik GmbH: Passt, 12 t. Hatte HMA 016 im Frühjahr im Einsatz. Dieselbe Type. (SAP-Historie)
