@@ -78,6 +78,16 @@
       cu_h: 'Wir starten mit dem Basisprodukt.<br><span class="mute">Ihre Lösung bauen wir auf Ihr Haus zu.</span>',
       p_eyebrow: 'Pilot', p_h: 'In 30 Tagen im Einsatz.<br><span class="mute">Mit Ihren echten Daten.</span>',
       p_sub: 'Kein Systemwechsel, kein Großprojekt. Wir verbinden uns lesend und arbeiten mit Ihrem Team.',
+      st_h: 'Jeder Schritt, jeder Preis.', st_cols: ['Schritt', 'Was passiert', 'Dauer', 'Preis'],
+      st_rows: [
+        ['Fit-Check', 'Ein Gespräch über Ihre Eckdaten: Branche, Umsatz, ERP und Vertrieb. Danach ein Vorschlag mit Umfang.', '1 bis 2 Wochen', 'Kostenlos', ''],
+        ['Potenzialanalyse', 'Aus einem lesenden Datenauszug rechnen wir in Euro, was heute verloren geht. Ergebnis: Ausgangslage und Business Case.', '3 Wochen', '{assess.eur}', 'voll angerechnet auf den Pilot'],
+        ['Pilot', 'Eine Produktfamilie, ein Team, ein Land. Erfolgskriterien vorher schriftlich, danach entscheiden Sie.', '30 Tage', 'ab {pilot.eur}', 'zu 100 % angerechnet auf Jahr 1'],
+        ['Einführung', 'Volle Anbindung an ERP, CRM und Postfach im ersten Land, alle Produktfamilien, Schulung Ihres Teams.', '2 bis 3 Monate', '{setup.eur}', 'einmalig'],
+        ['Lizenz', 'Betrieb, Support und Updates. Bei jeder Verlängerung messen wir den Wert neu.', 'jährlich', '{base.eur} + {share}', 'Basis plus Anteil am gemessenen Wert'],
+        ['Erweiterung', 'Jedes weitere Land oder jede weitere Gesellschaft mit eigenem ERP.', 'je Land', '+ {extra.eur} pro Jahr', 'dazu {setupx.eur} einmalig']
+      ],
+      st_note: 'Alle Preise netto zzgl. MwSt. Ihren Wert und Ihre Lizenz rechnen Sie im Business Case oben.',
       p1_w: 'Woche 1', p1_h: 'Verbinden', p1_p: 'Lesender Zugriff auf ERP, CRM und Postfach. Ihre Daten bleiben, wo sie sind.',
       p2_w: 'Woche 2', p2_h: 'Abgleichen', p2_p: 'Ihre echten Anfragen gegen Ihren echten Bestand, mit Ihren Regeln zu Marge und Kunden.',
       p3_w: 'Woche 3 und 4', p3_h: 'Arbeiten', p3_p: 'Ihr Team arbeitet damit und gibt frei. Wir messen gemeinsam, was es bringt.',
@@ -245,6 +255,16 @@
       cu_h: 'We start from the base product.<br><span class="mute">Your solution is built around your company.</span>',
       p_eyebrow: 'Pilot', p_h: 'Live in 30 days.<br><span class="mute">With your real data.</span>',
       p_sub: 'No system change, no big project. We connect read-only and work alongside your team.',
+      st_h: 'Every step, every price.', st_cols: ['Step', 'What happens', 'Duration', 'Price'],
+      st_rows: [
+        ['Fit check', 'A call about your key facts: industry, revenue, ERP and sales team. Then a proposal with the scope.', '1 to 2 weeks', 'Free', ''],
+        ['Value assessment', 'From a read-only data extract we calculate, in money, what is lost today. Result: the baseline and the business case.', '3 weeks', '{assess.eur}', 'credited in full to the pilot'],
+        ['Pilot', 'One product family, one team, one country. Success criteria in writing upfront, then you decide.', '30 days', 'from {pilot.eur}', 'credited 100% to year one'],
+        ['Implementation', 'Full connection to ERP, CRM and inbox in the first country, every product family, training for your team.', '2 to 3 months', '{setup.eur}', 'one-time'],
+        ['License', 'Running, support and updates. At every renewal we measure the value again.', 'yearly', '{base.eur} + {share}', 'base plus a share of the measured value'],
+        ['Expansion', 'Each further country or company with its own ERP.', 'per country', '+ {extra.eur} a year', 'plus {setupx.eur} one-time']
+      ],
+      st_note: 'All prices net, excl. VAT. In the US the same prices apply in dollars × 1.1, excl. sales tax. Work out your value and your license in the business case above.',
       p1_w: 'Week 1', p1_h: 'Connect', p1_p: 'Read-only access to ERP, CRM and inbox. Your data stays where it is.',
       p2_w: 'Week 2', p2_h: 'Match', p2_p: 'Your real requests against your real stock, with your rules on margin and customers.',
       p3_w: 'Weeks 3 and 4', p3_h: 'Work', p3_p: 'Your team works with it and approves. Together we measure what it brings.',

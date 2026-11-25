@@ -101,6 +101,19 @@ No system change, no big project. We connect read-only and work alongside your t
 - **Week 2, Match**: Your real requests against your real stock, with your rules on margin and customers.
 - **Weeks 3 and 4, Work**: Your team works with it and approves. Together we measure what it brings.
 
+### Every step, every price.
+
+| Step | What happens | Duration | Price |
+| --- | --- | --- | --- |
+| Fit check | A call about your key facts: industry, revenue, ERP and sales team. Then a proposal with the scope. | 1 to 2 weeks | Free |
+| Value assessment | From a read-only data extract we calculate, in money, what is lost today. Result: the baseline and the business case. | 3 weeks | €20,000 (credited in full to the pilot) |
+| Pilot | One product family, one team, one country. Success criteria in writing upfront, then you decide. | 30 days | from €60,000 (credited 100% to year one) |
+| Implementation | Full connection to ERP, CRM and inbox in the first country, every product family, training for your team. | 2 to 3 months | €60,000 (one-time) |
+| License | Running, support and updates. At every renewal we measure the value again. | yearly | €90,000 + 15% (base plus a share of the measured value) |
+| Expansion | Each further country or company with its own ERP. | per country | + €30,000 a year (plus €20,000 one-time) |
+
+All prices net, excl. VAT. In the US the same prices apply in dollars × 1.1, excl. sales tax. Work out your value and your license in the business case above.
+
 ## Questions and answers
 
 ### What is DemandMatch?
