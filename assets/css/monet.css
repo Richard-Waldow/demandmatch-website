@@ -1,11 +1,11 @@
 /* DemandMatch, Monet edition. Loaded last, over site.css / roi.css / systems.css.
    The paintings carry the colour (soft impressionist, cobalt / violet / viridian / rose / cadmium), the interface stays
    Apple-quiet: one surface per card, hairlines at half a pixel, large radii, no frames inside frames.
-   Headlines in Schibsted Grotesk, text in Geist. The same five paint colours return in the product's small signals
+   Headlines in Familjen Grotesk, text in Geist. The same five paint colours return in the product's small signals
    (status dots, chart segments, step numbers), so the UI and the paintings read as one world. */
 
 :root {
-  --serif: 'Schibsted Grotesk', 'Geist', ui-sans-serif, system-ui, sans-serif;
+  --serif: 'Familjen Grotesk', 'Geist', ui-sans-serif, system-ui, sans-serif;
   --surface: #f5f5f7; --band: #f5f5f7;
   --cobalt: #2c57c9; --cobalt-ink: #1f45a6;
   --viridian: #0c7c5e; --viridian-ink: #0b6b52;
@@ -21,9 +21,9 @@
 
 /* ------------------------------------------------------------------ type: one grotesk for everything that is said */
 .h1, .h2, .say, .card-h h3 { font-weight: 500; }
-.h1 { letter-spacing: -.045em; line-height: .98; }
-.h2 { letter-spacing: -.04em; line-height: 1.02; }
-.say { font-weight: 500; letter-spacing: -.04em; line-height: 1.04; }
+.h1 { letter-spacing: -.035em; line-height: .98; }
+.h2 { letter-spacing: -.03em; line-height: 1.02; }
+.say { font-weight: 500; letter-spacing: -.03em; line-height: 1.04; }
 .card-h h3 { letter-spacing: -.03em; }
 .brand-word { font-weight: 600; font-size: 20px; letter-spacing: -.04em; }
 .sp-lot h2, .faq-i h3, .ge-l h3, .pl-st h3 { font-weight: 500; }

@@ -1,0 +1,46 @@
+/* Type systems for the Monet edition: headline, text and label face change together, so the whole page changes voice.
+   html[data-type] is set in the head from ?type= (werk is the default); each set loads only its own Google fonts.
+
+   werk     Archivo wide headlines (like the lettering on cranes and containers), Archivo text, IBM Plex Mono labels
+   atelier  Instrument Serif headlines (editorial, narrow), Instrument Sans text, DM Mono labels
+   signal   Bricolage Grotesque throughout (optical sizes: quirky at headline size, calm in text), Space Mono labels */
+
+/* werk */
+html[data-type="werk"] {
+  --serif: 'Archivo', ui-sans-serif, system-ui, sans-serif;
+  --font: 'Archivo', ui-sans-serif, system-ui, sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+html[data-type="werk"] :is(.h1, .h2, .say, .card-h h3, .brand-word, .faq-i h3, .ge-l h3, .ge-tab span, .ge-p h3) { font-stretch: 125%; }
+html[data-type="werk"] .pl-st h3 { font-stretch: 112%; letter-spacing: -.03em; }
+html[data-type="werk"] .sp-lot h2 { font-stretch: 100%; letter-spacing: -.025em; }
+html[data-type="werk"] :is(.h1, .h2, .say) { font-weight: 500; }
+html[data-type="werk"] .h1 { letter-spacing: -.045em; line-height: 1; }
+html[data-type="werk"] :is(.h2, .say) { letter-spacing: -.04em; line-height: 1.04; }
+html[data-type="werk"] :is(.card-h h3, .pl-st h3, .ge-p h3, .faq-i h3) { letter-spacing: -.03em; }
+html[data-type="werk"] body { font-size: 14.5px; letter-spacing: -.005em; }
+
+/* atelier */
+html[data-type="atelier"] {
+  --serif: 'Instrument Serif', 'Times New Roman', serif;
+  --font: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+  --mono: 'DM Mono', ui-monospace, monospace;
+}
+html[data-type="atelier"] :is(.h1, .h2, .say, .card-h h3, .brand-word, .sp-lot h2, .faq-i h3, .ge-l h3, .pl-st h3, .ge-tab span, .ge-p h3) { font-weight: 400; }
+html[data-type="atelier"] .h1 { letter-spacing: -.02em; line-height: .95; }
+html[data-type="atelier"] :is(.h2, .say) { letter-spacing: -.015em; line-height: 1; }
+html[data-type="atelier"] :is(.card-h h3, .pl-st h3, .ge-p h3, .faq-i h3, .ge-tab span) { letter-spacing: -.005em; }
+
+/* signal */
+html[data-type="signal"] {
+  --serif: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif;
+  --font: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif;
+  --mono: 'Space Mono', ui-monospace, monospace;
+}
+html[data-type="signal"] { font-optical-sizing: auto; }
+html[data-type="signal"] :is(.h1, .h2, .say) { font-weight: 600; }
+html[data-type="signal"] .h1 { letter-spacing: -.02em; line-height: .98; }
+html[data-type="signal"] :is(.h2, .say) { letter-spacing: -.018em; line-height: 1.04; }
+html[data-type="signal"] :is(.card-h h3, .pl-st h3, .ge-p h3, .faq-i h3) { font-weight: 600; letter-spacing: -.02em; }
+html[data-type="signal"] body { letter-spacing: -.005em; }
+html[data-type="signal"] :is(.sp-k, .pl-dur, .lang button) { font-size: .92em; }
