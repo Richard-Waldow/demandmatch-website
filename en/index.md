@@ -64,7 +64,7 @@ All data in the example is sample data.
 
 ## How it works
 
-Spread across three kinds of systems. The autopilot makes it one list.
+Three systems. One list.
 
 Today your sales team pulls context from Outlook, Excel, SAP and the CRM and reconciles it in their heads. The autopilot reads from all of them and brings it together, from the first request to the order in SAP. Nothing is replaced.
 

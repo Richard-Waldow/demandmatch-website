@@ -6,6 +6,7 @@
   const board = document.getElementById('sp-board'); if (!board) return;
   const svg = board.querySelector('.sp-flow'), list = board.querySelector('.sp-list'), lot = board.querySelector('.sp-lot');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const wide = matchMedia('(min-width: 1001px)');
   const t = k => window.UI.t(k);
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
@@ -20,8 +21,8 @@
   }
 
   // Where the painted container is, in the painting's own pixels (assets/art/unloading.jpg, 1536 x 1024):
-  // its right edge (where the pellets leave) and its top right corner (where the lot card's leader line points).
-  const ART = { w: 1536, h: 1024, out: [474, 648], top: [470, 598] };
+  // its right edge (where the pellets leave) and its lower right corner (where the lot tag's string is tied).
+  const ART = { w: 1536, h: 1024, out: [474, 648], tie: [452, 694] };
   // the painting is the full-bleed wallpaper behind the hero and the board (.gallery-wallpaper)
   const img = document.querySelector('.gallery-wallpaper img');
   // map a painting pixel to board coordinates, from where the image really is (object-fit: cover, its object-position in %)
@@ -33,16 +34,26 @@
   // layout positions (offset*), so cards that are still sliding in do not bend the lines
   const pos = el => { let x = 0, y = 0; for (let n = el; n && n !== board; n = n.offsetParent) { x += n.offsetLeft; y += n.offsetTop; } return [x, y]; };
 
+  // narrow screens: no lines; the tag sits in the flow under the container, on a short string (CSS)
+  function placeNarrow() {
+    lot.style.marginTop = lot.style.marginLeft = '';
+    const [tx, ty] = pos(lot), [ax, ay] = fromArt(ART.tie), room = board.clientWidth - lot.offsetWidth - 2 * tx;
+    lot.style.marginTop = `${Math.max(0, Math.round(ay + 34 - ty))}px`;
+    lot.style.marginLeft = `${Math.max(0, Math.min(room, Math.round(ax - 22 - tx)))}px`;
+    board.classList.add('anchored');
+  }
+
   function draw() {
-    if (getComputedStyle(svg).display === 'none') { svg.innerHTML = ''; return; }
+    lot.style.transform = '';
+    if (!wide.matches) { svg.innerHTML = ''; placeNarrow(); return; }
+    lot.style.marginTop = lot.style.marginLeft = '';
     svg.setAttribute('viewBox', `0 0 ${board.clientWidth} ${board.clientHeight}`);
     const [x0, y0] = fromArt(ART.out), f = n => n.toFixed(1);
     let html = '';
-    // leader: a fine dotted line from the lot card down to the container, like a note on a painting
-    const [lx, ly] = pos(lot), [tx, ty] = fromArt(ART.top), lb = ly + lot.offsetHeight;
-    // from the card's bottom when the container hangs below it, otherwise from its left edge, level with the container
-    const [sx, sy] = ty > lb ? [lx + 18, lb] : [lx, Math.min(Math.max(ty, ly + 24), lb - 24)];
-    html += `<path class="lead" d="M${f(sx)} ${f(sy)} L${f(tx)} ${f(ty)}"/><circle class="lead-dot" cx="${f(tx)}" cy="${f(ty)}" r="3"/>`;
+    // the lot tag hangs below the container, its string tied to the container's lower corner
+    const [kx, ky] = fromArt(ART.tie), lx = kx - 34, ly = ky + 46, hx = lx + 22, hy = ly + 14;
+    lot.style.transform = `translate3d(${f(lx)}px, ${f(ly)}px, 0)`;
+    html += `<path class="string" d="M${f(kx)} ${f(ky)} Q${f((kx + hx) / 2 + 6)} ${f((ky + hy) / 2)} ${f(hx)} ${f(hy)}"/><circle class="knot" cx="${f(kx)}" cy="${f(ky)}" r="2.5"/>`;
     [...list.children].forEach((li, i) => {
       const pin = li.querySelector('.sp-pin'), [px, py] = pos(pin);
       const x1 = px + pin.offsetWidth / 2, y1 = py + pin.offsetHeight / 2, mx = x0 + (x1 - x0) * .55;
@@ -56,11 +67,13 @@
       }
     });
     svg.innerHTML = html;
+    board.classList.add('anchored');
   }
 
   rows();
   window.UI.onLang(rows);
   let tm; addEventListener('resize', () => { clearTimeout(tm); tm = setTimeout(draw, 120); });
+  wide.addEventListener('change', draw);
   document.fonts?.ready.then(draw);
   if (!img.complete) img.addEventListener('load', draw, { once: true });
 

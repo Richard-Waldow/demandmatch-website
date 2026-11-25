@@ -64,7 +64,7 @@ Alle Daten im Beispiel sind Beispieldaten.
 
 ## So funktioniert es
 
-Verteilt auf drei Arten von Systemen. Der Autopilot macht daraus eine Liste.
+Drei Systeme. Eine Liste.
 
 Heute holt Ihr Vertrieb den Kontext aus Outlook, Excel, SAP und dem CRM und gleicht ihn im Kopf ab. Der Autopilot liest aus allen und bündelt es, von der ersten Anfrage bis zum Auftrag in SAP. Nichts wird ersetzt.
 
