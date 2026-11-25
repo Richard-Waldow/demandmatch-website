@@ -3,7 +3,7 @@
 > DemandMatch matches your inventory with your customers' demand, automatically. Software for distributors of chemicals, plastics and industrial goods with $1bn+ in revenue: more sales, better margin, and your sales team only approves.
 
 DemandMatch matches your inventory with your customers' demand, automatically. Your sales team sells more, at better margin, and only approves.
-For distributors of chemicals, plastics and industrial goods with $1bn+ in revenue.
+For chemical, plastics and industrial distributors with $1bn+ revenue.
 
 Website: https://demandmatch.io/en/ · Deutsch: https://demandmatch.io/ · Contact: hello@demandmatch.io
 

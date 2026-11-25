@@ -3,7 +3,7 @@
 > DemandMatch gleicht Ihren Bestand automatisch mit dem Bedarf Ihrer Kunden ab. Software für Distributoren von Chemie, Kunststoffen und Industriebedarf ab 1 Mrd. € Umsatz: mehr Umsatz, bessere Marge, Ihr Vertrieb gibt nur noch frei.
 
 DemandMatch gleicht Ihren Bestand automatisch mit dem Bedarf Ihrer Kunden ab. Ihr Vertrieb verkauft mehr, mit besserer Marge, und gibt nur noch frei.
-Für Distributoren von Chemie, Kunststoffen und Industriebedarf ab 1 Mrd. € Umsatz.
+Für Chemie-, Kunststoff- und Industriedistributoren ab 1 Mrd. € Umsatz.
 
 Website: https://demandmatch.io/ · English: https://demandmatch.io/en/ · Kontakt: hello@demandmatch.io
 
