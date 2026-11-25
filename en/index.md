@@ -74,7 +74,7 @@ Reads from the systems you already run: SAP, Oracle, Odoo, DATEV, HubSpot, Gmail
 
 Every assumption is visible and adjustable. Only money that actually arrives goes into the ROI. Freed time is shown next to it and counted only if you choose to.
 
-Example for a distributor with €1.2bn revenue, 12% gross margin, stock at 12% of revenue and 400 people in sales. Expected: 1% more revenue from lost requests (€1.4m), 0.3 points margin uplift (€3.6m) and €15m of stock (10.5%) sold earlier at 9% holding cost (€1.4m), together €6.4m a year. Cost in year one: Group license €450,000, implementation €150,000, own effort €32,000. Payback after about 2.4 months, 3-year ROI about 950%. Conservative (0.5% revenue, 0.1 points, 3.5% of stock): €2.4m a year, payback after about 6 months, 3-year ROI about 290%. On top, 10 to 20% of sales time freed, 40 to 80 full-time people, not counted.
+Example for a distributor with €1.2bn revenue, 12% gross margin, stock at 12% of revenue and 400 people in sales. Conservative (0.5% revenue, 0.1 points, 3.5% of stock): €2.4m a year. The license is priced on that: €90,000 base plus 15% of €2.4m, about €446,000 a year from year two and about €268,000 in year one. With setup (€60,000) and own effort (€32,000), year one costs about €360,000. Payback after about 4 months, 3-year ROI about 370%. Expected (1% revenue, 0.3 points, 10.5% of stock): €6.4m a year with the same license, payback after about 1.5 months, 3-year ROI about 1,180%. You keep 81 to 93% of the value. On top, 10 to 20% of sales time freed, 40 to 80 full-time people, not counted.
 
 ### How we calculate
 
@@ -85,24 +85,50 @@ Example for a distributor with €1.2bn revenue, 12% gross margin, stock at 12% 
 - Value per year = (captured requests + margin uplift + stock) × share of the business run through DemandMatch.
 - Freed capacity = people × time freed × cost per person. It only counts if you include it.
 - Year 1 brings 50% of the value (ramp-up), years 2 and 3 bring 100% each.
-- Cost in year 1 = license + implementation + own effort (days × €800). Years 2 and 3 = license. The pilot is credited to year 1.
-- License: Division €180,000 a year (up to €400m revenue in scope, implementation €60,000), Group €450,000 (up to €2bn, implementation €150,000), Global from €600,000 (implementation from €150,000).
+- License per year = base (€90,000 for the first company, €30,000 for each further one) + 15% of the conservative value, at most a third of that value. If your own assumptions are below the conservative case, yours apply. Freed capacity never counts.
+- In year one the license counts half the value, as the ramp-up does. Setup €60,000 one-time, €20,000 for each further company.
+- Cost in year 1 = year-one license + setup + own effort (days × €800). Years 2 and 3 = license. The pilot is credited to year 1.
 - 3-year ROI = (3-year value − 3-year cost) ÷ 3-year cost. Payback = the month in which cumulative value exceeds cumulative cost.
 
-## Pricing: Clear prices. Measure first, then decide.
+## Pricing: A fair price. It follows the value we measure together.
 
-Every step has a fixed price, and every paid step is credited to the next one. You never pay twice.
+The first steps have fixed prices, and every paid step is credited to the next one. The license follows an open formula: a base plus a fixed share of the value we measure on your data.
 
 All prices net, excl. VAT. Prices in US dollars for customers in the US, excl. sales tax.
 
 - **Fit check** (30 minutes): Free. A call after you have sent us a few facts: industry, revenue, ERP and size of your sales team. That way we only talk to companies it fits.
 - **Value assessment** (3 weeks): €20,000 / $22,000. On one division's data: how much revenue is lost today, how much stock sits idle and how much margin is left open, in money. Credited in full to the pilot.
-- **Pilot** (30 days): €60,000 / $66,000. One product family, one team, success criteria agreed in writing upfront. Credited 100% to year one if you sign within 30 days of the review.
-- **License** (From year 1): from €180,000 / $198,000 per year. Annual, by scope: one division, the whole group, or global.
+- **Pilot** (30 days): from €60,000 / $66,000. One product family, one team, success criteria agreed in writing upfront. The price depends on scope. Credited 100% to year one if you sign within 30 days of the review.
+- **License** (From year 1): €90,000 / $99,000 per year + NaN%. Annual: a base plus 15% of the value measured in the value assessment and the pilot, at most a third of that value.
 
-- **Division** (To start with one division): €180,000 / $198,000 per year. Scope: One business unit or one country; Revenue in scope: up to €400m; Sales users: up to 60; Implementation, one-time: from €60,000 / $66,000.
-- **Group** (Typical at about €1bn revenue): €450,000 / $495,000 per year. Scope: All divisions and countries; Revenue in scope: up to €2bn; Sales users: up to 500; Implementation, one-time: from €150,000 / $165,000.
-- **Global** (For groups with several companies): from €600,000 / $660,000 per year. Scope: Several ERP systems, single sign-on, a dedicated contact; Revenue in scope: above €2bn; Sales users: by agreement; Implementation, one-time: from €150,000 / $165,000.
+### How your license is calculated
+
+Base + 15% of the value we measure together. At most a third of it.
+
+- **Base per year**: €90,000 / $99,000. For the first company with its ERP: running, connections and support. Each further company €30,000 / $33,000.
+- **Share of value**: 15%. Of the annual value the value assessment and the pilot show on your data. Only the conservative case counts.
+- **Ceiling**: ⅓. The license is never more than a third of that value. You always keep at least three times what you pay.
+
+Setup €60,000 / $66,000 one-time, €20,000 / $22,000 for each further company.
+
+### What makes the price fair
+
+1. **We measure together.** Before the pilot we write down how things run today, and how we calculate. Both sides sign. We measure on your data, in your systems.
+2. **Only the conservative case counts.** Whatever comes on top stays with you. Freed sales time never goes into the price.
+3. **The price is fixed for a year.** No monthly billing by effect, no arguments over attribution, a budget you can plan. Year one counts half the value, because the ramp-up takes time.
+4. **We measure again at every renewal.** If the value rises, the share rises with it. If it falls, your license falls too, never below the base.
+5. **You keep at least three times what you pay.** If the license would be more than a third of the value, we cut it. If a third does not cover the base, we tell you in the fit check that it is not a fit yet.
+
+### Examples with conservative assumptions
+
+| Revenue in scope | Companies | Value per year | License per year | You keep |
+| --- | --- | --- | --- | --- |
+| €150m | 1 | €297,000 | €99,000 (capped at ⅓) | 67% |
+| €600m | 1 | €1.2m | €268,000 | 77% |
+| €1.2bn | 3 | €2.4m | €506,000 | 79% |
+| €3bn | 6 | €5.9m | €1,130,000 | 81% |
+
+With the conservative assumptions of the business case, from year two. Run your own numbers in the business case above.
 
 Every license includes: matching both ways, offers with margin, freight and your pricing rules, read-only connection to ERP, CRM and inbox, and nothing goes out without your team's approval.
 
@@ -136,11 +162,11 @@ More sales, because no request is left waiting and no customer is forgotten. Bet
 
 ### What ROI can a distributor with €1bn revenue expect?
 
-At €1.2bn revenue and 12% gross margin we expect €2.4m (conservative) to €6.4m (expected) a year from more sales, better margin and stock sold earlier. Against the Group license, implementation and own effort of about €630,000 together in year one, that pays back in about 2 to 6 months. Freed sales time comes on top. The calculator on this page lets you adjust every assumption. Only money that actually arrives goes into the ROI; freed time is shown next to it and counted only if you choose to.
+At €1.2bn revenue and 12% gross margin we expect €2.4m (conservative) to €6.4m (expected) a year from more sales, better margin and stock sold earlier. The license is priced on the conservative case only: about €446,000 a year from year two. With setup and own effort, year one costs about €360,000 and pays back in about 1.5 to 4 months. Freed sales time comes on top. The calculator on this page lets you adjust every assumption. Only money that actually arrives goes into the ROI; freed time is shown next to it and counted only if you choose to.
 
 ### How much does DemandMatch cost?
 
-The fit check is free. The value assessment costs €20,000 and the 30-day pilot €60,000. Every paid step is credited to the next one: the value assessment in full to the pilot, the pilot 100% to year one of the license if you sign within 30 days of the review. You never pay twice. The license costs per year €180,000 for one division (up to €400m revenue), €450,000 for the whole group (up to €2bn revenue) and from €600,000 globally, plus a one-time implementation and customisation fee from €60,000 (Division) or from €150,000 (Group, Global). All prices net, excl. VAT. In the US: $22,000, $66,000, $198,000, $495,000 and from $660,000, plus from $66,000 or from $165,000 for implementation, excl. sales tax.
+The fit check is free. The value assessment costs €20,000 and the 30-day pilot from €60,000, depending on scope. Every paid step is credited to the next one: the value assessment in full to the pilot, the pilot 100% to year one of the license if you sign within 30 days of the review. The license follows an open formula: a base of €90,000 a year for the first company with its ERP (€30,000 for each further one) plus 15% of the annual value we measure together on your data in the value assessment and the pilot, in the conservative case only. It is never more than a third of that value, so you always keep at least three times what you pay. Setup is €60,000 one-time (€20,000 for each further company). All prices net, excl. VAT. In the US: $22,000, from $66,000, base $99,000 ($33,000 for each further company), setup $66,000 ($22,000), excl. sales tax.
 
 ### Which systems does DemandMatch work with?
 

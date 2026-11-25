@@ -1,15 +1,15 @@
-/* #roi: the business case a CFO can run. Inputs in three groups (company, effect, cost), presets for the effect
-   (conservative / expected), results in a calm panel: payback, 3-year ROI, value per year, license in proportion,
-   where the value comes from, freed capacity (shown, counted only on request), the three years, the cost line.
-   The model and every number come from here; the formulas are also written out in the page (roi_formulas). */
+/* #roi: the business case a CFO can run, and the mirror of the price. Inputs in three groups (company, effect, cost),
+   presets for the effect (conservative / expected), results in a calm panel: payback, 3-year ROI, value per year, the
+   license, how the value splits between the customer and DemandMatch, where it comes from, freed capacity (shown,
+   counted only on request), the three years, the cost line. The license is priced with PRICES.fee (pricing.js) on the
+   conservative value for this company, or on the visitor's own effect if that is lower; freed capacity never counts.
+   So picking "expected" raises the value but not the license: everything above the conservative case stays with the
+   customer. The formulas are also written out in the page (roi_formulas). */
 (() => {
   const host = document.getElementById('roi-app'); if (!host || !window.UI) return;
   const t = k => window.UI.t(k), de = window.UI.lang === 'de';
-  const DAY = 800, RAMP = .5;
-  // Division, Group, Global (Global is "from"), in euros, from the price list in pricing.js
-  const P = window.PRICES && window.PRICES.tiers;
-  const LIC = P ? ['division', 'group', 'global'].map(k => ({ fee: P[k].fee.eur, impl: P[k].impl.eur }))
-    : [{ fee: 180000, impl: 60000 }, { fee: 450000, impl: 150000 }, { fee: 600000, impl: 150000 }];
+  const PR = window.PRICES; if (!PR) return;
+  const DAY = 800, RAMP = PR.license.ramp;
 
   // ------------------------------------------------------------------ number formats (German: 1,2 Mrd. € / English: €1.2bn)
   const nf = (v, d = 0) => new Intl.NumberFormat(de ? 'de-DE' : 'en-US', { minimumFractionDigits: d, maximumFractionDigits: d }).format(v);
@@ -38,24 +38,28 @@
     { k: 'freed', g: 2, min: 0, max: 20, step: .5, v: [3.5, 10.5], f: v => pct(v, 1), hint: s => `≈ ${eur(s.rev * s.stock / 100 * s.freed / 100)} ${t('roi_of_stock')}` },
     { k: 'hold', g: 2, min: 5, max: 15, step: .5, v: 9, f: v => pct(v, v % 1 ? 1 : 0) },
     { k: 'time', g: 2, min: 0, max: 40, step: 1, v: [10, 20], f: v => pct(v) },
-    { k: 'days', g: 3, min: 0, max: 200, step: 5, v: 40, f: v => `${nf(v)} ${t('roi_days_u')}`, hint: () => t('roi_days_h') }
+    { k: 'days', g: 3, min: 0, max: 200, step: 5, v: 40, f: v => `${nf(v)} ${t('roi_days_u')}`, hint: () => t('roi_days_h') },
+    { k: 'co', g: 3, min: 1, max: 20, step: 1, v: 1, f: v => nf(v), hint: () => t('roi_co_h') }
   ];
   const LABEL = { rev: 'roi_rev', gm: 'roi_gm', stock: 'roi_stock', people: 'roi_people', pcost: 'roi_pcost', scope: 'roi_scope',
-    sales: 'roi_sales', margin: 'roi_margin', freed: 'roi_freed', hold: 'roi_hold', time: 'roi_time', days: 'roi_days' };
+    sales: 'roi_sales', margin: 'roi_margin', freed: 'roi_freed', hold: 'roi_hold', time: 'roi_time', days: 'roi_days', co: 'roi_co' };
+  // the conservative effect (the first preset), which the license is priced on
+  const CONS = Object.fromEntries(IN.filter(i => Array.isArray(i.v)).map(i => [i.k, i.v[0]]));
 
-  const S = { preset: 1, lic: -1, cap: false }; // preset 0 conservative, 1 expected, 2 your numbers; lic -1 = automatic
+  const S = { preset: 1, cap: false }; // preset 0 conservative, 1 expected, 2 your numbers
   IN.forEach(i => { S[i.k] = Array.isArray(i.v) ? i.v[1] : i.v; });
 
   // ------------------------------------------------------------------ the model
   function model(s) {
-    const scope = s.scope / 100, gm = s.gm / 100;
-    const inRev = s.rev * scope, inPeople = s.people * scope;
-    const levers = [s.rev * s.sales / 100 * gm, s.rev * s.margin / 100, s.rev * s.stock / 100 * s.freed / 100 * s.hold / 100].map(v => v * scope);
-    const capFte = inPeople * s.time / 100, capEur = capFte * s.pcost;
-    const cash = levers.reduce((a, b) => a + b, 0), value = cash + (s.cap ? capEur : 0);
-    const auto = inRev <= 4e8 ? 0 : inRev <= 2e9 ? 1 : 2;
-    const li = s.lic < 0 ? auto : s.lic, lic = LIC[li], own = s.days * DAY;
-    const val = [value * RAMP, value, value], cost = [lic.fee + lic.impl + own, lic.fee, lic.fee];
+    const scope = s.scope / 100, gm = s.gm / 100, inPeople = s.people * scope;
+    const lev = e => [s.rev * e.sales / 100 * gm, s.rev * e.margin / 100, s.rev * s.stock / 100 * e.freed / 100 * s.hold / 100].map(v => v * scope);
+    const sum = a => a.reduce((x, y) => x + y, 0);
+    const levers = lev(s), capFte = inPeople * s.time / 100, capEur = capFte * s.pcost;
+    const cash = sum(levers), value = cash + (s.cap ? capEur : 0);
+    // the license: base + share of the priced value (conservative, or lower if you say so), half the value in year one
+    const priced = Math.min(cash, sum(lev(CONS)));
+    const f1 = PR.fee(priced * RAMP, s.co), f2 = PR.fee(priced, s.co), setup = PR.setupFee(s.co), own = s.days * DAY;
+    const val = [value * RAMP, value, value], cost = [f1.fee + setup + own, f2.fee, f2.fee];
     let cum = 0; const net = val.map((v, i) => (cum += v - cost[i]));
     const V3 = val[0] + val[1] + val[2], C3 = cost[0] + cost[1] + cost[2];
     // payback: costs fall due at the start of each year, value arrives evenly month by month
@@ -66,8 +70,8 @@
       if (cv + mv >= cc && mv > 0) pay = m + (cc - cv) / mv;
       cv += mv;
     }
-    return { levers, cash, value, capFte, capEur, auto, li, lic, own, val, cost, net, V3, C3, roi: (V3 - C3) / C3, pay,
-      shareRev: lic.fee / inRev * 100, shareGp: lic.fee / (inRev * gm) * 100 };
+    return { levers, cash, value, capFte, capEur, priced, f1, f2, setup, own, val, cost, net, V3, C3, roi: (V3 - C3) / C3, pay,
+      ours: value > 0 ? Math.min(1, f2.fee / value) : 1 };
   }
 
   // ------------------------------------------------------------------ markup
@@ -80,14 +84,6 @@
     </div>`;
   const group = (n, name, extra = '') => `
     <fieldset class="roi-g"><legend>${esc(name)}</legend>${IN.filter(i => i.g === n).map(row).join('')}${extra}</fieldset>`;
-  const licRow = `
-    <div class="roi-r roi-lic">
-      <span class="roi-lbl" id="roi-lic-l">${esc(t('roi_lic'))}</span><output></output>
-      <div class="roi-seg roi-seg-s" role="radiogroup" aria-labelledby="roi-lic-l">
-        ${[t('roi_lic_auto'), ...t('roi_lics')].map((n, i) => `<button type="button" role="radio" data-lic="${i - 1}">${esc(n)}</button>`).join('')}
-      </div>
-      <small>${esc(t('roi_lic_h'))}</small>
-    </div>`;
   const fact = (k, label) => `<div class="roi-f roi-f-${k}"><dt>${esc(label)}</dt><dd><b></b><small></small></dd></div>`;
 
   host.innerHTML = `
@@ -97,17 +93,23 @@
           ${t('roi_presets').map((n, i) => `<button type="button" role="radio" data-preset="${i}">${esc(n)}</button>`).join('')}
         </div>
         <div class="roi-mini" aria-hidden="true"><span></span><span></span></div>
-        ${group(1, t('roi_g1'))}${group(2, t('roi_g2'))}${group(3, t('roi_g3'), licRow)}
+        ${group(1, t('roi_g1'))}${group(2, t('roi_g2'))}${group(3, t('roi_g3'))}
       </div>
       <div class="roi-side"><aside class="roi-out">
         <img class="roi-art" src="${window.SHARED_BASE || 'assets/'}art/roi-silos.jpg" alt="" loading="lazy" decoding="async">
         <div class="roi-memo">
         <p class="roi-memo-h"><span>${esc(t('roi_memo'))}</span><span class="roi-memo-c"></span></p>
         <p class="roi-verdict" aria-live="polite"></p>
-        <dl class="roi-facts">${fact('val', t('roi_value'))}${fact('share', t('roi_share'))}</dl>
+        <dl class="roi-facts">${fact('val', t('roi_value'))}${fact('fee', t('roi_fee'))}</dl>
+        <div class="roi-blk roi-split">
+          <p class="roi-h">${esc(t('roi_split'))}</p>
+          <div class="roi-bar" aria-hidden="true"><i></i><i></i></div>
+          <ul class="roi-leg">${t('roi_split_l').map((n, i) => `<li><i class="s${i}"></i><span>${esc(n)}</span><b></b></li>`).join('')}</ul>
+          <p class="roi-split-s">${esc(t('roi_split_s'))}</p>
+        </div>
         <div class="roi-blk">
           <p class="roi-h">${esc(t('roi_levers'))}</p>
-          <div class="roi-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="roi-bar roi-src" aria-hidden="true"><i></i><i></i><i></i></div>
           <ul class="roi-leg">${t('roi_l').map((n, i) => `<li><i class="c${i}"></i><span>${esc(n)}</span><b></b></li>`).join('')}</ul>
         </div>
         <div class="roi-blk roi-capb">
@@ -150,8 +152,6 @@
       if (i.hint) el.querySelector('small').textContent = i.hint(S);
     });
     qa('[data-preset]').forEach(b => b.setAttribute('aria-checked', String(+b.dataset.preset === S.preset)));
-    qa('[data-lic]').forEach(b => b.setAttribute('aria-checked', String(+b.dataset.lic === S.lic)));
-    q('.roi-lic output').textContent = `${t('roi_lics')[m.li]} · ${eur(m.lic.fee)}${m.li === 2 ? '+' : ''}`;
     q('.roi-sw input').checked = S.cap;
 
     const payTxt = m.pay === null ? t('roi_never') : `${nf(m.pay, m.pay < 10 ? 1 : 0)} ${t('roi_months')}`;
@@ -162,11 +162,17 @@
     q('.roi-memo-c').textContent = [t('roi_memo_rev').replace('{r}', eur(S.rev)), S.scope < 100 ? t('roi_memo_scope').replace('{x}', pct(S.scope)) : ''].filter(Boolean).join(' · ');
     const set = (k, b, s) => { q(`.roi-f-${k} b`).textContent = b; q(`.roi-f-${k} small`).textContent = s; };
     set('val', eur(m.value), t('roi_value_s'));
-    set('share', pct(m.shareGp, 2), t('roi_share_s').replace('{a}', pct(m.shareRev, 2)).replace('{b}', pct(m.shareGp, 2)));
+    set('fee', eur(m.f2.fee), !m.f2.fit ? t('roi_fee_fit') : m.f2.capped ? t('roi_fee_cap').replace('{v}', eur(m.priced))
+      : t('roi_fee_s').replace('{b}', eur(m.f2.base)).replace('{p}', pct(PR.license.share * 100)).replace('{v}', eur(m.priced)));
+
+    // how the value splits, from year two: what the customer keeps and what the license takes
+    const split = [1 - m.ours, m.ours];
+    qa('.roi-split .roi-bar i').forEach((el, i) => { el.style.width = `${split[i] * 100}%`; });
+    qa('.roi-split .roi-leg b').forEach((el, i) => { el.textContent = `${pct(split[i] * 100)} · ${eur(i ? m.f2.fee : Math.max(0, m.value - m.f2.fee))}`; });
 
     const tot = m.cash || 1;
-    qa('.roi-bar i').forEach((el, i) => { el.style.width = `${(m.levers[i] / tot) * 100}%`; });
-    qa('.roi-leg b').forEach((el, i) => { el.textContent = eur(m.levers[i]); });
+    qa('.roi-src i').forEach((el, i) => { el.style.width = `${(m.levers[i] / tot) * 100}%`; });
+    qa('.roi-blk:not(.roi-split) .roi-leg b').forEach((el, i) => { el.textContent = eur(m.levers[i]); });
     q('.roi-cap-s').textContent = t('roi_cap_s').replace('{f}', nf(m.capFte)).replace('{v}', eur(m.capEur));
     q('.roi-capb').classList.toggle('on', S.cap);
 
@@ -174,7 +180,7 @@
     [m.val, m.cost, m.net].forEach((arr, r) => [...cells[r].querySelectorAll('td')].forEach((td, i) => {
       td.textContent = eur(arr[i]); td.classList.toggle('neg', arr[i] < 0 && r === 2);
     }));
-    q('.roi-costl').textContent = t('roi_cost_l').replace('{l}', eur(m.lic.fee)).replace('{i}', eur(m.lic.impl)).replace('{d}', eur(m.own));
+    q('.roi-costl').textContent = t('roi_cost_l').replace('{l1}', eur(m.f1.fee)).replace('{l}', eur(m.f2.fee)).replace('{i}', eur(m.setup)).replace('{d}', eur(m.own));
     const mini = qa('.roi-mini span');
     mini[0].textContent = `${t('roi_payback')} ${payTxt}`; mini[1].textContent = `ROI ${pct(m.roi * 100)}`;
   }
@@ -190,7 +196,6 @@
     paint();
   }));
   qa('[data-preset]').forEach(b => b.addEventListener('click', () => preset(+b.dataset.preset)));
-  qa('[data-lic]').forEach(b => b.addEventListener('click', () => { S.lic = +b.dataset.lic; paint(); }));
   q('.roi-sw input').addEventListener('change', e => { S.cap = e.target.checked; paint(); });
 
   // ------------------------------------------------------------------ share and print. The link carries only the numbers, nothing personal
@@ -198,7 +203,7 @@
   function link() {
     const u = new URL(location.href);
     u.search = ''; u.hash = 'roi';
-    u.searchParams.set('roi', [...KEYS.map(k => S[k]), S.lic, S.cap ? 1 : 0].join('_'));
+    u.searchParams.set('roi', [...KEYS.map(k => S[k]), S.cap ? 1 : 0].join('_'));
     return u.href;
   }
   const lb = q('[data-roi-link]');
@@ -212,9 +217,9 @@
   const shared = new URLSearchParams(location.search).get('roi');
   if (shared) {
     const v = shared.split('_').map(Number);
-    if (v.length === KEYS.length + 2 && v.every(Number.isFinite)) {
+    if (v.length === KEYS.length + 1 && v.every(Number.isFinite)) {
       KEYS.forEach((k, i) => { const d = rows[k].i; S[k] = d.log ? Math.min(LOG.max, Math.max(LOG.min, v[i])) : Math.min(d.max, Math.max(d.min, v[i])); });
-      S.lic = [-1, 0, 1, 2].includes(v[KEYS.length]) ? v[KEYS.length] : -1; S.cap = v[KEYS.length + 1] === 1; S.preset = 2;
+      S.cap = v[KEYS.length] === 1; S.preset = 2;
     }
   }
   setControls();

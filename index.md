@@ -74,7 +74,7 @@ Liest aus Ihren bestehenden Systemen: SAP, Oracle, Odoo, DATEV, HubSpot, Gmail, 
 
 Jede Annahme ist sichtbar und verstellbar. In den ROI geht nur Geld ein, das wirklich ankommt. Frei werdende Zeit zeigen wir daneben, gerechnet wird sie nur, wenn Sie es wollen.
 
-Beispiel für einen Distributor mit 1,2 Mrd. € Umsatz, 12 % Bruttomarge, 12 % Lagerbestand und 400 Personen im Vertrieb. Erwartet: 1 % mehr Umsatz aus verlorenen Anfragen (1,4 Mio. €), 0,3 Prozentpunkte Margenplus (3,6 Mio. €) und 15 Mio. € Bestand (10,5 %) früher verkauft bei 9 % Lagerhaltungskosten (1,4 Mio. €), zusammen 6,4 Mio. € pro Jahr. Kosten im ersten Jahr: Gruppenlizenz 450.000 €, Einführung 150.000 €, Eigenaufwand 32.000 €. Amortisation nach etwa 2,4 Monaten, ROI über 3 Jahre etwa 950 %. Vorsichtig (0,5 % Umsatz, 0,1 Prozentpunkte, 3,5 % des Bestands): 2,4 Mio. € pro Jahr, Amortisation nach etwa 6 Monaten, ROI über 3 Jahre etwa 290 %. Dazu frei werdende Zeit von 10 bis 20 %, das sind 40 bis 80 Vollzeitstellen, nicht eingerechnet.
+Beispiel für einen Distributor mit 1,2 Mrd. € Umsatz, 12 % Bruttomarge, 12 % Lagerbestand und 400 Personen im Vertrieb. Vorsichtig (0,5 % Umsatz, 0,1 Prozentpunkte, 3,5 % des Bestands): 2,4 Mio. € pro Jahr. Darauf rechnet die Lizenz: 90.000 € Basis plus 15 % von 2,4 Mio. €, rund 446.000 € pro Jahr ab dem zweiten Jahr, im ersten Jahr rund 268.000 €. Mit Einrichtung (60.000 €) und Eigenaufwand (32.000 €) kostet das erste Jahr rund 360.000 €. Amortisation nach etwa 4 Monaten, ROI über 3 Jahre etwa 370 %. Erwartet (1 % Umsatz, 0,3 Prozentpunkte, 10,5 % des Bestands): 6,4 Mio. € pro Jahr bei derselben Lizenz, Amortisation nach etwa 1,5 Monaten, ROI über 3 Jahre etwa 1.180 %. Sie behalten 81 bis 93 % des Werts. Dazu frei werdende Zeit von 10 bis 20 %, das sind 40 bis 80 Vollzeitstellen, nicht eingerechnet.
 
 ### So rechnen wir
 
@@ -85,24 +85,50 @@ Beispiel für einen Distributor mit 1,2 Mrd. € Umsatz, 12 % Bruttomarge, 12 % 
 - Wert pro Jahr = (Gewonnene Anfragen + Margenplus + Bestand) × Anteil des Geschäfts mit DemandMatch.
 - Frei werdende Kapazität = Mitarbeitende × frei werdende Zeit × Kosten pro Person. Sie zählt nur mit, wenn Sie sie einrechnen.
 - Jahr 1 bringt 50 % des Werts (Anlauf), Jahr 2 und 3 je 100 %.
-- Kosten Jahr 1 = Lizenz + Einführung + Eigenaufwand (Personentage × 800 €). Jahr 2 und 3 = Lizenz. Der Pilot wird auf Jahr 1 angerechnet.
-- Lizenz: Bereich 180.000 € pro Jahr (bis 400 Mio. € Umsatz im Umfang, Einführung 60.000 €), Gruppe 450.000 € (bis 2 Mrd. €, Einführung 150.000 €), Global ab 600.000 € (Einführung ab 150.000 €).
+- Lizenz pro Jahr = Basis (90.000 € für die erste Gesellschaft, 30.000 € je weitere) + 15 % des vorsichtigen Werts, höchstens ein Drittel dieses Werts. Liegen Ihre eigenen Annahmen unter dem vorsichtigen Fall, gelten Ihre. Frei werdende Kapazität zählt nie.
+- Im ersten Jahr zählt für die Lizenz der halbe Wert, wie beim Anlauf. Einrichtung einmalig 60.000 €, 20.000 € je weitere Gesellschaft.
+- Kosten Jahr 1 = Lizenz Jahr 1 + Einrichtung + Eigenaufwand (Personentage × 800 €). Jahr 2 und 3 = Lizenz. Der Pilot wird auf Jahr 1 angerechnet.
 - ROI über 3 Jahre = (Wert über 3 Jahre − Kosten über 3 Jahre) ÷ Kosten über 3 Jahre. Amortisation = der Monat, in dem der kumulierte Wert die kumulierten Kosten übersteigt.
 
-## Preise: Klare Preise. Erst messen, dann entscheiden.
+## Preise: Ein fairer Preis. Er folgt dem Wert, den wir gemeinsam messen.
 
-Jeder Schritt hat einen festen Preis, und jeder bezahlte Schritt wird auf den nächsten angerechnet. Sie zahlen nie doppelt.
+Die ersten Schritte haben feste Preise, und jeder bezahlte Schritt wird auf den nächsten angerechnet. Die Lizenz folgt einer offenen Formel: eine Basis plus ein fester Anteil am Wert, den wir mit Ihren Daten messen.
 
 Alle Preise netto, zzgl. MwSt. Preise in US-Dollar für Kunden in den USA, zzgl. Sales Tax.
 
 - **Fit-Check** (30 Minuten): Kostenlos. Ein Gespräch, nachdem Sie uns ein paar Eckdaten geschickt haben: Branche, Umsatz, ERP und Größe des Vertriebs. So sprechen wir nur mit Unternehmen, für die es passt.
 - **Potenzialanalyse** (3 Wochen): 20.000 € / 22.000 $. Auf den Daten eines Bereichs: wie viel Umsatz heute verloren geht, wie viel Bestand liegt und wie viel Marge offen bleibt, in Euro. Wird voll auf den Pilot angerechnet.
-- **Pilot** (30 Tage): 60.000 € / 66.000 $. Eine Produktfamilie, ein Team, Erfolgskriterien vorher schriftlich. Wird zu 100 % auf das erste Jahr angerechnet, wenn Sie innerhalb von 30 Tagen nach der Auswertung unterschreiben.
-- **Lizenz** (Ab Jahr 1): ab 180.000 € / 198.000 $ pro Jahr. Jährlich, je nach Umfang: ein Bereich, die ganze Gruppe oder global.
+- **Pilot** (30 Tage): ab 60.000 € / 66.000 $. Eine Produktfamilie, ein Team, Erfolgskriterien vorher schriftlich. Der Preis hängt vom Umfang ab. Wird zu 100 % auf das erste Jahr angerechnet, wenn Sie innerhalb von 30 Tagen nach der Auswertung unterschreiben.
+- **Lizenz** (Ab Jahr 1): 90.000 € / 99.000 $ pro Jahr + NaN %. Jährlich: eine Basis plus 15 % des Werts, den Potenzialanalyse und Pilot gemessen haben, höchstens ein Drittel dieses Werts.
 
-- **Bereich** (Für den Einstieg mit einem Bereich): 180.000 € / 198.000 $ pro Jahr. Umfang: Ein Geschäftsbereich oder ein Land; Umsatz im Umfang: bis 400 Mio. €; Nutzer im Vertrieb: bis 60; Einführung, einmalig: ab 60.000 € / 66.000 $.
-- **Gruppe** (Typisch bei rund 1 Mrd. € Umsatz): 450.000 € / 495.000 $ pro Jahr. Umfang: Alle Bereiche und Länder; Umsatz im Umfang: bis 2 Mrd. €; Nutzer im Vertrieb: bis 500; Einführung, einmalig: ab 150.000 € / 165.000 $.
-- **Global** (Für Konzerne mit mehreren Gesellschaften): ab 600.000 € / 660.000 $ pro Jahr. Umfang: Mehrere ERP-Systeme, Single Sign-on, fester Ansprechpartner; Umsatz im Umfang: über 2 Mrd. €; Nutzer im Vertrieb: nach Vereinbarung; Einführung, einmalig: ab 150.000 € / 165.000 $.
+### So entsteht Ihre Lizenz
+
+Basis + 15 % des Werts, den wir gemeinsam messen. Höchstens ein Drittel davon.
+
+- **Basis pro Jahr**: 90.000 € / 99.000 $. Für die erste Gesellschaft mit ihrem ERP: Betrieb, Anbindungen und Support. Jede weitere Gesellschaft 30.000 € / 33.000 $.
+- **Anteil am Wert**: 15 %. Vom Wert pro Jahr, den Potenzialanalyse und Pilot mit Ihren Daten zeigen. Es zählt nur der vorsichtige Fall.
+- **Obergrenze**: ⅓. Die Lizenz ist nie höher als ein Drittel dieses Werts. Sie behalten immer mindestens das Dreifache.
+
+Einrichtung einmalig 60.000 € / 66.000 $, 20.000 € / 22.000 $ für jede weitere Gesellschaft.
+
+### Was den Preis fair macht
+
+1. **Wir messen gemeinsam.** Vor dem Pilot halten wir schriftlich fest, wie es heute läuft, und wie wir rechnen. Beide Seiten unterschreiben. Gemessen wird mit Ihren Daten, in Ihren Systemen.
+2. **Nur der vorsichtige Fall zählt.** Was darüber hinaus entsteht, behalten Sie. Frei werdende Zeit im Vertrieb geht nie in den Preis ein.
+3. **Der Preis steht für ein Jahr fest.** Keine Abrechnung nach Monaten, kein Streit über Zuordnung, Ihr Budget ist planbar. Im ersten Jahr zählt der halbe Wert, weil der Anlauf Zeit braucht.
+4. **Bei jeder Verlängerung messen wir neu.** Steigt der Wert, steigt der Anteil mit. Sinkt er, sinkt Ihre Lizenz, nie unter die Basis.
+5. **Sie behalten mindestens das Dreifache.** Wäre die Lizenz höher als ein Drittel des Werts, kürzen wir sie. Reicht ein Drittel nicht für die Basis, sagen wir Ihnen im Fit-Check, dass es noch nicht passt.
+
+### Beispiele mit vorsichtigen Annahmen
+
+| Umsatz im Umfang | Gesellschaften | Wert pro Jahr | Lizenz pro Jahr | Sie behalten |
+| --- | --- | --- | --- | --- |
+| 150 Mio. € | 1 | 297.000 € | 99.000 € (auf ⅓ begrenzt) | 67 % |
+| 600 Mio. € | 1 | 1,2 Mio. € | 268.000 € | 77 % |
+| 1,2 Mrd. € | 3 | 2,4 Mio. € | 506.000 € | 79 % |
+| 3 Mrd. € | 6 | 5,9 Mio. € | 1.130.000 € | 81 % |
+
+Mit den vorsichtigen Annahmen des Business Case, ab dem zweiten Jahr. Ihre eigenen Zahlen rechnen Sie im Business Case oben.
 
 In jeder Lizenz: Abgleich in beide Richtungen, Angebote mit Marge, Fracht und Ihren Preisregeln, lesende Anbindung an ERP, CRM und Postfach, und nichts geht raus ohne Freigabe Ihres Teams.
 
@@ -136,11 +162,11 @@ Mehr Umsatz, weil keine Anfrage liegen bleibt und kein Kunde vergessen wird. Bes
 
 ### Welchen ROI kann ein Distributor mit 1 Mrd. € Umsatz erwarten?
 
-Bei 1,2 Mrd. € Umsatz und 12 % Bruttomarge rechnen wir mit 2,4 Mio. € (vorsichtig) bis 6,4 Mio. € (erwartet) pro Jahr aus mehr Umsatz, besserer Marge und früher verkauftem Bestand. Gegen Gruppenlizenz, Einführung und Eigenaufwand von zusammen rund 630.000 € im ersten Jahr amortisiert sich das nach etwa 2 bis 6 Monaten. Frei werdende Vertriebszeit kommt dazu. Mit dem Rechner auf dieser Seite lassen sich alle Annahmen anpassen. In den ROI geht nur Geld ein, das wirklich ankommt; frei werdende Zeit zeigen wir daneben und rechnen sie nur, wenn Sie das wollen.
+Bei 1,2 Mrd. € Umsatz und 12 % Bruttomarge rechnen wir mit 2,4 Mio. € (vorsichtig) bis 6,4 Mio. € (erwartet) pro Jahr aus mehr Umsatz, besserer Marge und früher verkauftem Bestand. Die Lizenz rechnet nur mit dem vorsichtigen Fall: rund 446.000 € pro Jahr ab dem zweiten Jahr. Mit Einrichtung und Eigenaufwand kostet das erste Jahr rund 360.000 € und amortisiert sich nach etwa 1,5 bis 4 Monaten. Frei werdende Vertriebszeit kommt dazu. Mit dem Rechner auf dieser Seite lassen sich alle Annahmen anpassen. In den ROI geht nur Geld ein, das wirklich ankommt; frei werdende Zeit zeigen wir daneben und rechnen sie nur, wenn Sie das wollen.
 
 ### Was kostet DemandMatch?
 
-Der Fit-Check ist kostenlos. Die Potenzialanalyse kostet 20.000 €, der Pilot über 30 Tage 60.000 €. Jeder bezahlte Schritt wird auf den nächsten angerechnet: die Potenzialanalyse voll auf den Pilot, der Pilot zu 100 % auf das erste Lizenzjahr, wenn Sie innerhalb von 30 Tagen nach der Auswertung unterschreiben. Sie zahlen nie doppelt. Die Lizenz kostet pro Jahr 180.000 € für einen Bereich (bis 400 Mio. € Umsatz), 450.000 € für die ganze Gruppe (bis 2 Mrd. € Umsatz) und ab 600.000 € global, dazu einmalig ab 60.000 € (Bereich) bzw. ab 150.000 € (Gruppe, Global) für Einführung und Anpassung. Alle Preise netto zzgl. MwSt. In den USA: 22.000 $, 66.000 $, 198.000 $, 495.000 $ und ab 660.000 $, dazu ab 66.000 $ bzw. ab 165.000 $ für die Einführung, zzgl. Sales Tax.
+Der Fit-Check ist kostenlos. Die Potenzialanalyse kostet 20.000 €, der Pilot über 30 Tage ab 60.000 €, je nach Umfang. Jeder bezahlte Schritt wird auf den nächsten angerechnet: die Potenzialanalyse voll auf den Pilot, der Pilot zu 100 % auf das erste Lizenzjahr, wenn Sie innerhalb von 30 Tagen nach der Auswertung unterschreiben. Die Lizenz folgt einer offenen Formel: eine Basis von 90.000 € pro Jahr für die erste Gesellschaft mit ihrem ERP (30.000 € für jede weitere) plus 15 % des Werts pro Jahr, den wir in Potenzialanalyse und Pilot gemeinsam mit Ihren Daten messen, und zwar nur im vorsichtigen Fall. Sie ist nie höher als ein Drittel dieses Werts, Sie behalten also immer mindestens das Dreifache. Dazu einmalig 60.000 € für die Einrichtung (20.000 € je weitere Gesellschaft). Alle Preise netto zzgl. MwSt. In den USA: 22.000 $, ab 66.000 $, Basis 99.000 $ (33.000 $ je weitere Gesellschaft), Einrichtung 66.000 $ (22.000 $), zzgl. Sales Tax.
 
 ### Mit welchen Systemen arbeitet DemandMatch?
 

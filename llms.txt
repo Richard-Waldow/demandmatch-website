@@ -16,10 +16,13 @@ All prices net (excl. VAT in Europe, excl. sales tax in the US). Every paid step
 
 - Fit check (30 minutes): Free
 - Value assessment (3 weeks): €20,000 / $22,000
-- Pilot (30 days): €60,000 / $66,000
-- License Division (To start with one division): €180,000 / $198,000 per year, plus implementation from €60,000 / $66,000 one-time. One business unit or one country; revenue in scope up to €400m; sales users up to 60.
-- License Group (Typical at about €1bn revenue): €450,000 / $495,000 per year, plus implementation from €150,000 / $165,000 one-time. All divisions and countries; revenue in scope up to €2bn; sales users up to 500.
-- License Global (For groups with several companies): from €600,000 / $660,000 per year, plus implementation from €150,000 / $165,000 one-time. Several ERP systems, single sign-on, a dedicated contact; revenue in scope above €2bn; sales users by agreement.
+- Pilot (30 days): from €60,000 / $66,000
+- License, per year: €90,000 / $99,000 base for the first company with its ERP (€30,000 / $33,000 for each further one) plus 15% of the annual value measured together in the value assessment and the pilot, conservative case only, never more than a third of that value. Setup €60,000 / $66,000 one-time (€20,000 / $22,000 for each further company).
+- We measure together. Before the pilot we write down how things run today, and how we calculate. Both sides sign. We measure on your data, in your systems.
+- Only the conservative case counts. Whatever comes on top stays with you. Freed sales time never goes into the price.
+- The price is fixed for a year. No monthly billing by effect, no arguments over attribution, a budget you can plan. Year one counts half the value, because the ramp-up takes time.
+- We measure again at every renewal. If the value rises, the share rises with it. If it falls, your license falls too, never below the base.
+- You keep at least three times what you pay. If the license would be more than a third of the value, we cut it. If a third does not cover the base, we tell you in the fit check that it is not a fit yet.
 - Every license includes: matching both ways, offers with margin, freight and your pricing rules, read-only connection to ERP, CRM and inbox, and nothing goes out without your team's approval.
 - Paid annually in advance, 12-month minimum term. The value assessment and the pilot are credited in full.
 - Business case calculator: https://demandmatch.io/en/#roi
