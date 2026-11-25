@@ -70,6 +70,25 @@ Today your sales team pulls context from Outlook, Excel, SAP and the CRM and rec
 
 Reads from the systems you already run: SAP, Oracle, Odoo, DATEV, HubSpot, Gmail, Outlook, WhatsApp, Slack.
 
+## Business case: Run the numbers yourself. With your figures, not ours.
+
+Every assumption is visible and adjustable. Only money that actually arrives goes into the ROI. Freed time is shown next to it and counted only if you choose to.
+
+Example for a distributor with €1.2bn revenue, 12% gross margin, stock at 12% of revenue and 400 people in sales. Expected: 1% more revenue from lost requests (€1.4m), 0.3 points margin uplift (€3.6m) and €15m of stock (10.5%) sold earlier at 9% holding cost (€1.4m), together €6.4m a year. Cost in year one: Group license €450,000, implementation €150,000, own effort €32,000. Payback after about 2.4 months, 3-year ROI about 950%. Conservative (0.5% revenue, 0.1 points, 3.5% of stock): €2.4m a year, payback after about 6 months, 3-year ROI about 290%. On top, 10 to 20% of sales time freed, 40 to 80 full-time people, not counted.
+
+### How we calculate
+
+- Gross profit = revenue × gross margin.
+- Captured requests = revenue × extra revenue % × gross margin.
+- Margin uplift = revenue × margin points.
+- Stock = revenue × stock % × share sold earlier × holding cost. Avoided write-downs are not counted.
+- Value per year = (captured requests + margin uplift + stock) × share of the business run through DemandMatch.
+- Freed capacity = people × time freed × cost per person. It only counts if you include it.
+- Year 1 brings 50% of the value (ramp-up), years 2 and 3 bring 100% each.
+- Cost in year 1 = license + implementation + own effort (days × €800). Years 2 and 3 = license. The pilot is credited to year 1.
+- License: Division €180,000 a year (up to €400m revenue in scope, implementation €60,000), Group €450,000 (up to €2bn, implementation €150,000), Global from €600,000 (implementation from €150,000).
+- 3-year ROI = (3-year value − 3-year cost) ÷ 3-year cost. Payback = the month in which cumulative value exceeds cumulative cost.
+
 ## Pricing: Clear prices. Measure first, then decide.
 
 Every step has a fixed price, and every paid step is credited to the next one. You never pay twice.
@@ -77,58 +96,17 @@ Every step has a fixed price, and every paid step is credited to the next one. Y
 All prices net, excl. VAT. Prices in US dollars for customers in the US, excl. sales tax.
 
 - **Fit check** (30 minutes): Free. A call after you have sent us a few facts: industry, revenue, ERP and size of your sales team. That way we only talk to companies it fits.
-- **Value assessment** (3 weeks): €20,000 / $25,000. On one division's data: how much revenue is lost today, how much stock sits idle and how much margin is left open, in money. Credited in full to the pilot.
-- **Pilot** (30 days): €60,000 / $65,000. One product family, one team, success criteria agreed in writing upfront. Credited 100% to year one if you sign within 30 days of the review.
-- **License** (From year 1): from €180,000 / $200,000 per year. Annual, by the revenue DemandMatch covers. Every feature in every license.
+- **Value assessment** (3 weeks): €20,000 / $22,000. On one division's data: how much revenue is lost today, how much stock sits idle and how much margin is left open, in money. Credited in full to the pilot.
+- **Pilot** (30 days): €60,000 / $66,000. One product family, one team, success criteria agreed in writing upfront. Credited 100% to year one if you sign within 30 days of the review.
+- **License** (From year 1): from €180,000 / $198,000 per year. Annual, by scope: one division, the whole group, or global.
 
-### Pricing that scales with you
+- **Division** (To start with one division): €180,000 / $198,000 per year. Scope: One business unit or one country; Revenue in scope: up to €400m; Sales users: up to 60; Implementation, one-time: from €60,000 / $66,000.
+- **Group** (Typical at about €1bn revenue): €450,000 / $495,000 per year. Scope: All divisions and countries; Revenue in scope: up to €2bn; Sales users: up to 500; Implementation, one-time: from €150,000 / $165,000.
+- **Global** (For groups with several companies): from €600,000 / $660,000 per year. Scope: Several ERP systems, single sign-on, a dedicated contact; Revenue in scope: above €2bn; Sales users: by agreement; Implementation, one-time: from €150,000 / $165,000.
 
-No tiers, no price jumps. Your license follows the revenue DemandMatch covers, and every additional euro of revenue costs less.
-
-Rates (EUR):
-
-- Up to €1bn: €45,000 per €100m
-- €1bn to €3bn: €20,000 per €100m
-- Above €3bn: €10,000 per €100m
-- Minimum license: €180,000 per year
-
-Rates (USD):
-
-- Up to $1bn: $45,000 per $100m
-- $1bn to $3bn: $20,000 per $100m
-- Above $3bn: $10,000 per $100m
-- Minimum license: $200,000 per year
-
-Like tax brackets, the lower rate applies only to revenue above each threshold.
-
-Onboarding: 30% of the annual license, at least €60,000 / $65,000. Included in a 3-year term, charged in year one on a 1-year term.
-
-When you expand to more divisions or countries, we recalculate the price on your total revenue in scope. You pay only the difference, and the lower rate applies automatically.
-
-Example: at $1.2bn revenue in scope the annual license is $490,000. On a 3-year term onboarding is included. Indicative. Your final quote follows the value assessment.
-
-Every license includes every feature, for every customer: matching both ways, offers with margin, freight and your pricing rules, read-only connection to ERP, CRM and inbox, several ERP systems, single sign-on and unlimited sales users (fair use). How complex your system landscape is goes into onboarding, not the license. Nothing goes out without your team's approval.
+Every license includes: matching both ways, offers with margin, freight and your pricing rules, read-only connection to ERP, CRM and inbox, and nothing goes out without your team's approval.
 
 Paid annually in advance, 12-month minimum term. The value assessment and the pilot are credited in full.
-
-## Business case: Run the numbers yourself. With your figures, not ours.
-
-Revenue comes from the price tool. Only money that actually arrives goes into the ROI. Freed time is shown next to it and counted only if you choose to.
-
-Example with €1.2bn revenue in scope, 12% gross margin, stock at 12% of revenue, 60% of business through DemandMatch and a 3-year term. Conservative: annual license €490,000, value €1.42m a year, €2.9 of value per €1 of license, payback after 8.8 months, 3-year ROI 137%. Expected: value €3.84m a year, payback after 3.3 months, 3-year ROI 539%. One-time cash release from inventory: €3.02m (conservative, not included in ROI).
-
-### How we calculate
-
-- Annual license: €45,000 per €100m of revenue in scope up to €1bn, €20,000 per €100m from €1bn to €3bn, €10,000 per €100m above. At least €180,000 a year, rounded to €5,000.
-- Onboarding = 30% of the annual license, at least €60,000, rounded to €5,000. Included in a 3-year term, charged in year one on a 1-year term.
-- Annual value = share through DemandMatch × (revenue × extra revenue × gross margin + revenue × margin points + revenue × stock % × share sold earlier × 9% holding cost). Avoided write-downs are not counted.
-- Conservative: 0.5% extra revenue, 0.1 margin points, 3.5% of stock sold earlier. Expected: 1%, 0.3 points, 10.5%.
-- Cost in year 1 = annual license + onboarding (0 on a 3-year term) + €32,000 own effort. Years 2 and 3 = annual license.
-- Year one brings 50% of the annual value (ramp-up), years 2 and 3 bring 100% each.
-- Payback = cost in year 1 ÷ (50% of the annual value ÷ 12), in months. From month 13 the full value counts.
-- 3-year ROI = (3-year value − 3-year cost) ÷ 3-year cost. 3-year cost = 3 × annual license + onboarding (on a 1-year term) + own effort.
-- One-time cash release = share × revenue × stock % × share sold earlier. It is never added to value, payback or ROI.
-- Freed capacity = people × share × time freed (conservative 10%, expected 20%) × cost per person. It only counts if you include it.
 
 ## Base product + customisation
 
@@ -140,7 +118,7 @@ No system change, no big project. We connect read-only and work alongside your t
 
 - **Week 1, Connect**: Read-only access to ERP, CRM and inbox. Your data stays where it is.
 - **Week 2, Match**: Your real requests against your real stock, with your rules on margin and customers.
-- **Weeks 3 and 4, Work**: We measure: response time on inquiries, win rate on matched quotes, margin on matched quotes versus your baseline, and slow-moving stock sold. Then we recalculate the business case with your real numbers.
+- **Weeks 3 and 4, Work**: Your team works with it and approves. Together we measure what it brings.
 
 ## Questions and answers
 
@@ -158,11 +136,11 @@ More sales, because no request is left waiting and no customer is forgotten. Bet
 
 ### What ROI can a distributor with €1bn revenue expect?
 
-At €1.2bn revenue in scope, 12% gross margin, stock at 12% of revenue and 60% of business through DemandMatch we expect €1.42m of value a year (conservative) to €3.84m (expected). Against an annual license of €490,000 on a 3-year term, that pays back in about 8.8 months (conservative) or 3.3 months (expected), with a 3-year ROI of 137% or 539%. On top comes a one-time cash release from inventory of €3.02m, which we do not count in the ROI. Freed sales time is shown next to it and counted only if you choose to. In the calculator on this page you set revenue, gross margin, stock and the share through DemandMatch yourself.
+At €1.2bn revenue and 12% gross margin we expect €2.4m (conservative) to €6.4m (expected) a year from more sales, better margin and stock sold earlier. Against the Group license, implementation and own effort of about €630,000 together in year one, that pays back in about 2 to 6 months. Freed sales time comes on top. The calculator on this page lets you adjust every assumption. Only money that actually arrives goes into the ROI; freed time is shown next to it and counted only if you choose to.
 
 ### How much does DemandMatch cost?
 
-The fit check is free. The 3-week value assessment costs €20,000 and the 30-day pilot €60,000. The value assessment is credited in full to the pilot, the pilot to the annual license if you sign within 30 days of the review. You never pay twice. The annual license follows the revenue DemandMatch covers: €45,000 per €100m up to €1bn, €20,000 per €100m from €1bn to €3bn and €10,000 per €100m above, at least €180,000 a year. Like tax brackets, the lower rate applies only to revenue above each threshold. At €1.2bn that is €490,000. Onboarding costs 30% of the annual license, at least €60,000, and is included in a 3-year term. Every license includes every feature, including single sign-on and several ERP systems. All prices net, excl. VAT. In the US the same rates apply per $100m, with a minimum of $200,000 a year and $65,000 for onboarding; the value assessment costs $25,000 and the pilot $65,000, excl. sales tax.
+The fit check is free. The value assessment costs €20,000 and the 30-day pilot €60,000. Every paid step is credited to the next one: the value assessment in full to the pilot, the pilot 100% to year one of the license if you sign within 30 days of the review. You never pay twice. The license costs per year €180,000 for one division (up to €400m revenue), €450,000 for the whole group (up to €2bn revenue) and from €600,000 globally, plus a one-time implementation and customisation fee from €60,000 (Division) or from €150,000 (Group, Global). All prices net, excl. VAT. In the US: $22,000, $66,000, $198,000, $495,000 and from $660,000, plus from $66,000 or from $165,000 for implementation, excl. sales tax.
 
 ### Which systems does DemandMatch work with?
 
