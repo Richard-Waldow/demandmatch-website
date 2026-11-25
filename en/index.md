@@ -74,15 +74,14 @@ Reads from the systems you already run: SAP, Oracle, Odoo, DATEV, HubSpot, Gmail
 
 Every assumption is visible and adjustable. Only money that actually arrives goes into the ROI. Freed time is shown next to it and counted only if you choose to.
 
-Example for a distributor with €1.2bn revenue, 12% gross margin, stock at 12% of revenue and 400 people in sales. Conservative (0.5% revenue, 0.1 points, 3.5% of stock): €2.4m a year. The license is priced on that: €90,000 base plus 15% of €2.4m, about €446,000 a year from year two and about €268,000 in year one. With setup (€60,000) and own effort (€32,000), year one costs about €360,000. Payback after about 4 months, 3-year ROI about 370%. Expected (1% revenue, 0.3 points, 10.5% of stock): €6.4m a year with the same license, payback after about 1.5 months, 3-year ROI about 1,180%. You keep 81 to 93% of the value. On top, 10 to 20% of sales time freed, 40 to 80 full-time people, not counted.
+Example for a distributor with €1.2bn revenue, 12% gross margin, stock at 12% of revenue and 400 people in sales. Conservative (0.5% revenue, 0.1 points, 3.5% of stock): €2.4m a year. The license is priced on that: €90,000 base plus 15% of €2.4m, about €446,000 a year from year two and about €268,000 in year one. With setup (€60,000) and own effort (€32,000), year one costs about €360,000. Payback after about 3.6 months, 3-year ROI about 370%. Expected (1% revenue, 0.3 points, 10.5% of stock): €6.4m a year with the same license, payback after about 1.3 months, 3-year ROI about 1,180%. You keep 81 to 93% of the value. On top, 10 to 20% of sales time freed, 40 to 80 full-time people, not counted.
 
 ### How we calculate
 
-- Gross profit = revenue × gross margin.
-- Captured requests = revenue × extra revenue % × gross margin.
+- Gross profit from captured requests = revenue × extra revenue % × gross margin.
 - Margin uplift = revenue × margin points.
-- Stock = revenue × stock % × share sold earlier × holding cost. Avoided write-downs are not counted.
-- Value per year = (captured requests + margin uplift + stock) × share of the business run through DemandMatch.
+- Lower holding cost = revenue × stock % × share sold earlier × holding cost. The capital released and avoided write-downs are not counted.
+- Value per year = (gross profit from captured requests + margin uplift + lower holding cost) × share of the business run through DemandMatch.
 - Freed capacity = people × time freed × cost per person. It only counts if you include it.
 - Year 1 brings 50% of the value (ramp-up), years 2 and 3 bring 100% each.
 - License per year = base (€90,000 for the first company, €30,000 for each further one) + 15% of the conservative value, at most a third of that value. If your own assumptions are below the conservative case, yours apply. Freed capacity never counts.
@@ -122,7 +121,7 @@ Because it follows the value we measure together. Before the pilot both sides wr
 
 ### What ROI can a distributor with €1bn revenue expect?
 
-At €1.2bn revenue and 12% gross margin we expect €2.4m (conservative) to €6.4m (expected) a year from more sales, better margin and stock sold earlier. The license is priced on the conservative case only: about €446,000 a year from year two. With setup and own effort, year one costs about €360,000 and pays back in about 1.5 to 4 months. Freed sales time comes on top. The calculator on this page lets you adjust every assumption. Only money that actually arrives goes into the ROI; freed time is shown next to it and counted only if you choose to.
+At €1.2bn revenue and 12% gross margin we expect €2.4m (conservative) to €6.4m (expected) a year from more sales, better margin and stock sold earlier. The license is priced on the conservative case only: about €446,000 a year from year two. With setup and own effort, year one costs about €360,000 and pays back in about 1.3 to 3.6 months. Freed sales time comes on top. The calculator on this page lets you adjust every assumption. Only money that actually arrives goes into the ROI; freed time is shown next to it and counted only if you choose to.
 
 ### How much does DemandMatch cost?
 

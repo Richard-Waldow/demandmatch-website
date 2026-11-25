@@ -74,15 +74,14 @@ Liest aus Ihren bestehenden Systemen: SAP, Oracle, Odoo, DATEV, HubSpot, Gmail, 
 
 Jede Annahme ist sichtbar und verstellbar. In den ROI geht nur Geld ein, das wirklich ankommt. Frei werdende Zeit zeigen wir daneben, gerechnet wird sie nur, wenn Sie es wollen.
 
-Beispiel für einen Distributor mit 1,2 Mrd. € Umsatz, 12 % Bruttomarge, 12 % Lagerbestand und 400 Personen im Vertrieb. Vorsichtig (0,5 % Umsatz, 0,1 Prozentpunkte, 3,5 % des Bestands): 2,4 Mio. € pro Jahr. Darauf rechnet die Lizenz: 90.000 € Basis plus 15 % von 2,4 Mio. €, rund 446.000 € pro Jahr ab dem zweiten Jahr, im ersten Jahr rund 268.000 €. Mit Einrichtung (60.000 €) und Eigenaufwand (32.000 €) kostet das erste Jahr rund 360.000 €. Amortisation nach etwa 4 Monaten, ROI über 3 Jahre etwa 370 %. Erwartet (1 % Umsatz, 0,3 Prozentpunkte, 10,5 % des Bestands): 6,4 Mio. € pro Jahr bei derselben Lizenz, Amortisation nach etwa 1,5 Monaten, ROI über 3 Jahre etwa 1.180 %. Sie behalten 81 bis 93 % des Werts. Dazu frei werdende Zeit von 10 bis 20 %, das sind 40 bis 80 Vollzeitstellen, nicht eingerechnet.
+Beispiel für einen Distributor mit 1,2 Mrd. € Umsatz, 12 % Bruttomarge, 12 % Lagerbestand und 400 Personen im Vertrieb. Vorsichtig (0,5 % Umsatz, 0,1 Prozentpunkte, 3,5 % des Bestands): 2,4 Mio. € pro Jahr. Darauf rechnet die Lizenz: 90.000 € Basis plus 15 % von 2,4 Mio. €, rund 446.000 € pro Jahr ab dem zweiten Jahr, im ersten Jahr rund 268.000 €. Mit Einrichtung (60.000 €) und Eigenaufwand (32.000 €) kostet das erste Jahr rund 360.000 €. Amortisation nach etwa 3,6 Monaten, ROI über 3 Jahre etwa 370 %. Erwartet (1 % Umsatz, 0,3 Prozentpunkte, 10,5 % des Bestands): 6,4 Mio. € pro Jahr bei derselben Lizenz, Amortisation nach etwa 1,3 Monaten, ROI über 3 Jahre etwa 1.180 %. Sie behalten 81 bis 93 % des Werts. Dazu frei werdende Zeit von 10 bis 20 %, das sind 40 bis 80 Vollzeitstellen, nicht eingerechnet.
 
 ### So rechnen wir
 
-- Rohertrag = Umsatz × Bruttomarge.
-- Gewonnene Anfragen = Umsatz × zusätzlicher Umsatz in % × Bruttomarge.
+- Rohertrag aus gewonnenen Anfragen = Umsatz × zusätzlicher Umsatz in % × Bruttomarge.
 - Margenplus = Umsatz × Prozentpunkte Margenplus.
-- Bestand = Umsatz × Lagerbestand in % × früher verkaufter Anteil × Lagerhaltungskosten. Vermiedene Abschreibungen rechnen wir nicht mit.
-- Wert pro Jahr = (Gewonnene Anfragen + Margenplus + Bestand) × Anteil des Geschäfts mit DemandMatch.
+- Geringere Lagerkosten = Umsatz × Lagerbestand in % × früher verkaufter Anteil × Lagerhaltungskosten. Das dabei frei werdende Kapital und vermiedene Abschreibungen rechnen wir nicht mit.
+- Wert pro Jahr = (Rohertrag aus gewonnenen Anfragen + Margenplus + geringere Lagerkosten) × Anteil des Geschäfts mit DemandMatch.
 - Frei werdende Kapazität = Mitarbeitende × frei werdende Zeit × Kosten pro Person. Sie zählt nur mit, wenn Sie sie einrechnen.
 - Jahr 1 bringt 50 % des Werts (Anlauf), Jahr 2 und 3 je 100 %.
 - Lizenz pro Jahr = Basis (90.000 € für die erste Gesellschaft, 30.000 € je weitere) + 15 % des vorsichtigen Werts, höchstens ein Drittel dieses Werts. Liegen Ihre eigenen Annahmen unter dem vorsichtigen Fall, gelten Ihre. Frei werdende Kapazität zählt nie.
@@ -122,7 +121,7 @@ Weil er dem Wert folgt, den wir gemeinsam messen. Vor dem Pilot halten beide Sei
 
 ### Welchen ROI kann ein Distributor mit 1 Mrd. € Umsatz erwarten?
 
-Bei 1,2 Mrd. € Umsatz und 12 % Bruttomarge rechnen wir mit 2,4 Mio. € (vorsichtig) bis 6,4 Mio. € (erwartet) pro Jahr aus mehr Umsatz, besserer Marge und früher verkauftem Bestand. Die Lizenz rechnet nur mit dem vorsichtigen Fall: rund 446.000 € pro Jahr ab dem zweiten Jahr. Mit Einrichtung und Eigenaufwand kostet das erste Jahr rund 360.000 € und amortisiert sich nach etwa 1,5 bis 4 Monaten. Frei werdende Vertriebszeit kommt dazu. Mit dem Rechner auf dieser Seite lassen sich alle Annahmen anpassen. In den ROI geht nur Geld ein, das wirklich ankommt; frei werdende Zeit zeigen wir daneben und rechnen sie nur, wenn Sie das wollen.
+Bei 1,2 Mrd. € Umsatz und 12 % Bruttomarge rechnen wir mit 2,4 Mio. € (vorsichtig) bis 6,4 Mio. € (erwartet) pro Jahr aus mehr Umsatz, besserer Marge und früher verkauftem Bestand. Die Lizenz rechnet nur mit dem vorsichtigen Fall: rund 446.000 € pro Jahr ab dem zweiten Jahr. Mit Einrichtung und Eigenaufwand kostet das erste Jahr rund 360.000 € und amortisiert sich nach etwa 1,3 bis 3,6 Monaten. Frei werdende Vertriebszeit kommt dazu. Mit dem Rechner auf dieser Seite lassen sich alle Annahmen anpassen. In den ROI geht nur Geld ein, das wirklich ankommt; frei werdende Zeit zeigen wir daneben und rechnen sie nur, wenn Sie das wollen.
 
 ### Was kostet DemandMatch?
 

@@ -30,13 +30,13 @@
     { k: 'rev', g: 1, min: 0, max: 1000, step: 1, v: 1.2e9, log: true, f: v => eur(v) },
     { k: 'gm', g: 1, min: 5, max: 30, step: .5, v: 12, f: v => pct(v, v % 1 ? 1 : 0) },
     { k: 'stock', g: 1, min: 5, max: 25, step: .5, v: 12, f: v => pct(v, v % 1 ? 1 : 0), hint: s => `≈ ${eur(s.rev * s.stock / 100)}` },
+    { k: 'hold', g: 1, min: 5, max: 30, step: .5, v: 9, f: v => pct(v, v % 1 ? 1 : 0), hint: () => t('roi_hold_h') },
     { k: 'people', g: 1, min: 20, max: 1000, step: 10, v: 400, f: v => `${nf(v)} ${t('roi_people_u')}` },
     { k: 'pcost', g: 1, min: 50000, max: 150000, step: 1000, v: 84000, f: v => eur(v) },
     { k: 'scope', g: 1, min: 10, max: 100, step: 5, v: 100, f: v => pct(v), hint: () => t('roi_scope_h') },
     { k: 'sales', g: 2, min: 0, max: 3, step: .1, v: [.5, 1], f: v => pct(v, 1) },
     { k: 'margin', g: 2, min: 0, max: 1, step: .05, v: [.1, .3], f: v => `+${nf(v, 2)} ${t('roi_pts')}` },
     { k: 'freed', g: 2, min: 0, max: 20, step: .5, v: [3.5, 10.5], f: v => pct(v, 1), hint: s => `≈ ${eur(s.rev * s.stock / 100 * s.freed / 100)} ${t('roi_of_stock')}` },
-    { k: 'hold', g: 2, min: 5, max: 15, step: .5, v: 9, f: v => pct(v, v % 1 ? 1 : 0) },
     { k: 'time', g: 2, min: 0, max: 40, step: 1, v: [10, 20], f: v => pct(v) },
     { k: 'days', g: 3, min: 0, max: 200, step: 5, v: 40, f: v => `${nf(v)} ${t('roi_days_u')}`, hint: () => t('roi_days_h') },
     { k: 'co', g: 3, min: 1, max: 20, step: 1, v: 1, f: v => nf(v), hint: () => t('roi_co_h') }
@@ -46,8 +46,9 @@
   // the conservative effect (the first preset), which the license is priced on
   const CONS = Object.fromEntries(IN.filter(i => Array.isArray(i.v)).map(i => [i.k, i.v[0]]));
 
-  const S = { preset: 1, cap: false }; // preset 0 conservative, 1 expected, 2 your numbers
-  IN.forEach(i => { S[i.k] = Array.isArray(i.v) ? i.v[1] : i.v; });
+  // opens on the conservative case: the first figure a CFO sees should be the one we would sign
+  const S = { preset: 0, cap: false }; // preset 0 conservative, 1 expected, 2 your numbers
+  IN.forEach(i => { S[i.k] = Array.isArray(i.v) ? i.v[0] : i.v; });
 
   // ------------------------------------------------------------------ the model
   function model(s) {
