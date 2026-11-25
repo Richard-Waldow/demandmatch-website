@@ -1,6 +1,6 @@
 /* #pricing (pricing.js), in the quiet language of the rest of the page: the path to a decision is a small offer document
-   sitting on an oil painting, the way the product sits on the harbour; under it the license method (formula, its three
-   parts, the fairness rules, worked examples). No rings, no drop shadows, no tick lists.
+   sitting on an oil painting, the way the product sits on the harbour. One slider in it estimates the license; the
+   method and the fairness rules live in the FAQ and the business case. No rings, no drop shadows, no tick lists.
    Prices in the serif with lining, tabular figures. */
 .pricing { padding-top: clamp(90px, 11vw, 160px); padding-bottom: clamp(20px, 3vw, 40px); }
 .pricing .sec-h .sub { max-width: 58ch; }
@@ -36,43 +36,13 @@
 .pr-steps h3 { margin: 0; font: 500 15px/1.35 var(--font); color: var(--ink); }
 .pr-steps p { margin: 6px 0 0; font-size: 14px; line-height: 1.55; color: var(--ink-3); max-width: 36ch; }
 
-/* the license method, under the painting: three blocks in the same editorial split, a label column on the left (where
-   the old tier table had its labels) and the content on the right, each block opened by a hairline. The formula is set
-   in the serif like a sentence; its three parts are flat columns with one big figure each; the rules are a plain
-   numbered list; the examples a printed table with tabular figures. No cards, no tiles. */
-.pr-method, .pr-fair, .pr-ex { display: grid; grid-template-columns: minmax(140px, .62fr) minmax(0, 3fr); column-gap: clamp(20px, 3vw, 44px);
-  padding-top: 26px; border-top: 1px solid var(--line); }
-.pr-method { margin-top: clamp(72px, 9vw, 120px); }
-.pr-fair, .pr-ex { margin-top: clamp(56px, 7vw, 96px); }
-.pr-method > *, .pr-fair > *, .pr-ex > * { grid-column: 2; }
-.pr-method > .pr-m-h, .pr-fair > .pr-m-h, .pr-ex > .pr-m-h { grid-column: 1; grid-row: 1 / span 9; align-self: start; }
-.pr-m-h { margin: 4px 0 0; font: 500 15px/1.35 var(--font); color: var(--ink); }
-.pr-formula { margin: 0; max-width: 24ch; font: 400 clamp(28px, 2.8vw, 40px)/1.15 var(--serif); letter-spacing: -.03em; color: var(--ink); text-wrap: balance; }
-.pr-parts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px clamp(20px, 3vw, 44px); margin: clamp(32px, 4vw, 48px) 0 0; }
-.pr-parts > div { display: flex; flex-direction: column; padding-top: 14px; border-top: 1px solid rgb(20 20 20 / .09); }
-.pr-parts dt { order: 1; font-size: 13px; color: var(--ink-3); }
-.pr-parts dd { margin: 0; }
-.pr-part-v { order: 0; margin-bottom: 10px !important; font: 400 clamp(36px, 3.2vw, 48px)/1 var(--serif); letter-spacing: -.04em; color: var(--ink); white-space: nowrap; }
-.pr-part-t { order: 2; margin-top: 6px !important; max-width: 34ch; font-size: 14px; line-height: 1.55; color: var(--ink-2); }
-.pr-setup { margin: 22px 0 0; font-size: 14px; color: var(--ink-3); }
-
-.pr-rules { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 clamp(20px, 3vw, 44px); margin: 0; padding: 0; list-style: none; counter-reset: rule; }
-.pr-rules li { position: relative; padding: 14px 0 16px 30px; border-top: 1px solid rgb(20 20 20 / .09); font-size: 14px; line-height: 1.55; color: var(--ink-3); counter-increment: rule; }
-.pr-rules li:nth-child(-n+2) { border-top: 0; padding-top: 2px; }
-.pr-rules li::before { content: counter(rule); position: absolute; left: 0; top: 14px; font: 400 17px/1.3 var(--serif); color: var(--ink-3); }
-.pr-rules li:nth-child(-n+2)::before { top: 2px; }
-.pr-rules b { display: block; margin-bottom: 3px; font-weight: 500; color: var(--ink); }
-
-.pr-x { width: 100%; border-collapse: collapse; font-size: 14.5px; }
-.pr-x th, .pr-x td { padding: 13px 0 13px 16px; text-align: right; vertical-align: baseline; border-top: 1px solid rgb(20 20 20 / .09); white-space: nowrap; }
-.pr-x .l { padding-left: 0; text-align: left; }
-.pr-x thead th { padding-top: 2px; border-top: 0; font-size: 13px; font-weight: 400; color: var(--ink-3); white-space: normal; }
-.pr-x tbody th { font-weight: 400; color: var(--ink); }
-.pr-x td { color: var(--ink-2); }
-.pr-x td b { font: 400 19px/1 var(--serif); letter-spacing: -.02em; color: var(--ink); }
-.pr-x td small { display: block; margin-top: 4px; font-size: 12px; color: #8a6d3f; }
-.pr-x-note { margin: 14px 0 0; font-size: 13px; line-height: 1.5; color: var(--ink-3); }
-.pr-all { grid-column: auto; margin: clamp(40px, 5vw, 56px) 0 0; max-width: 92ch; font-size: 14px; line-height: 1.55; color: var(--ink-3); }
+/* the estimate at the foot of the offer document: one slider in the business case's style, the license in the serif */
+.pr-est .roi-r { padding-top: 16px; }
+.pr-doc .roi-r input[type="range"]::-webkit-slider-thumb { box-shadow: 0 0 0 3px #fff; }
+.pr-doc .roi-r input[type="range"]::-moz-range-thumb { box-shadow: 0 0 0 3px #fff; }
+.pr-est-v { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin: 4px 0 0; font-size: 14.5px; color: var(--ink); }
+.pr-est-v b { font: 400 23px/1.1 var(--serif); letter-spacing: -.02em; white-space: nowrap; }
+.pr-est-s { margin: 4px 0 0; font-size: 12.5px; line-height: 1.45; color: var(--ink-3); }
 
 .pr-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px 32px; margin-top: clamp(40px, 5vw, 64px);
   padding-top: 28px; border-top: 1px solid var(--line); }
@@ -80,14 +50,10 @@
 .pr-foot .cta-row { margin-top: 0; }
 
 /* lining, tabular figures for every price (after the font shorthands above, which reset it) */
-#pricing b, #pricing .pr-doc-v, .pr-part-v, .pr-x { font-variant-numeric: lining-nums tabular-nums; }
+#pricing b, #pricing .pr-doc-v, #pricing output { font-variant-numeric: lining-nums tabular-nums; }
 
 @media (max-width: 1000px) {
   .pr-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  /* the label column goes on top of each block */
-  .pr-method, .pr-fair, .pr-ex { grid-template-columns: minmax(0, 1fr); }
-  .pr-method > *, .pr-fair > *, .pr-ex > *, .pr-method > .pr-m-h, .pr-fair > .pr-m-h, .pr-ex > .pr-m-h { grid-column: 1; grid-row: auto; }
-  .pr-m-h { margin-bottom: 18px; }
 }
 @media (max-width: 720px) {
   /* the painting becomes a band, the document sits half on it */
@@ -95,14 +61,6 @@
   .pr-art { height: 320px; object-position: 18% 62%; }
   .pr-doc { width: 100%; padding: 18px 18px 16px; }
   .pr-steps { grid-template-columns: minmax(0, 1fr); }
-  .pr-parts, .pr-rules { grid-template-columns: minmax(0, 1fr); }
-  .pr-rules li:nth-child(2) { border-top: 1px solid rgb(20 20 20 / .09); padding-top: 14px; }
-  .pr-rules li:nth-child(2)::before { top: 14px; }
-  /* the examples: the companies column drops, the rest stays one row per example */
-  .pr-x th:nth-child(2), .pr-x td:nth-child(2) { display: none; }
-  .pr-x { font-size: 13.5px; }
-  .pr-x th, .pr-x td { padding-left: 10px; }
-  .pr-x td b { font-size: 16px; }
   .pr-foot .cta-row { width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) {

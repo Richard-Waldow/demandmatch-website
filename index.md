@@ -160,6 +160,10 @@ Für Distributoren und Großhändler von Chemie, Kunststoffen und Industriebedar
 
 Mehr Umsatz, weil keine Anfrage liegen bleibt und kein Kunde vergessen wird. Bessere Marge, weil jedes Angebot mit Fracht, Lager und Ihren Preisregeln rechnet und liegende Ware verkauft statt abgeschrieben wird. Und weniger Handarbeit: Lesen, Abgleichen und Angebot schreiben laufen automatisch.
 
+### Warum ist der Preis fair?
+
+Weil er dem Wert folgt, den wir gemeinsam messen. Vor dem Pilot halten beide Seiten schriftlich fest, wie es heute läuft und wie wir rechnen. Es zählt nur der vorsichtige Fall, frei werdende Zeit nie. Der Preis steht für ein Jahr fest, im ersten Jahr zählt der halbe Wert, weil der Anlauf Zeit braucht. Bei jeder Verlängerung messen wir neu: steigt der Wert, steigt der Anteil mit, sinkt er, sinkt Ihre Lizenz, nie unter die Basis. Und die Lizenz ist nie höher als ein Drittel des Werts, Sie behalten also immer mindestens das Dreifache.
+
 ### Welchen ROI kann ein Distributor mit 1 Mrd. € Umsatz erwarten?
 
 Bei 1,2 Mrd. € Umsatz und 12 % Bruttomarge rechnen wir mit 2,4 Mio. € (vorsichtig) bis 6,4 Mio. € (erwartet) pro Jahr aus mehr Umsatz, besserer Marge und früher verkauftem Bestand. Die Lizenz rechnet nur mit dem vorsichtigen Fall: rund 446.000 € pro Jahr ab dem zweiten Jahr. Mit Einrichtung und Eigenaufwand kostet das erste Jahr rund 360.000 € und amortisiert sich nach etwa 1,5 bis 4 Monaten. Frei werdende Vertriebszeit kommt dazu. Mit dem Rechner auf dieser Seite lassen sich alle Annahmen anpassen. In den ROI geht nur Geld ein, das wirklich ankommt; frei werdende Zeit zeigen wir daneben und rechnen sie nur, wenn Sie das wollen.

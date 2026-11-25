@@ -160,6 +160,10 @@ For distributors and wholesalers of chemicals, plastics and industrial goods wit
 
 More sales, because no request is left waiting and no customer is forgotten. Better margin, because every offer accounts for freight, storage and your pricing rules, and stock that sits gets sold instead of written off. And less manual work: reading, matching and writing the offer run automatically.
 
+### Why is the price fair?
+
+Because it follows the value we measure together. Before the pilot both sides write down how things run today and how we calculate. Only the conservative case counts, freed time never does. The price is fixed for a year, and year one counts half the value, because the ramp-up takes time. At every renewal we measure again: if the value rises, the share rises with it; if it falls, your license falls too, never below the base. And the license is never more than a third of the value, so you always keep at least three times what you pay.
+
 ### What ROI can a distributor with €1bn revenue expect?
 
 At €1.2bn revenue and 12% gross margin we expect €2.4m (conservative) to €6.4m (expected) a year from more sales, better margin and stock sold earlier. The license is priced on the conservative case only: about €446,000 a year from year two. With setup and own effort, year one costs about €360,000 and pays back in about 1.5 to 4 months. Freed sales time comes on top. The calculator on this page lets you adjust every assumption. Only money that actually arrives goes into the ROI; freed time is shown next to it and counted only if you choose to.
