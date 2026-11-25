@@ -136,11 +136,11 @@ Mehr Umsatz, weil keine Anfrage liegen bleibt und kein Kunde vergessen wird. Bes
 
 ### Welchen ROI kann ein Distributor mit 1 Mrd. € Umsatz erwarten?
 
-Bei 1,2 Mrd. € Umsatz und 12 % Bruttomarge rechnen wir mit 2,4 Mio. € (vorsichtig) bis 6,4 Mio. € (erwartet) pro Jahr aus mehr Umsatz, besserer Marge und früher verkauftem Bestand. Gegen Gruppenlizenz, Einführung und Eigenaufwand von zusammen rund 630.000 € im ersten Jahr amortisiert sich das nach etwa 2 bis 6 Monaten. Frei werdende Vertriebszeit kommt dazu. Mit dem Rechner auf dieser Seite lassen sich alle Annahmen anpassen.
+Bei 1,2 Mrd. € Umsatz und 12 % Bruttomarge rechnen wir mit 2,4 Mio. € (vorsichtig) bis 6,4 Mio. € (erwartet) pro Jahr aus mehr Umsatz, besserer Marge und früher verkauftem Bestand. Gegen Gruppenlizenz, Einführung und Eigenaufwand von zusammen rund 630.000 € im ersten Jahr amortisiert sich das nach etwa 2 bis 6 Monaten. Frei werdende Vertriebszeit kommt dazu. Mit dem Rechner auf dieser Seite lassen sich alle Annahmen anpassen. In den ROI geht nur Geld ein, das wirklich ankommt; frei werdende Zeit zeigen wir daneben und rechnen sie nur, wenn Sie das wollen.
 
 ### Was kostet DemandMatch?
 
-Der Fit-Check ist kostenlos. Die Potenzialanalyse kostet 20.000 €, der Pilot über 30 Tage 60.000 €; beide werden voll angerechnet. Die Lizenz kostet pro Jahr 180.000 € für einen Bereich (bis 400 Mio. € Umsatz), 450.000 € für die ganze Gruppe (bis 2 Mrd. € Umsatz) und ab 600.000 € global, dazu einmalig ab 60.000 € (Bereich) bzw. ab 150.000 € (Gruppe, Global) für Einführung und Anpassung. Alle Preise netto zzgl. MwSt. In den USA: 22.000 $, 66.000 $, 198.000 $, 495.000 $ und ab 660.000 $, dazu ab 66.000 $ bzw. ab 165.000 $ für die Einführung, zzgl. Sales Tax.
+Der Fit-Check ist kostenlos. Die Potenzialanalyse kostet 20.000 €, der Pilot über 30 Tage 60.000 €. Jeder bezahlte Schritt wird auf den nächsten angerechnet: die Potenzialanalyse voll auf den Pilot, der Pilot zu 100 % auf das erste Lizenzjahr, wenn Sie innerhalb von 30 Tagen nach der Auswertung unterschreiben. Sie zahlen nie doppelt. Die Lizenz kostet pro Jahr 180.000 € für einen Bereich (bis 400 Mio. € Umsatz), 450.000 € für die ganze Gruppe (bis 2 Mrd. € Umsatz) und ab 600.000 € global, dazu einmalig ab 60.000 € (Bereich) bzw. ab 150.000 € (Gruppe, Global) für Einführung und Anpassung. Alle Preise netto zzgl. MwSt. In den USA: 22.000 $, 66.000 $, 198.000 $, 495.000 $ und ab 660.000 $, dazu ab 66.000 $ bzw. ab 165.000 $ für die Einführung, zzgl. Sales Tax.
 
 ### Mit welchen Systemen arbeitet DemandMatch?
 
@@ -152,11 +152,11 @@ Nein. DemandMatch bereitet vor, ein Mensch entscheidet. Kein Angebot und keine E
 
 ### Was passiert mit unseren Daten?
 
-DemandMatch greift nur lesend auf ERP, CRM und Postfach zu und ändert dort nichts. Ihre Daten bleiben, wo sie sind. Anbindung und Zugriffsrechte legen wir gemeinsam mit Ihrer IT fest.
+Kein Systemwechsel, kein Großprojekt. DemandMatch greift nur lesend auf ERP, CRM und Postfach zu und ändert dort nichts. Ihre Daten bleiben, wo sie sind. Anbindung und Zugriffsrechte legen wir gemeinsam mit Ihrer IT fest.
 
 ### Wie fängt man an?
 
-Mit einem kostenlosen Fit-Check, dann einer Potenzialanalyse auf den Daten eines Bereichs und einem Pilot von 30 Tagen auf Ihren echten Daten. Woche 1: lesend verbinden. Woche 2: Ihre echten Anfragen gegen Ihren echten Bestand abgleichen, mit Ihren Regeln zu Marge und Kunden. Woche 3 und 4: Ihr Team arbeitet damit, und wir messen gemeinsam, was es bringt.
+Mit einem kostenlosen Fit-Check: Sie schicken uns vorab ein paar Eckdaten (Branche, Umsatz, ERP, Größe des Vertriebsteams), damit wir nur sprechen, wo es passt. Dann eine Potenzialanalyse auf den Daten eines Bereichs und ein Pilot von 30 Tagen auf Ihren echten Daten, für eine Produktfamilie und ein Team, mit vorab schriftlich vereinbarten Erfolgskriterien. Woche 1: lesend verbinden. Woche 2: Ihre echten Anfragen gegen Ihren echten Bestand abgleichen, mit Ihren Regeln zu Marge und Kunden. Woche 3 und 4: Ihr Team arbeitet damit, und wir messen gemeinsam, was es bringt.
 
 ### Wer steht hinter DemandMatch?
 

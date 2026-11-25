@@ -136,11 +136,11 @@ More sales, because no request is left waiting and no customer is forgotten. Bet
 
 ### What ROI can a distributor with €1bn revenue expect?
 
-At €1.2bn revenue and 12% gross margin we expect €2.4m (conservative) to €6.4m (expected) a year from more sales, better margin and stock sold earlier. Against the Group license, implementation and own effort of about €630,000 together in year one, that pays back in about 2 to 6 months. Freed sales time comes on top. The calculator on this page lets you adjust every assumption.
+At €1.2bn revenue and 12% gross margin we expect €2.4m (conservative) to €6.4m (expected) a year from more sales, better margin and stock sold earlier. Against the Group license, implementation and own effort of about €630,000 together in year one, that pays back in about 2 to 6 months. Freed sales time comes on top. The calculator on this page lets you adjust every assumption. Only money that actually arrives goes into the ROI; freed time is shown next to it and counted only if you choose to.
 
 ### How much does DemandMatch cost?
 
-The fit check is free. The value assessment costs €20,000 and the 30-day pilot €60,000; both are credited in full. The license costs per year €180,000 for one division (up to €400m revenue), €450,000 for the whole group (up to €2bn revenue) and from €600,000 globally, plus a one-time implementation and customisation fee from €60,000 (Division) or from €150,000 (Group, Global). All prices net, excl. VAT. In the US: $22,000, $66,000, $198,000, $495,000 and from $660,000, plus from $66,000 or from $165,000 for implementation, excl. sales tax.
+The fit check is free. The value assessment costs €20,000 and the 30-day pilot €60,000. Every paid step is credited to the next one: the value assessment in full to the pilot, the pilot 100% to year one of the license if you sign within 30 days of the review. You never pay twice. The license costs per year €180,000 for one division (up to €400m revenue), €450,000 for the whole group (up to €2bn revenue) and from €600,000 globally, plus a one-time implementation and customisation fee from €60,000 (Division) or from €150,000 (Group, Global). All prices net, excl. VAT. In the US: $22,000, $66,000, $198,000, $495,000 and from $660,000, plus from $66,000 or from $165,000 for implementation, excl. sales tax.
 
 ### Which systems does DemandMatch work with?
 
@@ -152,11 +152,11 @@ No. DemandMatch prepares, a person decides. No offer and no email goes out befor
 
 ### What happens to our data?
 
-DemandMatch has read-only access to ERP, CRM and inbox and changes nothing there. Your data stays where it is. We set up the connection and access rights together with your IT.
+No system change, no big project. DemandMatch has read-only access to ERP, CRM and inbox and changes nothing there. Your data stays where it is. We set up the connection and access rights together with your IT.
 
 ### How do we get started?
 
-With a free fit check, then a value assessment on one division's data and a 30-day pilot on your real data. Week 1: connect read-only. Week 2: match your real requests against your real stock, with your rules on margin and customers. Weeks 3 and 4: your team works with it, and together we measure what it brings.
+With a free fit check: you send us a few facts first (industry, revenue, ERP, size of your sales team), so we only talk where it fits. Then a value assessment on one division's data and a 30-day pilot on your real data, for one product family and one team, with success criteria agreed in writing upfront. Week 1: connect read-only. Week 2: match your real requests against your real stock, with your rules on margin and customers. Weeks 3 and 4: your team works with it, and together we measure what it brings.
 
 ### Who is behind DemandMatch?
 

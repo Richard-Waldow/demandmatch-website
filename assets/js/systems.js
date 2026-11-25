@@ -136,7 +136,6 @@
     host.innerHTML = `<div class="wrap">
       <div class="sy-head">
         <h2 class="h2 rv">${window.UI.t('sy_h')}</h2>
-        <p class="sub rv">${window.UI.t('sy_lead')}</p>
         <button class="sy-switch rv" type="button" role="switch" aria-checked="false"><span class="sy-spark">${sparkle()}</span><span class="sy-sw-t">Autopilot</span><i class="sy-tg big"><i></i></i></button>
       </div>
       <div class="sy-stage rv"><div class="sy-art" aria-hidden="true"></div>
